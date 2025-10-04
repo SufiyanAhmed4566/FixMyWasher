@@ -930,3 +930,4 @@ Google PageSpeed Insights:
 - Cumulative Layout Shift: < 0.1
 ```
 
+https://sufiyanahmed4566.github.io/FixMyWasher/
