@@ -1,0 +1,105 @@
+# robots.txt for FixMyWasher.in - Washing Machine Repair Bangalore
+# Optimized for Google Search Console and SEO
+# Last updated: 2025-01-10
+
+# ========================================
+# Default Rules for All Crawlers
+# ========================================
+User-agent: *
+Allow: /
+Allow: /home.html
+Allow: /book.html
+
+# Allow all static resources
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# ========================================
+# Googlebot - Priority Treatment
+# ========================================
+User-agent: Googlebot
+Allow: /
+Allow: /home.html$
+Allow: /book.html$
+Disallow: /thank-you$
+Disallow: /*?*
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.webp
+
+# ========================================
+# Other Major Search Engines
+# ========================================
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# ========================================
+# Social Media Crawlers (for OG tags)
+# ========================================
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# ========================================
+# Block Aggressive Bots
+# ========================================
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# AI Scrapers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# ========================================
+# Sitemap Location (CRITICAL)
+# ========================================
+Sitemap: https://fixmywasher.in/sitemap.xml
