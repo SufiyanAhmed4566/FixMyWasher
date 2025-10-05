@@ -375,196 +375,407 @@
             box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
             background-color: white;
         }
-        
         .brand-selection {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-            margin-top: 0.5rem;
-        }
-        
-        .brand-option {
-            flex: 1 1 calc(33.333% - 0.8rem);
-            min-width: 100px;
-            cursor: pointer;
-            position: relative;
-            transition: all 0.3s ease;
-            perspective: 1000px;
-        }
-        
-        .brand-option input {
-            position: absolute;
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-        
-        .brand-card {
-            border: 2px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 0.8rem;
-            text-align: center;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            background: white;
-            transform-style: preserve-3d;
-            position: relative;
-        }
-        
-        .brand-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--gradient);
-            opacity: 0;
-            border-radius: 10px;
-            transition: opacity 0.3s ease;
-            z-index: -1;
-        }
-        
-        .brand-option:hover .brand-card {
-            transform: translateY(-5px) rotateX(5deg);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .brand-option input:checked + .brand-card {
-            border-color: var(--electric-blue);
-            background-color: rgba(59, 130, 246, 0.1);
-            box-shadow: 0 0 0 2px var(--electric-blue), 0 10px 20px rgba(59, 130, 246, 0.2);
-            transform: translateY(-5px) scale(1.03);
-        }
-        
-        .brand-option input:checked + .brand-card::before {
-            opacity: 0.1;
-        }
-        
-        .brand-logo {
-            width: 50px;
-            height: 50px;
-            object-fit: contain;
-            margin: 0 auto 0.5rem;
-            filter: grayscale(30%);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-        
-        .brand-option:hover .brand-logo {
-            filter: grayscale(10%);
-            transform: scale(1.05);
-        }
-        
-        .brand-option input:checked + .brand-card .brand-logo {
-            filter: grayscale(0%);
-            transform: scale(1.15);
-        }
-        
-        .brand-name {
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: var(--dark-gray);
-            transition: all 0.3s ease;
-        }
-        
-        .brand-option input:checked + .brand-card .brand-name {
-            color: var(--electric-blue);
-            font-weight: 600;
-        }
-        
-            
-    .type-selection {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 1rem;
-        margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem; /* Reduced gap */
+    margin-top: 0.5rem;
+}
+
+.brand-option {
+    flex: 1 1 calc(25% - 0.5rem); /* Adjusted for smaller gap */
+    min-width: 70px; /* Reduced min-width */
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Mobile-first approach - 4 columns on all screens */
+@media (max-width: 768px) {
+    .brand-option {
+        flex: 1 1 calc(25% - 0.5rem);
+        min-width: 65px;
     }
     
-    .type-option {
-        cursor: pointer;
+    .brand-card {
+        padding: 0.5rem 0.3rem; /* Reduced padding */
+    }
+    
+    .brand-logo {
+        width: 35px; /* Smaller logos */
+        height: 35px;
+        margin: 0 auto 0.3rem;
+    }
+    
+    .brand-name {
+        font-size: 0.7rem;
+        font-weight: 600;
+        line-height: 1;
+        white-space: nowrap; /* Prevent text wrapping */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* For very small screens (below 432px) */
+@media (max-width: 432px) {
+    .brand-option {
+        flex: 1 1 calc(25% - 0.4rem); /* Even smaller gap */
+        min-width: 60px;
+    }
+    
+    .brand-card {
+        padding: 0.4rem 0.2rem;
+    }
+    
+    .brand-logo {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto 0.2rem;
+    }
+    
+    .brand-name {
+        font-size: 0.65rem;
+    }
+}
+
+.brand-option input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.brand-card {
+    border: 2px solid #e2e8f0;
+    border-radius: 8px; /* Slightly smaller radius */
+    padding: 0.6rem 0.4rem; /* Reduced padding */
+    text-align: center;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.brand-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient);
+    opacity: 0;
+    border-radius: 6px;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.brand-option:hover .brand-card {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.brand-option input:checked + .brand-card {
+    border-color: var(--electric-blue);
+    background-color: rgba(59, 130, 246, 0.1);
+    box-shadow: 0 0 0 2px var(--electric-blue), 0 5px 15px rgba(59, 130, 246, 0.2);
+    transform: translateY(-3px) scale(1.02);
+}
+
+.brand-option input:checked + .brand-card::before {
+    opacity: 0.1;
+}
+
+.brand-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin: 0 auto 0.3rem;
+    filter: grayscale(30%);
+    transition: all 0.3s ease;
+}
+
+.brand-option:hover .brand-logo {
+    filter: grayscale(10%);
+    transform: scale(1.03);
+}
+
+.brand-option input:checked + .brand-card .brand-logo {
+    filter: grayscale(0%);
+    transform: scale(1.08);
+}
+
+.brand-name {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--dark-gray);
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Single line only */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1;
+    width: 100%;
+}
+
+.brand-option input:checked + .brand-card .brand-name {
+    color: var(--electric-blue);
+    font-weight: 600;
+}    
+            
+    .type-selection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.type-option {
+    cursor: pointer;
+}
+
+/* Default styles for first two type cards (larger) */
+.type-card {
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.2rem 0.8rem;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 200px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.image-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+    flex-shrink: 0;
+}
+
+.type-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    width: auto;
+    height: auto;
+}
+
+.type-option:nth-child(1) .type-image {
+    max-height: 90px;
+    transform: scale(1.1);
+}
+
+.type-option:nth-child(2) .type-image {
+    max-height: 95px;
+    transform: scale(1.05);
+}
+
+.type-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--dark-gray);
+    margin-bottom: 0.3rem;
+    line-height: 1.2;
+}
+
+.type-description {
+    font-size: 0.9rem;
+    color: #64748b;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* Special compact styles ONLY for the third type card (No idea!) */
+.type-option:nth-child(3) {
+    grid-column: 1 / -1; /* Span full width */
+    width: 100%; /* Take full form width */
+}
+
+.type-option:nth-child(3) .type-card {
+    border-radius: 8px; /* Compact radius */
+    padding: 0.8rem 0.4rem; /* Compact padding */
+    min-height: 80px; /* Much smaller height */
+    height: 80px; /* Fixed smaller height */
+    flex-direction: row; /* Horizontal layout */
+    justify-content: flex-start; /* Align to start */
+    text-align: left;
+    gap: 1rem; /* Space between icon and text */
+}
+
+.type-option:nth-child(3) .image-container {
+    width: auto; /* Auto width for icon */
+    height: auto; /* Auto height */
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+
+.type-option:nth-child(3) .type-icon {
+    font-size: 2rem; /* Same as brand card */
+    color: #64748b;
+    transition: all 0.3s ease;
+}
+
+.type-option:nth-child(3) .type-name {
+    font-size: 0.9rem; /* Slightly larger for horizontal layout */
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+    margin-bottom: 0.2rem;
+}
+
+.type-option:nth-child(3) .type-description {
+    font-size: 0.75rem;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+/* Text container for horizontal layout */
+.type-option:nth-child(3) .type-card > div:not(.image-container) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+}
+
+/* Hover and Selected States */
+.type-option:hover .type-card {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.type-option input:checked + .type-card {
+    border-color: var(--electric-blue);
+    background-color: rgba(59, 130, 246, 0.1);
+    box-shadow: 0 0 0 2px var(--electric-blue), 0 10px 20px rgba(59, 130, 246, 0.2);
+    transform: translateY(-5px) scale(1.02);
+}
+
+.type-option input:checked + .type-card .type-image,
+.type-option input:checked + .type-card .type-icon {
+    transform: scale(1.15);
+}
+
+.type-option input:checked + .type-card .type-name {
+    color: var(--electric-blue);
+}
+
+.type-option input:checked + .type-card .type-description {
+    color: var(--electric-blue);
+    font-weight: 600;
+}
+
+/* Compact hover for third card only */
+.type-option:nth-child(3):hover .type-card {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.type-option:nth-child(3) input:checked + .type-card {
+    transform: translateY(-3px) scale(1.02);
+}
+
+.type-option:nth-child(3) input:checked + .type-card .type-icon {
+    transform: scale(1.08); /* Smaller scale for compact card */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .type-selection {
+        gap: 0.6rem;
     }
     
     .type-card {
-        border: 2px solid #e2e8f0;
-        border-radius: 12px;
-        padding: 1rem;
-        text-align: center;
-        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        background: white;
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding: 1rem 0.6rem;
+        min-height: 180px;
     }
     
     .image-container {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 0.8rem;
+        height: 90px;
+        margin-bottom: 0.6rem;
     }
     
-    .type-image {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-        transition: all 0.3s ease;
+    .type-option:nth-child(1) .type-image {
+        max-height: 85px;
     }
     
-    .type-icon {
-        font-size: 3.5rem;
-        color: #64748b;
-        transition: all 0.3s ease;
+    .type-option:nth-child(2) .type-image {
+        max-height: 88px;
     }
     
-    .type-name {
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--dark-gray);
-        margin-bottom: 0.3rem;
+    /* Third card mobile adjustments */
+    .type-option:nth-child(3) .type-card {
+        padding: 0.6rem 1rem;
+        min-height: 70px;
+        height: 70px;
+        gap: 0.8rem;
     }
     
-    .type-description {
+    .type-option:nth-child(3) .type-icon {
+        font-size: 1.8rem;
+    }
+    
+    .type-option:nth-child(3) .type-name {
+        font-size: 0.85rem;
+    }
+    
+    .type-option:nth-child(3) .type-description {
+        font-size: 0.7rem;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 432px) {
+    .type-selection {
+        gap: 0.5rem;
+    }
+    
+    .type-card {
+        padding: 0.8rem 0.4rem;
+        min-height: 160px;
+    }
+    
+    .image-container {
+        height: 80px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .type-option:nth-child(1) .type-image {
+        max-height: 75px;
+    }
+    
+    .type-option:nth-child(2) .type-image {
+        max-height: 78px;
+    }
+    
+    /* Third card very small screen adjustments */
+    .type-option:nth-child(3) .type-card {
+        padding: 0.5rem 0.8rem;
+        min-height: 60px;
+        height: 60px;
+        gap: 0.6rem;
+    }
+    
+    .type-option:nth-child(3) .type-icon {
+        font-size: 1.6rem;
+    }
+    
+    .type-option:nth-child(3) .type-name {
         font-size: 0.8rem;
-        color: #64748b;
     }
     
-    /* Hover and Selected States */
-    .type-option:hover .type-card {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    .type-option:nth-child(3) .type-description {
+        font-size: 0.65rem;
     }
-    
-    .type-option input:checked + .type-card {
-        border-color: var(--electric-blue);
-        background-color: rgba(59, 130, 246, 0.1);
-        box-shadow: 0 0 0 2px var(--electric-blue), 0 10px 20px rgba(59, 130, 246, 0.2);
-    }
-    
-    .type-option input:checked + .type-card .type-image,
-    .type-option input:checked + .type-card .type-icon {
-        transform: scale(1.1);
-    }
-    
-    .type-option input:checked + .type-card .type-name {
-        color: var(--electric-blue);
-    }
-    
-    @media (max-width: 768px) {
-        .type-selection {
-            grid-template-columns: 1fr;
-        }
-        
-        .image-container {
-            height: 150px;
-        }
-        
-        .type-icon {
-            font-size: 4rem;
-        }
-    }
-  
+}
         .dropdown-container {
             position: relative;
             z-index: 1000; /* Increased z-index */
@@ -1215,7 +1426,7 @@
         </label>
         
         <!-- Unknown -->
-        <label class="type-option">
+        <label class="type-option" style="padding-top: 10px;">
             <input type="radio" name="type" value="Unknown">
             <div class="type-card">
                 <div class="image-container">
@@ -1502,7 +1713,7 @@
     formData.set('_template', 'table');
     formData.set('_subject', 'New Repair Request from FixMyWasher');
 
-    fetch('https://formsubmit.co/ajax/sufiyan45666@gmail.com', {
+    fetch('https://formsubmit.co/ajax/1ff67db706ed3b4e8ff6c9cdf9bcb650', {
         method: 'POST',
         body: formData
     })
