@@ -27,6 +27,11 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://fixmywasher.in/">
     
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <!-- Schema.org markup for Google -->
     <script type="application/ld+json">
     {
@@ -120,10 +125,7 @@
     }
     </script>
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Inline Critical CSS -->
     <style>
         :root {
             --primary-blue: #2563eb;
@@ -137,9 +139,6 @@
             --neon-gradient: linear-gradient(135deg, var(--vibrant-blue) 0%, var(--neon-teal) 100%);
             --light-gray: #f8fafc;
             --dark-gray: #1e293b;
-            --glow: 0 0 15px rgba(59, 130, 246, 0.5);
-            --neon-glow: 0 0 20px rgba(29, 78, 216, 0.7);
-            --text-glow: 0 0 10px rgba(255, 255, 255, 0.8);
         }
         
         * {
@@ -153,50 +152,15 @@
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
             color: var(--dark-gray);
             line-height: 1.6;
             background-color: #f5f9ff;
             overflow-x: hidden;
-            /* Hardware acceleration for smooth scrolling */
             -webkit-overflow-scrolling: touch;
-            transform: translateZ(0);
         }
 
-        /* Performance optimizations */
-        .hero-video,
-        .water-bubbles,
-        .bubble {
-            transform: translateZ(0);
-            backface-visibility: hidden;
-            perspective: 1000;
-        }
-
-        /* Critical: Reduce heavy animations on mobile */
-        @media (max-width: 768px) {
-            .hero-video {
-                display: none; /* Remove video on mobile - major performance killer */
-            }
-            
-            .water-bubbles {
-                display: none; /* Remove bubbles on mobile */
-            }
-            
-            /* Reduce animation intensity */
-            .hero-content {
-                animation: none !important;
-            }
-            
-            .step-card:hover {
-                transform: none !important;
-            }
-            
-            .area-card:hover {
-                transform: none !important;
-            }
-        }
-        
-        /* Hero Section - Optimized for Mobile */
+        /* Critical above-the-fold styles */
         .hero {
             position: relative;
             padding: 2rem 1rem 1.5rem;
@@ -204,20 +168,6 @@
             overflow: hidden;
             background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(20, 184, 166, 0.1) 100%);
             min-height: auto;
-        }
-        
-        .hero-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-            opacity: 0.7;
-            filter: brightness(0.8) contrast(1.2);
-            /* Performance optimizations */
-            will-change: transform;
         }
         
         .hero-content {
@@ -251,44 +201,6 @@
             line-height: 1.5;
         }
         
-        /* Water Bubbles Animation - Reduced for Performance */
-        .water-bubbles {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
-            pointer-events: none;
-        }
-        
-        .bubble {
-            position: absolute;
-            bottom: -100px;
-            background: rgba(59, 130, 246, 0.3);
-            border-radius: 50%;
-            animation: rise 8s linear infinite;
-            z-index: -1;
-            /* Reduced effects for performance */
-            will-change: transform;
-            transform: translateZ(0);
-        }
-        
-        @keyframes rise {
-            0% {
-                bottom: -100px;
-                transform: translateX(0) scale(0.8);
-                opacity: 0.6;
-            }
-            100% {
-                bottom: 100vh;
-                transform: translateX(-50px) scale(1);
-                opacity: 0;
-            }
-        }
-        
-        /* Header with Performance Optimizations */
         header {
             position: sticky;
             top: 0;
@@ -328,7 +240,6 @@
             font-size: 1.1rem;
         }
         
-        /* Buttons - Mobile Optimized */
         .cta-button, .hero-button {
             padding: 0.6rem 1.2rem;
             background: var(--neon-gradient);
@@ -351,8 +262,17 @@
             padding: 0.8rem 1.6rem;
             font-size: 0.9rem;
         }
-        
-        /* Steps Section - Mobile First */
+
+        /* Non-critical CSS loaded async */
+    </style>
+
+    <!-- Deferred non-critical resources -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    <!-- Non-critical CSS -->
+    <style>
+        /* Rest of the CSS that's not critical */
         .steps {
             padding: 1.5rem 1rem;
             background: rgba(255, 255, 255, 0.95);
@@ -424,7 +344,6 @@
             line-height: 1.3;
         }
         
-        /* Service Areas - Mobile Optimized */
         .service-areas {
             padding: 1.5rem 1rem;
             text-align: center;
@@ -470,7 +389,6 @@
             font-size: 0.8rem;
         }
         
-        /* CTA Section - Mobile Optimized */
         .cta-section {
             padding: 2rem 1rem;
             text-align: center;
@@ -493,7 +411,6 @@
             font-size: 0.85rem;
         }
         
-        /* Footer - Mobile Optimized */
         footer {
             background: var(--dark-gray);
             color: white;
@@ -563,6 +480,7 @@
             border-radius: 50%;
             color: white;
             font-size: 0.9rem;
+            text-decoration: none;
         }
         
         .footer-bottom {
@@ -600,7 +518,6 @@
             font-size: 0.75rem;
         }
         
-        /* Floating CTA - Mobile Optimized */
         .floating-cta {
             position: fixed;
             bottom: 1rem;
@@ -619,7 +536,26 @@
             cursor: pointer;
             text-decoration: none;
         }
-        
+
+        /* Accessibility improvements */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Focus styles for accessibility */
+        a:focus, button:focus {
+            outline: 2px solid var(--electric-blue);
+            outline-offset: 2px;
+        }
+
         /* Desktop Styles */
         @media (min-width: 768px) {
             .hero {
@@ -680,97 +616,28 @@
                 grid-template-columns: 1fr 1fr;
                 text-align: left;
             }
-            
-            /* Re-enable animations for desktop */
-            .hero-video {
-                display: block;
-            }
-            
-            .water-bubbles {
-                display: block;
-            }
-            
-            .hero-content {
-                animation: float 6s ease-in-out infinite;
-            }
-            
-            @keyframes float {
-                0% { transform: translateY(0px); }
-                50% { transform: translateY(-8px); }
-                100% { transform: translateY(0px); }
-            }
-            
-            .step-card:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 12px 25px rgba(59, 130, 246, 0.15);
-            }
-            
-            .area-card:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
-                color: white;
-                background: var(--neon-gradient);
-            }
-            
-            .area-card:hover i {
-                color: white;
-            }
-        }
-        
-        @media (min-width: 992px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero-content {
-                padding: 3rem;
-            }
-        }
-
-        /* Performance: Reduce motion for users who prefer it */
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-            
-            .hero-video {
-                display: none;
-            }
-            
-            .water-bubbles {
-                display: none;
-            }
         }
     </style>
 </head>
 <body>
-    <!-- Water Bubbles Animation - Performance Optimized -->
-    <div class="water-bubbles" id="waterBubbles"></div>
-    
     <!-- Header -->
     <header>
-        <a href="#" class="logo">
+        <a href="https://sufiyanahmed4566.github.io/FixMyWasher/" class="logo">
             <div class="logo-icon">🧺</div>
             FixMyWasher
         </a>
         <a href="Submission.html" class="cta-button" id="bookNowBtn">
-            <i class="fas fa-calendar-check"></i> Book Now
+            <i class="fas fa-calendar-check" aria-hidden="true"></i> Book Now
         </a>
     </header>
     
-    <!-- Hero Section with Video -->
+    <!-- Hero Section -->
     <section class="hero">
-        <video class="hero-video" autoplay muted loop playsinline preload="metadata">
-            <source src="https://media.istockphoto.com/id/1309390204/video/worker-repairing-washing-machine-in-laundry-room.mp4?s=mp4-640x640-is&k=20&c=weYVYZYpIQTQV2iFluwUpvWDmUVvUTRzQeT39ZwBa2U=" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
         <div class="hero-content">
             <h1>Professional Washing Machine Repair in Bangalore</h1>
             <p>Same-day service | Free diagnosis | 90-day warranty | Certified technicians</p>
             <a href="Submission.html" class="hero-button" id="heroButton">
-                <i class="fas fa-calendar-check"></i> Book Repair Now
+                <i class="fas fa-calendar-check" aria-hidden="true"></i> Book Repair Now
             </a>
         </div>
     </section>
@@ -782,7 +649,7 @@
             <div class="step-card">
                 <div class="step-number">1</div>
                 <div class="step-icon">
-                    <i class="fas fa-clipboard-list"></i>
+                    <i class="fas fa-clipboard-list" aria-hidden="true"></i>
                 </div>
                 <h3>Book Online</h3>
                 <p>Quick 2-minute form</p>
@@ -790,7 +657,7 @@
             <div class="step-card">
                 <div class="step-number">2</div>
                 <div class="step-icon">
-                    <i class="fas fa-phone-alt"></i>
+                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
                 </div>
                 <h3>Get a Call</h3>
                 <p>Within 30 minutes</p>
@@ -798,7 +665,7 @@
             <div class="step-card">
                 <div class="step-number">3</div>
                 <div class="step-icon">
-                    <i class="fas fa-user-tie"></i>
+                    <i class="fas fa-user-tie" aria-hidden="true"></i>
                 </div>
                 <h3>Technician Arrives</h3>
                 <p>Same-day service</p>
@@ -806,7 +673,7 @@
             <div class="step-card">
                 <div class="step-number">4</div>
                 <div class="step-icon">
-                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
                 </div>
                 <h3>Problem Solved</h3>
                 <p>With warranty</p>
@@ -821,40 +688,40 @@
             <p>Same-day service available in these and surrounding areas</p>
             <div class="areas-grid">
                 <div class="area-card">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     <span>Jayanagar</span>
                 </div>
                 <div class="area-card">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     <span>Koramangala</span>
                 </div>
                 <div class="area-card">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     <span>Indiranagar</span>
                 </div>
                 <div class="area-card">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     <span>Whitefield</span>
                 </div>
                 <div class="area-card">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     <span>Marathahalli</span>
                 </div>
                 <div class="area-card">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     <span>HSR Layout</span>
                 </div>
                 <div class="area-card">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     <span>BTM Layout</span>
                 </div>
                 <div class="area-card">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     <span>Electronic City</span>
                 </div>
             </div>
             <a href="Submission.html" class="cta-button" style="margin-top: 1rem;">
-                <i class="fas fa-calendar-check"></i> Book Your Repair
+                <i class="fas fa-calendar-check" aria-hidden="true"></i> Book Your Repair
             </a>
         </div>
     </section>
@@ -865,7 +732,7 @@
             <h2>Need Same-Day Washing Machine Repair?</h2>
             <p>Our certified technicians are standing by to help you today</p>
             <a href="Submission.html" class="cta-button" id="ctaButton">
-                <i class="fas fa-calendar-check"></i> Get Instant Help
+                <i class="fas fa-calendar-check" aria-hidden="true"></i> Get Instant Help
             </a>
         </div> 
     </section>
@@ -876,101 +743,87 @@
             <div class="footer-column">
                 <h3>Our Services</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Washing Machine Repair</a></li>
-                    <li><a href="#">Top Load Service</a></li>
-                    <li><a href="#">Front Load Service</a></li>
-                    <li><a href="#">All Brand Repairs</a></li>
+                    <li><a href="https://sufiyanahmed4566.github.io/FixMyWasher/">Washing Machine Repair</a></li>
+                    <li><a href="https://sufiyanahmed4566.github.io/FixMyWasher/">Top Load Service</a></li>
+                    <li><a href="https://sufiyanahmed4566.github.io/FixMyWasher/">Front Load Service</a></li>
+                    <li><a href="https://sufiyanahmed4566.github.io/FixMyWasher/">All Brand Repairs</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>Contact Us</h3>
                 <ul class="footer-links">
-                    <li><a href="tel:+918012345678"><i class="fas fa-phone"></i> 080 1234 5678</a></li>
-                    <li><a href="mailto:help@fixmywasher.in"><i class="fas fa-envelope"></i> help@fixmywasher.in</a></li>
-                    <li><a href="https://wa.me/918012345678"><i class="fab fa-whatsapp"></i> WhatsApp Us</a></li>
+                    <li><a href="tel:+918012345678"><i class="fas fa-phone" aria-hidden="true"></i> 080 1234 5678</a></li>
+                    <li><a href="mailto:help@fixmywasher.in"><i class="fas fa-envelope" aria-hidden="true"></i> help@fixmywasher.in</a></li>
+                    <li><a href="https://wa.me/918012345678"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Us</a></li>
                 </ul>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://sufiyanahmed4566.github.io/FixMyWasher/" aria-label="Facebook">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                    <a href="https://sufiyanahmed4566.github.io/FixMyWasher/" aria-label="Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                    <a href="https://sufiyanahmed4566.github.io/FixMyWasher/" aria-label="Twitter">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter</span>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <a href="#" class="footer-logo">
-                <i class="fas fa-washing-machine"></i> FixMyWasher.in
+            <a href="https://sufiyanahmed4566.github.io/FixMyWasher/" class="footer-logo">
+                <i class="fas fa-washing-machine" aria-hidden="true"></i> FixMyWasher.in
             </a>
             <div class="legal-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Refund Policy</a>
+                <a href="https://sufiyanahmed4566.github.io/FixMyWasher/">Privacy Policy</a>
+                <a href="https://sufiyanahmed4566.github.io/FixMyWasher/">Terms of Service</a>
+                <a href="https://sufiyanahmed4566.github.io/FixMyWasher/">Refund Policy</a>
             </div>
             <p class="copyright">© 2025 FixMyWasher.in - All Rights Reserved</p>
         </div>
     </footer>
     
     <!-- Floating CTA (Mobile) -->
-    <a href="Submission.html" class="floating-cta" id="floatingCta">
-        <i class="fas fa-tools"></i>
+    <a href="Submission.html" class="floating-cta" id="floatingCta" aria-label="Book Repair Service">
+        <i class="fas fa-tools" aria-hidden="true"></i>
+        <span class="sr-only">Book Repair Service</span>
     </a>
 
+    <!-- Deferred JavaScript -->
     <script>
-        // Performance-optimized bubble animation
-        function createBubbles() {
-            const container = document.getElementById('waterBubbles');
-            // Only create bubbles if container exists and is visible
-            if (!container || window.innerWidth < 768) return;
-            
-            container.innerHTML = '';
-            
-            // Reduced number of bubbles for performance
-            for (let i = 0; i < 8; i++) {
-                const bubble = document.createElement('div');
-                bubble.className = 'bubble';
-                const size = Math.random() * 20 + 10;
-                const left = Math.random() * 100;
-                const duration = Math.random() * 6 + 4;
-                const delay = Math.random() * 3;
-                const opacity = Math.random() * 0.3 + 0.3;
-                
-                bubble.style.width = `${size}px`;
-                bubble.style.height = `${size}px`;
-                bubble.style.left = `${left}%`;
-                bubble.style.animationDuration = `${duration}s`;
-                bubble.style.animationDelay = `${delay}s`;
-                bubble.style.opacity = opacity;
-                bubble.style.backgroundColor = `hsla(${Math.random() * 30 + 200}, 80%, 70%, ${opacity})`;
-                
-                container.appendChild(bubble);
-            }
-        }
-        
-        // Initialize with performance optimizations
+        // Minimal JavaScript for better performance
         document.addEventListener('DOMContentLoaded', function() {
-            // Only run heavy animations on desktop
-            if (window.innerWidth >= 768) {
-                createBubbles();
-                setInterval(createBubbles, 60000);
-            }
-            
-            // Add click handler for floating CTA
+            // Add focus styles for accessibility
+            const focusableElements = document.querySelectorAll('a, button, [tabindex]');
+            focusableElements.forEach(el => {
+                el.addEventListener('focus', function() {
+                    this.style.outline = '2px solid var(--electric-blue)';
+                    this.style.outlineOffset = '2px';
+                });
+                el.addEventListener('blur', function() {
+                    this.style.outline = '';
+                });
+            });
+
+            // Floating CTA click handler
             document.getElementById('floatingCta').addEventListener('click', function(e) {
                 e.preventDefault();
                 window.location.href = 'Submission.html';
             });
         });
 
-        // Performance: Stop animations when page is not visible
-        document.addEventListener('visibilitychange', function() {
-            if (document.hidden) {
-                // Pause heavy animations
-                const video = document.querySelector('.hero-video');
-                if (video) video.pause();
-            } else {
-                // Resume if needed
-                const video = document.querySelector('.hero-video');
-                if (video) video.play();
-            }
+        // Load non-critical resources after page load
+        window.addEventListener('load', function() {
+            // Font display optimization
+            const style = document.createElement('style');
+            style.textContent = `
+                @font-face {
+                    font-display: swap;
+                }
+            `;
+            document.head.appendChild(style);
         });
     </script>
 </body>
