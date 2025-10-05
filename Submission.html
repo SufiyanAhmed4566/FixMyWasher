@@ -1699,8 +1699,8 @@
             }
             
             // Form submission
-            form.addEventListener('submit', function(e) {
-    e.preventDefault(); // Always prevent default form behavior
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
 
     if (!validateForm()) return;
 
@@ -1722,6 +1722,10 @@
             setTimeout(() => {
                 form.style.display = 'none';
                 successMessage.style.display = 'block';
+                
+                // ✅ ADD THIS LINE TO SCROLL TO TOP
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit My Request';
 
