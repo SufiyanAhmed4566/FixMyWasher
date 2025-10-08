@@ -13,7 +13,7 @@
     
     <!-- Home Page -->
     <url>
-        <loc>https://fixmywasher.in/index.html</loc>
+        <loc>https://fixmywasher.in/</loc>
         <lastmod>2025-01-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -28,32 +28,3 @@
     </url>
 
 </urlset>
-    <!-- Service Area Pages (if you add them)
-    <url>
-        <loc>https://fixmywasher.in/areas/koramangala</loc>
-        <lastmod>2025-01-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://fixmywasher.in/areas/indiranagar</loc>
-        <lastmod>2025-01-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Brand-specific pages (if you add them) -->
-    <url>
-        <loc>https://fixmywasher.in/brands/lg-repair</loc>
-        <lastmod>2025-01-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://fixmywasher.in/brands/samsung-repair</loc>
-        <lastmod>2025-01-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url> -->
