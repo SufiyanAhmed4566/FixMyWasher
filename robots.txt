@@ -7,8 +7,8 @@
 # ========================================
 User-agent: *
 Allow: /
-Allow: /home.html
-Allow: /book.html
+Allow: /index.html
+Allow: /Submission.html
 
 # Allow all static resources
 Allow: /images/
@@ -26,8 +26,8 @@ Allow: /*.svg$
 # ========================================
 User-agent: Googlebot
 Allow: /
-Allow: /home.html$
-Allow: /book.html$
+Allow: /index.html$
+Allow: /Submission.html$
 Disallow: /thank-you$
 Disallow: /*?*
 Crawl-delay: 0
