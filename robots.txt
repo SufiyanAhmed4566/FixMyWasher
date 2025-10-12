@@ -7,7 +7,6 @@
 # ========================================
 User-agent: *
 Allow: /
-Allow: /index.html
 Allow: /Submission.html
 
 # Allow all static resources
@@ -26,11 +25,9 @@ Allow: /*.svg$
 # ========================================
 User-agent: Googlebot
 Allow: /
-Allow: /index.html$
 Allow: /Submission.html$
 Disallow: /thank-you$
 Disallow: /*?*
-Crawl-delay: 0
 
 User-agent: Googlebot-Image
 Allow: /images/
@@ -43,15 +40,12 @@ Allow: /*.webp
 # ========================================
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 0
 
 User-agent: DuckDuckBot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Yandex
 Allow: /
-Crawl-delay: 2
 
 # ========================================
 # Social Media Crawlers (for OG tags)

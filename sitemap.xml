@@ -3,15 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-    <!-- Homepage - Highest Priority -->
-    <url>
-        <loc>https://fixmywasher.in/</loc>
-        <lastmod>2025-01-10</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    
-    <!-- Home Page -->
+    <!-- Homepage -->
     <url>
         <loc>https://fixmywasher.in/</loc>
         <lastmod>2025-01-10</lastmod>
@@ -19,7 +11,7 @@
         <priority>1.0</priority>
     </url>
 
-    <!-- Booking Page - High Priority -->
+    <!-- Booking Page -->
     <url>
         <loc>https://fixmywasher.in/Submission.html</loc>
         <lastmod>2025-01-10</lastmod>
