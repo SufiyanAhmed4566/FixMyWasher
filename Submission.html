@@ -40,6 +40,26 @@
 
   gtag('config', 'AW-17646728047');
 </script>
+
+<!-- Google tag (gtag.js) event - delayed navigation helper -->
+<script>
+  // Helper function to delay opening a URL until a gtag event is sent.
+  // Call it in response to an action that should navigate to a URL.
+  function gtagSendEvent(url) {
+    var callback = function () {
+      if (typeof url === 'string') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'ads_conversion_Submit_lead_form_1', {
+      'event_callback': callback,
+      'event_timeout': 2000,
+      // <event_parameters>
+    });
+    return false;
+  }
+</script>
+
     
     <script type="application/ld+json">
     {
@@ -1469,9 +1489,9 @@ footer::before {
                 <strong>🔒 Your information is secure</strong> and will only be used for service booking purposes. We respect your privacy and follow strict data protection guidelines.
             </div>
             
-            <button type="submit" class="submit-btn" id="submitBtn">
-                <span>✈️</span> Submit My Request
-            </button>
+    <button type="submit" class="submit-btn" id="submitBtn" onclick="trackConversion()">
+    <span>✈️</span> Submit My Request
+</button>
         </form>
         
         <div class="success-message" id="successMessage">
@@ -1519,6 +1539,12 @@ footer::before {
             <p class="copyright">© 2025 FixMyWasher.in</p>
         </div>
     </footer>
+
+    <script>
+function trackConversion() {
+    gtag('event', 'ads_conversion_Submit_lead_form_1');
+}
+</script>
     
     <script>
         document.addEventListener('DOMContentLoaded', function() {
