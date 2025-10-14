@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0NRL6X5B4L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0NRL6X5B4L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0NRL6X5B4L');
+    </script>
 
-  gtag('config', 'G-0NRL6X5B4L');
-</script>
-
-<!-- Google tag (gtag.js) event - delayed navigation helper -->
-<script>
-  // Helper function to delay opening a URL until a gtag event is sent.
-  // Call it in response to an action that should navigate to a URL.
-  function gtagSendEvent(url) {
-    var callback = function () {
-      if (typeof url === 'string') {
-        window.location = url;
+    <!-- Google tag (gtag.js) event - delayed navigation helper -->
+    <script>
+      // Helper function to delay opening a URL until a gtag event is sent.
+      // Call it in response to an action that should navigate to a URL.
+      function gtagSendEvent(url) {
+        var callback = function () {
+          if (typeof url === 'string') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'ads_conversion_Submit_lead_form_1', {
+          'event_callback': callback,
+          'event_timeout': 2000,
+          // <event_parameters>
+        });
+        return false;
       }
-    };
-    gtag('event', 'ads_conversion_Submit_lead_form_1', {
-      'event_callback': callback,
-      'event_timeout': 2000,
-      // <event_parameters>
-    });
-    return false;
-  }
-</script>
+    </script>
 
+    <script>
+    function trackConversion() {
+        gtag('event', 'ads_conversion_Submit_lead_form_1');
+    }
+    </script>
 
-<!-- Favicon for all browsers -->
-<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="48x48">
-<link rel="shortcut icon" href="/favicon.ico">
+    <!-- Favicon for all browsers -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="48x48">
+    <link rel="shortcut icon" href="/favicon.ico">
 
-<!-- PNG icons for modern browsers -->
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <!-- PNG icons for modern browsers -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
 
-<!-- Apple icon for iOS and Safari -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- Apple icon for iOS and Safari -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-<!-- Web app manifest (optional, but helps with PWA and SEO) -->
-<link rel="manifest" href="/site.webmanifest">
+    <!-- Web app manifest (optional, but helps with PWA and SEO) -->
+    <link rel="manifest" href="/site.webmanifest">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,9 +73,6 @@
     
     <link rel="canonical" href="https://fixmywasher.in/Submission">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    
-
-
     
     <script type="application/ld+json">
     {
@@ -126,7 +126,6 @@
         ]
       }
     }
-    
     </script>
 
     <!-- Preconnect to external domains -->
@@ -194,15 +193,15 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    font-size: 1.4rem; /* Increased font size */
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--dark-gray);
     text-decoration: none;
 }
 
 .logo-icon {
-    width: 45px; /* Increased from 30px */
-    height: 45px; /* Increased from 30px */
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -375,6 +374,7 @@ header {
 .time-dropdown-container,
 .dropdown-container {
     position: relative;
+    z-index: 10;
 }
 
 .time-dropdown-toggle,
@@ -412,32 +412,51 @@ header {
     transform: rotate(180deg);
 }
 
-/* ===== Replace absolute dropdown behavior with in-flow expandable menus ===== */
-.time-dropdown-menu,
-.dropdown-menu {
-    /* participate in normal layout so they push content down */
+/* ===== Time Dropdown (in-flow layout) ===== */
+.time-dropdown-menu {
     position: static !important;
     width: 100%;
-    max-height: 0;                 /* closed state */
-    overflow: hidden;              /* hide content when closed */
+    max-height: 0;
+    overflow: hidden;
     background: #fff;
     border: 1px solid #e2e8f0;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     margin-top: 0.5rem;
     transition: max-height 240ms ease, padding 240ms ease;
-    padding: 0;                    /* no padding when closed */
+    padding: 0;
+    z-index: 5;
 }
 
-/* open state: give enough space and allow scrolling when content larger */
-.time-dropdown-menu.active,
+.time-dropdown-menu.active {
+    max-height: 320px;
+    padding: 0.3rem 0;
+    overflow: auto;
+}
+
+/* ===== Area Dropdown (CHANGED to in-flow layout) ===== */
+.dropdown-menu {
+    /* CHANGED: Now using in-flow layout like time dropdown */
+    position: static !important;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-top: 0.5rem;
+    transition: max-height 240ms ease, padding 240ms ease;
+    padding: 0;
+    z-index: 5;
+}
+
 .dropdown-menu.active {
-    max-height: 320px;             /* visual cap so it won't grow forever */
-    padding: 0.3rem 0;             /* restore vertical padding */
-    overflow: auto;                /* enable internal scrolling if needed */
+    max-height: 320px;
+    padding: 0.3rem 0;
+    overflow-y: auto;
 }
 
-/* keep the items styling intact */
 .time-dropdown-item,
 .dropdown-item {
     padding: 0.8rem 1.5rem;
@@ -447,6 +466,12 @@ header {
     gap: 0.5rem;
     transition: all 0.2s ease;
     position: relative;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.time-dropdown-item:last-child,
+.dropdown-item:last-child {
+    border-bottom: none;
 }
 
 .time-dropdown-item:hover,
@@ -454,7 +479,6 @@ header {
     background-color: var(--light-gray);
 }
 
-/* selected look */
 .time-dropdown-item.selected,
 .dropdown-item.selected {
     background-color: rgba(59,130,246,0.08);
@@ -469,6 +493,28 @@ header {
     color: var(--electric-blue);
 }
 
+/* ===== Improved Area Dropdown Features ===== */
+.dropdown-item mark {
+    background-color: #fef3c7;
+    color: #92400e;
+    padding: 0.1rem 0.2rem;
+    border-radius: 2px;
+}
+
+.no-results {
+    padding: 1rem;
+    text-align: center;
+    color: #64748b;
+    font-style: italic;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/* Ensure parent doesn't clip the expanding menu */
+.repair-form {
+    overflow: visible;
+}
+
+/* Time specific styles */
 .time-icon {
     font-size: 1.2rem;
     width: 24px;
@@ -485,7 +531,7 @@ header {
     margin-top: 0.1rem;
 }
 
-/* make the search box sticky **inside** the scrollable menu */
+/* Search box inside area dropdown */
 .dropdown-menu .search-box {
     position: sticky;
     top: 0;
@@ -510,11 +556,6 @@ header {
     box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
 }
 
-/* ensure parent doesn't clip the expanding menu */
-.repair-form {
-    overflow: visible;
-}
-
 /* Security Text Styles */
 .security-text {
     background: rgba(59, 130, 246, 0.05);
@@ -531,6 +572,60 @@ header {
 .security-text strong {
     color: var(--electric-blue);
     font-weight: 600;
+}
+
+/* NEW: Disclaimer Section with Checkbox */
+.disclaimer-section {
+    background: rgba(59, 130, 246, 0.03);
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    border-radius: 10px;
+    padding: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.disclaimer-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+.disclaimer-checkbox input[type="checkbox"] {
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.disclaimer-checkbox input[type="checkbox"]:checked {
+    background-color: var(--electric-blue);
+    border-color: var(--electric-blue);
+}
+
+.disclaimer-text {
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.disclaimer-text a {
+    color: var(--electric-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.disclaimer-text a:hover {
+    text-decoration: underline;
+}
+
+.disclaimer-error {
+    color: #ef4444;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    display: none;
 }
 
 .brand-selection {
@@ -1286,7 +1381,6 @@ footer::before {
         font-size: 2rem;
     }
 }
-
     </style>
 </head>
 <body>
@@ -1294,7 +1388,7 @@ footer::before {
     
     <header>
           <a href="https://fixmywasher.in/" class="logo">
-            <div class="logo-icon"><img src="favicon.png" alt=""></div>
+            <div class="logo-icon"><img src="favicon.png" alt="FixMyWasher Logo"></div>
             FixMyWasher
         </a>
     </header>
@@ -1501,10 +1595,21 @@ footer::before {
             <div class="security-text">
                 <strong>🔒 Your information is secure</strong> and will only be used for service booking purposes. We respect your privacy and follow strict data protection guidelines.
             </div>
+
+            <!-- NEW: Disclaimer Section with Checkbox - FIXED -->
+            <div class="disclaimer-section">
+                <label class="disclaimer-checkbox">
+                    <input type="checkbox" id="disclaimerCheckbox" required>
+                    <div class="disclaimer-text">
+                        I agree to the <a href="https://fixmywasher.in/privacy-policy" target="_blank">Privacy Policy</a> and <a href="https://fixmywasher.in/terms-and-conditions" target="_blank">Terms & Conditions</a>. I consent to receiving service-related communications via WhatsApp and phone.
+                    </div>
+                </label>
+                <div class="disclaimer-error" id="disclaimer-error">Please accept the terms and conditions to continue</div>
+            </div>
             
-    <button type="submit" class="submit-btn" id="submitBtn" onclick="trackConversion()">
-    <span>✈️</span> Submit My Request
-</button>
+            <button type="submit" class="submit-btn" id="submitBtn" onclick="trackConversion()">
+                <span>✈️</span> Submit My Request
+            </button>
         </form>
         
         <div class="success-message" id="successMessage">
@@ -1552,12 +1657,6 @@ footer::before {
             <p class="copyright">© 2025 FixMyWasher.in</p>
         </div>
     </footer>
-
-    <script>
-function trackConversion() {
-    gtag('event', 'ads_conversion_Submit_lead_form_1');
-}
-</script>
     
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -1597,12 +1696,14 @@ function trackConversion() {
             const areaInput = document.getElementById('area');
             const submitBtn = document.getElementById('submitBtn');
             const successMessage = document.getElementById('successMessage');
+            const disclaimerCheckbox = document.getElementById('disclaimerCheckbox');
             
             const nameError = document.getElementById('name-error');
             const phoneError = document.getElementById('phone-error');
             const brandError = document.getElementById('brand-error');
             const typeError = document.getElementById('type-error');
             const timeSlotError = document.getElementById('timeSlot-error');
+            const disclaimerError = document.getElementById('disclaimer-error');
             
             // Time dropdown elements
             const timeToggle = document.getElementById('timeToggle');
@@ -1615,104 +1716,212 @@ function trackConversion() {
             const areaSearch = document.getElementById('areaSearch');
             const areaItems = document.getElementById('areaItems');
             
-            const bangaloreAreas = [
-                'Not Available','Jayanagar', 'Koramangala', 'Indiranagar', 'HSR Layout', 'BTM Layout', 
-                'Marathahalli', 'Domlur', 'MG Road', 'Brigade Road', 'Richmond Town', 
-                'Banashankari', 'JP Nagar', 'Basavanagudi', 'Arekere', 'Kumaraswamy Layout', 
-                'Uttarahalli', 'Padmanabhanagar', 'Whitefield', 'KR Puram', 'CV Raman Nagar', 
-                'Mahadevapura', 'Ramamurthy Nagar', 'Hoodi', 'Brookefield', 'Kadugodi', 
-                'Hebbal', 'Yelahanka', 'RT Nagar', 'Sahakar Nagar', 'Sanjaynagar', 
-                'HBR Layout', 'Nagawara', 'Manyata Tech Park', 'Rajajinagar', 'Vijayanagar', 
-                'Malleshwaram', 'Magadi Road', 'Nagarbhavi', 'Kamakshipalya', 'Electronic City', 
-                'Sarjapur Road', 'Bellandur', 'Hennur', 'Thanisandra', 'Bagalur', 
-                'Bannerghatta Road', 'Horamavu', 'Kengeri', 'Peenya', 'Yeshwanthpur'
-            ];
+// FIXED: Area list with popular areas first and "Not Available" at top
+const bangaloreAreas = [
+    // Always keep "Not Available" at the very top
+    'Not Available',
+    
+    // Most popular areas first
+    'Koramangala', 'Indiranagar', 'HSR Layout', 'Jayanagar', 'Whitefield',
+    'Marathahalli', 'BTM Layout', 'Electronic City', 'Sarjapur Road',
+    'Bellandur', 'MG Road', 'Brigade Road', 'Richmond Town',
+    
+    // Other popular areas
+    'Banashankari', 'JP Nagar', 'Basavanagudi', 'Malleshwaram',
+    'Rajajinagar', 'Vijayanagar', 'Yeshwanthpur', 'Hebbal',
+    'Yelahanka', 'RT Nagar', 'HRBR Layout', 'Kalyan Nagar',
+    
+    // Additional areas
+    'Domlur', 'Ulsoor', 'Lavelle Road', 'Cunningham Road',
+    'Shivajinagar', 'Commercial Street', 'Frazer Town',
+    'Cox Town', 'Cooke Town', 'Vasanth Nagar', 'Seshadripuram',
+    
+    // South Bangalore areas
+    'Jayanagar 4th Block', 'Jayanagar 9th Block', 'JP Nagar 1st Phase',
+    'JP Nagar 2nd Phase', 'JP Nagar 6th Phase', 'Bannerghatta Road',
+    'Arekere', 'Hulimavu', 'Begur', 'Bommanahalli',
+    
+    // East Bangalore areas
+    'KR Puram', 'CV Raman Nagar', 'Ramamurthy Nagar', 'Hennur',
+    'Thanisandra', 'Bagalur', 'Horamavu', 'Kalkere',
+    'Banaswadi', 'Kammanahalli', 'Kacharakanahalli',
+    
+    // West Bangalore areas
+    'Rajajinagar', 'Vijayanagar', 'Malleshwaram', 'Yeshwanthpur',
+    'Peenya', 'Jalahalli', 'Dasarahalli', 'Nagasandra',
+    'Magadi Road', 'Nagarbhavi', 'Kengeri',
+    
+    // North Bangalore areas
+    'Hebbal', 'Yelahanka', 'RT Nagar', 'Sahakar Nagar',
+    'Sanjay Nagar', 'HBR Layout', 'Nagawara', 'Manyata Tech Park',
+    'Thanisandra', 'Kogilu', 'Chikkajala',
+    
+    // Central Bangalore areas
+    'Shivajinagar', 'Commercial Street', 'Frazer Town', 'Cox Town',
+    'Cooke Town', 'Vasanth Nagar', 'Seshadripuram', 'Gandhi Nagar',
+    
+    // Outer areas
+    'Anekal', 'Hosur Road', 'Bommasandra', 'Jigani',
+    'Attibele', 'Sarjapur', 'Varthur', 'Kadugodi',
+    'Budigere', 'Devanahalli', 'Nelamangala'
+];
+
+// Area dropdown functionality
+function populateAreaDropdown() {
+    areaItems.innerHTML = '';
+    
+    bangaloreAreas.forEach(area => {
+        const item = document.createElement('div');
+        item.className = 'dropdown-item';
+        item.textContent = area;
+        item.addEventListener('click', function() {
+            areaToggle.textContent = area;
+            areaInput.value = area;
+            areaDropdown.classList.remove('active');
+            areaToggle.classList.remove('active');
             
-            // Time dropdown functionality
-            timeToggle.addEventListener('click', function() {
-                this.classList.toggle('active');
-                timeDropdown.classList.toggle('active');
+            // Remove selected class from all items
+            document.querySelectorAll('.dropdown-item').forEach(el => {
+                el.classList.remove('selected');
             });
+            // Add selected class to clicked item
+            this.classList.add('selected');
+        });
+        areaItems.appendChild(item);
+    });
+}
+
+// FIXED: Improved area search functionality
+areaSearch.addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    const items = areaItems.querySelectorAll('.dropdown-item');
+    let hasVisibleItems = false;
+    
+    items.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (text.includes(searchTerm)) {
+            item.style.display = 'block';
+            hasVisibleItems = true;
             
-            timeItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    const value = this.getAttribute('data-value');
-                    timeToggle.textContent = value;
-                    timeSlotInput.value = value;
-                    timeDropdown.classList.remove('active');
-                    timeToggle.classList.remove('active');
-                    
-                    timeItems.forEach(el => {
-                        el.classList.remove('selected');
-                    });
-                    this.classList.add('selected');
-                });
-            });
-            
-            document.addEventListener('click', function(e) {
-                if (!timeToggle.contains(e.target) && !timeDropdown.contains(e.target)) {
-                    timeDropdown.classList.remove('active');
-                    timeToggle.classList.remove('active');
-                }
-            });
-            
-            // Area dropdown functionality
-            function populateAreaDropdown() {
-                areaItems.innerHTML = '';
-                bangaloreAreas.forEach(area => {
-                    const item = document.createElement('div');
-                    item.className = 'dropdown-item';
-                    item.textContent = area;
-                    item.addEventListener('click', function() {
-                        areaToggle.textContent = area;
-                        areaInput.value = area;
-                        areaDropdown.classList.remove('active');
-                        areaToggle.classList.remove('active');
-                        
-                        document.querySelectorAll('.dropdown-item').forEach(el => {
-                            el.classList.remove('selected');
-                        });
-                        this.classList.add('selected');
-                    });
-                    areaItems.appendChild(item);
-                });
+            // Highlight matching text
+            if (searchTerm) {
+                const regex = new RegExp(`(${searchTerm})`, 'gi');
+                item.innerHTML = item.textContent.replace(regex, '<mark>$1</mark>');
             }
-            
-            areaSearch.addEventListener('input', function() {
-                const searchTerm = this.value.toLowerCase();
-                const items = areaItems.querySelectorAll('.dropdown-item');
-                
-                items.forEach(item => {
-                    const text = item.textContent.toLowerCase();
-                    if (text.includes(searchTerm)) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            });
-            
-            areaToggle.addEventListener('click', function() {
-                this.classList.toggle('active');
-                areaDropdown.classList.toggle('active');
-                
-                if (areaDropdown.classList.contains('active')) {
-                    areaSearch.focus();
-                }
-            });
-            
-            document.addEventListener('click', function(e) {
-                if (!areaToggle.contains(e.target) && !areaDropdown.contains(e.target)) {
-                    areaDropdown.classList.remove('active');
-                    areaToggle.classList.remove('active');
-                }
-            });
-            
-            phoneInput.addEventListener('input', function() {
-                this.value = this.value.replace(/\D/g, '').slice(0, 10);
-            });
-            
-            function validateForm() {
+        } else {
+            item.style.display = 'none';
+        }
+    });
+    
+    // Show "No results" message if no items match
+    const noResults = document.getElementById('noResults');
+    if (!hasVisibleItems && searchTerm) {
+        if (!noResults) {
+            const noResultsMsg = document.createElement('div');
+            noResultsMsg.id = 'noResults';
+            noResultsMsg.className = 'no-results';
+            noResultsMsg.textContent = 'No areas found. Try a different search.';
+            noResultsMsg.style.padding = '1rem';
+            noResultsMsg.style.textAlign = 'center';
+            noResultsMsg.style.color = '#64748b';
+            areaItems.appendChild(noResultsMsg);
+        }
+    } else if (noResults) {
+        noResults.remove();
+    }
+});
+
+// FIXED: Improved dropdown toggle with proper closing
+areaToggle.addEventListener('click', function(e) {
+    e.stopPropagation(); // Prevent event bubbling
+    
+    // Close time dropdown if it's open
+    timeDropdown.classList.remove('active');
+    timeToggle.classList.remove('active');
+    
+    this.classList.toggle('active');
+    areaDropdown.classList.toggle('active');
+    
+    if (areaDropdown.classList.contains('active')) {
+        areaSearch.focus();
+        // Reset search and show all items
+        areaSearch.value = '';
+        const items = areaItems.querySelectorAll('.dropdown-item');
+        items.forEach(item => {
+            item.style.display = 'block';
+            item.innerHTML = item.textContent; // Remove highlights
+        });
+        
+        // Remove any existing "no results" message
+        const noResults = document.getElementById('noResults');
+        if (noResults) {
+            noResults.remove();
+        }
+        
+        // Scroll to top to ensure "Not Available" is visible
+        areaDropdown.scrollTop = 0;
+    }
+});
+
+// FIXED: Close dropdown when clicking outside
+document.addEventListener('click', function(e) {
+    // Close area dropdown
+    if (!areaToggle.contains(e.target) && !areaDropdown.contains(e.target)) {
+        areaDropdown.classList.remove('active');
+        areaToggle.classList.remove('active');
+    }
+    
+    // Close time dropdown
+    if (!timeToggle.contains(e.target) && !timeDropdown.contains(e.target)) {
+        timeDropdown.classList.remove('active');
+        timeToggle.classList.remove('active');
+    }
+});
+
+// FIXED: Time dropdown functionality
+timeToggle.addEventListener('click', function(e) {
+    e.stopPropagation(); // Prevent event bubbling
+    
+    // Close area dropdown if it's open
+    areaDropdown.classList.remove('active');
+    areaToggle.classList.remove('active');
+    
+    this.classList.toggle('active');
+    timeDropdown.classList.toggle('active');
+});
+
+timeItems.forEach(item => {
+    item.addEventListener('click', function() {
+        const value = this.getAttribute('data-value');
+        timeToggle.textContent = value;
+        timeSlotInput.value = value;
+        timeDropdown.classList.remove('active');
+        timeToggle.classList.remove('active');
+        
+        // Remove selected class from all items
+        timeItems.forEach(el => {
+            el.classList.remove('selected');
+        });
+        // Add selected class to clicked item
+        this.classList.add('selected');
+    });
+});
+
+// FIXED: Close dropdowns when pressing Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        // Close area dropdown
+        areaDropdown.classList.remove('active');
+        areaToggle.classList.remove('active');
+        
+        // Close time dropdown
+        timeDropdown.classList.remove('active');
+        timeToggle.classList.remove('active');
+    }
+});
+
+
+function validateForm() {
                 let isValid = true;
                 
                 if (nameInput.value.trim() === '') {
@@ -1765,8 +1974,23 @@ function trackConversion() {
                     timeSlotError.style.display = 'none';
                 }
                 
+                // NEW: Disclaimer checkbox validation - FIXED
+                if (!disclaimerCheckbox.checked) {
+                    disclaimerError.style.display = 'block';
+                    isValid = false;
+                } else {
+                    disclaimerError.style.display = 'none';
+                }
+                
                 return isValid;
             }
+            
+            // FIXED: Added event listener for checkbox to ensure it's working
+            disclaimerCheckbox.addEventListener('change', function() {
+                if (this.checked) {
+                    disclaimerError.style.display = 'none';
+                }
+            });
             
             form.addEventListener('submit', function(e) {
                 e.preventDefault();
@@ -1802,6 +2026,7 @@ function trackConversion() {
                                 areaInput.value = '';
                                 timeToggle.textContent = 'Select time slot';
                                 timeSlotInput.value = '';
+                                disclaimerCheckbox.checked = false;
                                 document.querySelectorAll('.dropdown-item').forEach(el => {
                                     el.classList.remove('selected');
                                 });
