@@ -30,9 +30,29 @@
     </script>
 
     <script>
-    function trackConversion() {
-        gtag('event', 'ads_conversion_Submit_lead_form_1');
-    }
+  function trackConversion() {
+    // Get all form data
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const brand = document.querySelector('input[name="brand"]:checked')?.value || 'Unknown';
+    const machineType = document.querySelector('input[name="type"]:checked')?.value || 'Unknown';
+    const timeSlot = document.getElementById('timeSlot').value || 'Not Selected';
+    const area = document.getElementById('area').value || 'Not Selected';
+    
+    // Track Google Ads conversion
+    gtag('event', 'ads_conversion_Submit_lead_form_1');
+    
+    // Track to Google Analytics
+    gtag('event', 'form_submit', {
+        'event_category': 'Lead Form',
+        'event_label': 'Washing Machine Repair',
+        'brand': brand,
+        'machine_type': machineType,
+        'time_slot': timeSlot,
+        'area_selected': area !== 'Not Selected' ? 'Yes' : 'No',
+        'value': 1
+    });
+}
     </script>
 
     <!-- Favicon for all browsers -->
