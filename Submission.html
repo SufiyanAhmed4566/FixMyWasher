@@ -2005,7 +2005,7 @@ function validateForm() {
     formData.set('_template', 'table');
     formData.set('_subject', 'New Repair Request from FixMyWasher');
 
-    // FIXED: Send to both emails simultaneously
+    // Send both emails simultaneously
     const email1 = fetch('https://formsubmit.co/ajax/1ff67db706ed3b4e8ff6c9cdf9bcb650', {
         method: 'POST',
         body: formData
@@ -2016,10 +2016,8 @@ function validateForm() {
         body: formData
     });
 
-    // Send both requests at the same time
-    Promise.all([email1, email2])
-    .then(responses => {
-        // Show success as soon as both requests are sent
+    // Show success after 1 second REGARDLESS of email status
+    setTimeout(() => {
         form.style.display = 'none';
         successMessage.style.display = 'block';
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -2042,11 +2040,16 @@ function validateForm() {
                 el.classList.remove('selected');
             });
         }, 100);
+    }, 1000);
+
+    // Handle emails in background (user doesn't wait)
+    Promise.all([email1, email2])
+    .then(() => {
+        console.log('Both emails sent successfully');
     })
     .catch(error => {
-        alert('❌ Error submitting form: ' + error.message);
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = '<span>✈️</span> Submit My Request';
+        console.error('Email sending error:', error);
+        // Don't show error to user - they already see success
     });
 });
 
