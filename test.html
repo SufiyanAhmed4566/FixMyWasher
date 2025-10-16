@@ -35,8 +35,36 @@ function trackConversion() {
     const uniqueId = 'SUB_' + Date.now() + '_' + Math.random().toString(36).substr(2, 5);
     document.getElementById('uniqueId').value = uniqueId;
     
-    const now = new Date().toISOString();
-    document.getElementById('dateTime').value = now;
+    // FIXED: Get current time in Indian timezone (IST)
+    const now = new Date();
+    
+    // Convert to IST (UTC+5:30) and format properly
+    const options = {
+        timeZone: 'Asia/Kolkata',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+    };
+    
+    const formatter = new Intl.DateTimeFormat('en-IN', options);
+    const parts = formatter.formatToParts(now);
+    
+    const day = parts.find(part => part.type === 'day').value;
+    const month = parts.find(part => part.type === 'month').value;
+    const year = parts.find(part => part.type === 'year').value;
+    const hour = parts.find(part => part.type === 'hour').value;
+    const minute = parts.find(part => part.type === 'minute').value;
+    const second = parts.find(part => part.type === 'second').value;
+    
+    // Format: YYYY-MM-DD HH:MM:SS (IST time)
+    const istDateTime = `${year}-${month}-${day} ${hour}:${minute}:${second}`;
+    
+    // Set both ISO string (for consistency) and formatted IST time
+    document.getElementById('dateTime').value = istDateTime;
     
     // Get all form data
     const name = document.getElementById('name').value;
@@ -68,6 +96,13 @@ function trackConversion() {
         'area_selected': area !== 'Not Selected' ? 'Yes' : 'No',
         'value': 1
     });
+    
+    // Prevent immediate form submission to allow time for tracking
+    setTimeout(() => {
+        document.getElementById('repairForm').submit();
+    }, 500);
+    
+    return false;
 }
     </script>
 
@@ -1435,8 +1470,9 @@ footer::before {
             <p>Fill the form below and our technician will contact you shortly</p>
         </div>
         
-        <form id="repairForm" class="repair-form" 
-      action="https://formsubmit.co/13b561c9abe118b3624d1bc45a08e458?sheet=https://docs.google.com/spreadsheets/d/1lVQLHn6KyOINkwZ4E4VXL4vCNQPBBoB-cqt7YQY6H_4/edit?usp=sharing" method="POST">
+<form id="repairForm" class="repair-form" 
+      action="https://formsubmit.co/13b561c9abe118b3624d1bc45a08e458?sheet=https://docs.google.com/spreadsheets/d/1lVQLHn6KyOINkwZ4E4VXL4vCNQPBBoB-cqt7YQY6H_4/" 
+      method="POST">
 
                <input type="hidden" name="unique_id" id="uniqueId">
                <input type="hidden" name="date_time" id="dateTime">
