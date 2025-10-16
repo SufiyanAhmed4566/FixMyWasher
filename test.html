@@ -62,11 +62,9 @@ function trackConversion() {
     
     // Format: YYYY-MM-DD HH:MM:SS (IST time)
     const istDateTime = `${year}-${month}-${day} ${hour}:${minute}:${second}`;
-    
-    // Set both ISO string (for consistency) and formatted IST time
     document.getElementById('dateTime').value = istDateTime;
     
-    // Get all form data
+    // Get all form data for tracking
     const name = document.getElementById('name').value;
     const phone = document.getElementById('phone').value;
     const brand = document.querySelector('input[name="brand"]:checked')?.value || 'Unknown';
@@ -97,12 +95,10 @@ function trackConversion() {
         'value': 1
     });
     
-    // Prevent immediate form submission to allow time for tracking
-    setTimeout(() => {
-        document.getElementById('repairForm').submit();
-    }, 500);
+    // REMOVED: The manual form submission
+    // Let the form event listener handle the submission
     
-    return false;
+    return true; // Changed from false to true
 }
     </script>
 
@@ -1471,7 +1467,7 @@ footer::before {
         </div>
         
 <form id="repairForm" class="repair-form" 
-      action="https://formsubmit.co/13b561c9abe118b3624d1bc45a08e458?sheet=https://docs.google.com/spreadsheets/d/1lVQLHn6KyOINkwZ4E4VXL4vCNQPBBoB-cqt7YQY6H_4/" 
+      action="https://formsubmit.co/1ff67db706ed3b4e8ff6c9cdf9bcb650+f8e897224df1b7aecfdf1b5312df1e3b?sheet=https://docs.google.com/spreadsheets/d/1lVQLHn6KyOINkwZ4E4VXL4vCNQPBBoB-cqt7YQY6H_4/" 
       method="POST">
 
                <input type="hidden" name="unique_id" id="uniqueId">
@@ -2079,23 +2075,10 @@ function validateForm() {
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<span>⏳</span> Submitting...';
 
-    const formData = new FormData(form);
-    formData.set('_captcha', 'false');
-    formData.set('_template', 'table');
-    formData.set('_subject', 'New Repair Request from FixMyWasher');
-
-    // Send both emails simultaneously
-    const email1 = fetch('https://formsubmit.co/ajax/1ff67db706ed3b4e8ff6c9cdf9bcb650', {
-        method: 'POST',
-        body: formData
-    });
-
-    const email2 = fetch('https://formsubmit.co/ajax/f8e897224df1b7aecfdf1b5312df1e3b', {
-        method: 'POST',
-        body: formData
-    });
-
-    // Show success after 1 second REGARDLESS of email status
+    // Let FormSubmit handle everything (emails + Google Sheets)
+    this.submit();
+    
+    // Show success after 1 second
     setTimeout(() => {
         form.style.display = 'none';
         successMessage.style.display = 'block';
@@ -2120,18 +2103,7 @@ function validateForm() {
             });
         }, 100);
     }, 1000);
-
-    // Handle emails in background (user doesn't wait)
-    Promise.all([email1, email2])
-    .then(() => {
-        console.log('Both emails sent successfully');
-    })
-    .catch(error => {
-        console.error('Email sending error:', error);
-        // Don't show error to user - they already see success
-    });
 });
-
             createBubbles();
             populateAreaDropdown();
         });
