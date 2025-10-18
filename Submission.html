@@ -1678,6 +1678,32 @@ footer::before {
         </div>
     </footer>
     
+
+    <script>
+  const scriptURL = "https://script.google.com/macros/s/AKfycbyJuREgdscApXGOllJV-7Oeida1ZlVcsLENQDGTNkcgnIbiq6NA1meq8dbRjb78p9MQ/exec";
+  const form = document.getElementById("repairForm");
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    fetch(scriptURL, {
+      method: "POST",
+      body: JSON.stringify(data),
+    })
+    .then(res => res.json())
+    .then(res => {
+      // Form submitted successfully, no alert
+      console.log("Form submitted:", res);
+      form.reset();
+    })
+    .catch(err => {
+      // Error occurred, no alert
+      console.error("Error submitting form:", err);
+    });
+  });
+</script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             function createBubbles() {
