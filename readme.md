@@ -6,7 +6,7 @@ A professional website for FixMyWasher.in, offering washing machine repair servi
 ## 🏗️ File Structure
 ```
 fixmywasher.in/
-├── 📄 index.html                 # Homepage with service overview
+├── 📄 https://fixmywasher.in/                 # Homepage with service overview
 ├── 📄 Submission.html            # Booking form page
 ├── 📄 contact.html               # Contact information page
 ├── 📄 privacy-policy.html        # Privacy policy document
@@ -65,7 +65,7 @@ fixmywasher.in/
 
 ## 📄 Page Details
 
-### 1. index.html (Homepage)
+### 1. https://fixmywasher.in/ (Homepage)
 **Purpose**: Service overview and lead generation
 **Features**:
 - Hero section with main CTA
