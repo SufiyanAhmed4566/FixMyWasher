@@ -1,88 +1,105 @@
 # robots.txt for FixMyWasher.in - Washing Machine Repair Bangalore
 # Optimized for Google Search Console and SEO
-# Last updated: 2025-10-13
+# Last updated: 2025-01-01
 
 # ========================================
 # Default Rules for All Crawlers
 # ========================================
 User-agent: *
 Allow: /
+
+# Allow all HTML pages
+Allow: /index.html
 Allow: /Submission.html
+Allow: /contact.html
+Allow: /privacy-policy.html
+Allow: /terms-and-conditions.html
+
+# Allow all assets and verification files
 Allow: /favicon.ico
 Allow: /favicon.png
+Allow: /favicon-16x16.png
+Allow: /favicon-32x32.png
+Allow: /android-chrome-192x192.png
+Allow: /android-chrome-512x512.png
+Allow: /apple-touch-icon.png
+Allow: /site.webmanifest
+Allow: /google415b23037075c296.html
 
-# Allow all static resources
-Allow: /images/
-Allow: /css/
-Allow: /js/
-Allow: /*.css$
-Allow: /*.js$
-Allow: /*.jpg$
-Allow: /*.png$
-Allow: /*.webp$
-Allow: /*.svg$
+# Disallow unnecessary files
+Disallow: /about.txt
+Disallow: /README.md
+Disallow: /.github/
 
 # ========================================
 # Googlebot - Priority Treatment
 # ========================================
 User-agent: Googlebot
 Allow: /
-Allow: /Submission.html$
-Allow: /favicon.ico
-Allow: /favicon.png
-Disallow: /thank-you$
-Disallow: /*?*
+Allow: /Submission.html
+Allow: /contact.html
+Crawl-delay: 1
 
 User-agent: Googlebot-Image
-Allow: /images/
-Allow: /*.jpg
-Allow: /*.png
-Allow: /*.webp
+Allow: /favicon.png
+Allow: /favicon-16x16.png
+Allow: /favicon-32x32.png
+Allow: /android-chrome-192x192.png
+Allow: /android-chrome-512x512.png
+Allow: /apple-touch-icon.png
 
 # ========================================
 # Other Major Search Engines
 # ========================================
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: DuckDuckBot
 Allow: /
+Crawl-delay: 2
 
 User-agent: Yandex
 Allow: /
+Crawl-delay: 2
 
 # ========================================
 # Social Media Crawlers (for OG tags)
 # ========================================
 User-agent: facebookexternalhit
 Allow: /
+Crawl-delay: 1
 
 User-agent: Twitterbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: LinkedInBot
 Allow: /
-
-User-agent: WhatsApp
-Allow: /
+Crawl-delay: 1
 
 # ========================================
 # Block Aggressive Bots
 # ========================================
 User-agent: AhrefsBot
 Disallow: /
+Crawl-delay: 10
 
 User-agent: SemrushBot
 Disallow: /
+Crawl-delay: 10
 
 User-agent: MJ12bot
 Disallow: /
+Crawl-delay: 10
 
 User-agent: DotBot
 Disallow: /
+Crawl-delay: 10
 
 User-agent: BLEXBot
 Disallow: /
+Crawl-delay: 10
 
 # AI Scrapers
 User-agent: GPTBot

@@ -19,20 +19,24 @@
     <link rel="canonical" href="https://fixmywasher.in/privacy-policy">
 
     <!-- Favicon for all browsers -->
-<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="48x48">
-<link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="48x48">
+    <link rel="shortcut icon" href="/favicon.ico">
 
-<!-- PNG icons for modern browsers -->
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <!-- PNG icons for modern browsers -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
 
-<!-- Apple icon for iOS and Safari -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- Apple icon for iOS and Safari -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-<!-- Web app manifest (optional, but helps with PWA and SEO) -->
-<link rel="manifest" href="/site.webmanifest">
+    <!-- Web app manifest -->
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Schema.org markup -->
     <script type="application/ld+json">
     {
@@ -57,8 +61,8 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.5;
             color: #333;
             background-color: #f8fafc;
         }
@@ -66,161 +70,487 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 2rem 1rem;
+            padding: 1rem 0.8rem;
         }
         
-        header {
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            padding: 1rem 0;
-            margin-bottom: 2rem;
+        /* Navigation Menu Styles */
+        .main-nav {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            border-bottom: 3px solid;
+            border-image: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%) 1;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
-        
+
         .nav-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 0.4rem 0.8rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        
+
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2563eb;
-            text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
-        
-        .nav-links a {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1e293b;
             text-decoration: none;
-            color: #64748b;
-            font-weight: 500;
-            transition: color 0.3s;
         }
-        
-        .nav-links a:hover {
+
+        .logo-icon {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .nav-menu li {
+            position: relative;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+            font-size: 0.75rem;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+        }
+
+        .nav-menu a:hover {
             color: #2563eb;
         }
-        
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 140px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 0.4rem 0;
+            z-index: 1000;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 0.5rem 0.7rem;
+            color: #1e293b;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            font-size: 0.75rem;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f8fafc;
+            color: #2563eb;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            color: #1e293b;
+            padding: 0.3rem;
+            z-index: 1001;
+        }
+
+        /* Content Styles */
         h1 {
             color: #1e293b;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            border-bottom: 3px solid #3b82f6;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #3b82f6;
             padding-bottom: 0.5rem;
+            text-align: center;
         }
         
         h2 {
             color: #334155;
-            margin: 2rem 0 1rem 0;
-            font-size: 1.4rem;
+            margin: 1.5rem 0 0.8rem 0;
+            font-size: 1.2rem;
         }
         
         .content-card {
             background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            margin-bottom: 2rem;
+            padding: 1.2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 1.5rem;
         }
         
         p {
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             color: #475569;
+            font-size: 0.9rem;
+            line-height: 1.5;
         }
         
         ul {
-            margin: 1rem 0;
-            padding-left: 2rem;
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
         }
         
         li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
             color: #475569;
+            font-size: 0.9rem;
+            line-height: 1.4;
         }
         
         .info-box {
             background: #f0fdf4;
-            border: 2px solid #22c55e;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
+            border: 1px solid #22c55e;
+            border-radius: 6px;
+            padding: 1rem;
+            margin: 1rem 0;
         }
         
         .info-box h3 {
             color: #15803d;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
         }
         
         .highlight {
             background: #dbeafe;
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
+            padding: 0.1rem 0.3rem;
+            border-radius: 3px;
             font-weight: 600;
             color: #1e40af;
+            font-size: 0.85rem;
         }
-        
+
+        /* Footer Styles */
         footer {
+            background: #1e293b;
+            color: white;
+            padding: 1.5rem 0.8rem;
             text-align: center;
-            padding: 2rem 0;
-            margin-top: 3rem;
-            border-top: 1px solid #e2e8f0;
-            color: #64748b;
+            margin-top: 2rem;
         }
-        
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-column h2 {
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: white;
+        }
+
         .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.4rem;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #374151;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .legal-links {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin: 1rem 0;
+            gap: 0.8rem;
+            margin: 0.8rem 0;
+            flex-wrap: wrap;
         }
-        
-        .footer-links a {
-            color: #64748b;
+
+        .legal-links a {
+            color: #cbd5e1;
             text-decoration: none;
+            font-size: 0.75rem;
+            transition: color 0.3s ease;
         }
-        
-        .footer-links a:hover {
-            color: #2563eb;
+
+        .legal-links a:hover {
+            color: white;
         }
-        
+
+        .copyright {
+            font-size: 0.75rem;
+            color: #94a3b8;
+        }
+
+        /* Mobile Navigation */
         @media (max-width: 768px) {
-            .nav-links {
-                gap: 1rem;
+            .nav-menu {
+                display: none;
+                position: fixed;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 0.4rem 0.6rem;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                z-index: 999;
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                max-height: calc(100vh - 100%);
+                overflow-y: auto;
             }
-            
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-menu li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-menu a {
+                padding: 0.5rem 0.6rem;
+                justify-content: center;
+                font-size: 0.85rem;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            }
+
+            .dropdown-content {
+                position: static;
+                box-shadow: none;
+                background: #f8fafc;
+                border-radius: 6px;
+                margin: 0.15rem 0;
+                width: 100%;
+                padding: 0.2rem 0;
+            }
+
+            .dropdown-content a {
+                padding: 0.4rem 0.6rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Ultra Mobile Optimization (365px - 414px) */
+        @media (max-width: 414px) {
             .container {
+                padding: 0.8rem 0.6rem;
+            }
+
+            .nav-container {
+                padding: 0.3rem 0.6rem;
+            }
+
+            .logo {
+                font-size: 1rem;
+            }
+
+            .logo-icon {
+                width: 28px;
+                height: 28px;
+            }
+
+            .content-card {
                 padding: 1rem;
             }
-            
+
+            h1 {
+                font-size: 1.3rem;
+                margin-bottom: 0.8rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+                margin: 1.2rem 0 0.6rem 0;
+            }
+
+            p, li {
+                font-size: 0.85rem;
+            }
+
+            ul {
+                padding-left: 1.2rem;
+            }
+
+            .info-box {
+                padding: 0.8rem;
+            }
+
+            .info-box h3 {
+                font-size: 0.9rem;
+            }
+
+            .highlight {
+                font-size: 0.8rem;
+            }
+
+            footer {
+                padding: 1.2rem 0.6rem;
+            }
+
+            .footer-content {
+                gap: 1.2rem;
+            }
+
+            .footer-column h2 {
+                font-size: 1rem;
+            }
+
+            .footer-links a {
+                font-size: 0.75rem;
+            }
+
+            .legal-links {
+                gap: 0.6rem;
+            }
+
+            .legal-links a {
+                font-size: 0.7rem;
+            }
+
+            .copyright {
+                font-size: 0.7rem;
+            }
+        }
+
+        /* Extra Small Mobile Optimization */
+        @media (max-width: 365px) {
+            .container {
+                padding: 0.6rem 0.4rem;
+            }
+
+            .nav-container {
+                padding: 0.2rem 0.4rem;
+            }
+
+            .logo {
+                font-size: 0.9rem;
+            }
+
+            .logo-icon {
+                width: 25px;
+                height: 25px;
+            }
+
             .content-card {
-                padding: 1.5rem;
+                padding: 0.8rem;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            p, li {
+                font-size: 0.8rem;
+            }
+
+            ul {
+                padding-left: 1rem;
+            }
+
+            .legal-links {
+                flex-direction: column;
+                gap: 0.3rem;
             }
         }
     </style>
 </head>
 <body>
-    <header>
+    <!-- Navigation Menu -->
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
-            <a href="https://fixmywasher.in" class="logo">
-                <span>🧺</span> FixMyWasher
+            <a href="index.html" class="logo" aria-label="FixMyWasher Home">
+                <div class="logo-icon"><img src="favicon.png" alt="FixMyWasher Logo" width="30" height="30"></div>
+                FixMyWasher
             </a>
-            <div class="nav-links">
-                <a href="https://fixmywasher.in">Home</a>
-                <a href="contact.html">Contact</a>
-                <a href="terms-and-conditions.html">Terms</a>
-            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem"><i class="fas fa-home"></i> Home</a></li>
+                <li role="none"><a href="Submission.html" role="menuitem"><i class="fas fa-calendar-check"></i> Book Now</a></li>
+                <li class="dropdown" role="none">
+                    <a href="Submission.html" role="menuitem" aria-haspopup="true" aria-expanded="false"><i class="fas fa-tools"></i> Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content" role="menu">
+                        <a href="Submission.html" role="menuitem">Top Load Washing Machine</a>
+                        <a href="Submission.html" role="menuitem">Front Load Washing Machine</a>
+                        <a href="Submission.html" role="menuitem">All Brands Repair</a>
+                    </div>
+                </li>
+                <li role="none"><a href="contact.html" role="menuitem"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
     <div class="container">
         <div class="content-card">
@@ -326,12 +656,88 @@
     </div>
 
     <footer>
-        <div class="footer-links">
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms-and-conditions.html">Terms & Conditions</a>
-            <a href="contact.html">Contact Us</a>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h2>Our Services</h2>
+                <ul class="footer-links">
+                    <li><a href="Submission.html">Washing Machine Repair</a></li>
+                    <li><a href="Submission.html">Top Load Service</a></li>
+                    <li><a href="Submission.html">Front Load Service</a></li>
+                    <li><a href="Submission.html">All Brand Repairs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2>Contact Us</h2>
+                <ul class="footer-links">
+                    <li><a href="tel:+918012345678"><i class="fas fa-phone" aria-hidden="true"></i> 080 1234 5678</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope" aria-hidden="true"></i> Email Us</a></li>
+                    <li><a href="https://wa.me/918012345678"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Us</a></li>
+                </ul>
+            </div>
         </div>
-        <p>&copy; 2025 FixMyWasher.in - Your Trusted Washing Machine Repair Service in Bangalore</p>
+        <div class="footer-bottom">
+            <a href="index.html" class="footer-logo">
+                <i class="fas fa-washing-machine" aria-hidden="true"></i> FixMyWasher.in
+            </a>
+            <div class="legal-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <p class="copyright">© 2025 FixMyWasher.in - All Rights Reserved</p>
+        </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu functionality
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navMenu = document.getElementById('navMenu');
+
+            // Fast mobile menu toggle
+            if (mobileMenuBtn && navMenu) {
+                mobileMenuBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const isActive = navMenu.classList.contains('active');
+                    
+                    // Toggle menu
+                    navMenu.classList.toggle('active');
+                    this.setAttribute('aria-expanded', !isActive);
+                    
+                    // Fast icon toggle
+                    const icon = this.querySelector('i');
+                    icon.className = isActive ? 'fas fa-bars' : 'fas fa-times';
+                });
+            }
+
+            // Fast close menu on outside click
+            document.addEventListener('click', function(event) {
+                if (navMenu && navMenu.classList.contains('active') && 
+                    !event.target.closest('.nav-container')) {
+                    closeMobileMenu();
+                }
+            });
+
+            // Fast close menu on link click
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+
+            // Fast close function
+            function closeMobileMenu() {
+                if (navMenu) {
+                    navMenu.classList.remove('active');
+                }
+                if (mobileMenuBtn) {
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    const icon = mobileMenuBtn.querySelector('i');
+                    if (icon.classList.contains('fa-times')) {
+                        icon.className = 'fas fa-bars';
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
