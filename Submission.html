@@ -1891,14 +1891,13 @@ footer::before {
         </div>
     </footer> 
     <!-- for the fake google adds click in the sheets-->
- <script>
+<script>
 const gclid = new URLSearchParams(window.location.search).get("gclid");
 
 if (gclid) {
-  // Function to get IP from multiple services
   const getIP = async () => {
     try {
-      // Primary service
+      // Primary IP service
       const res = await fetch("https://api.ipify.org?format=json");
       const data = await res.json();
       return data.ip;
@@ -1909,7 +1908,7 @@ if (gclid) {
         const data2 = await res2.json();
         return data2.ip;
       }
-      return "unknown"; // Fallback if both fail
+      return "unknown";
     }
   };
 
@@ -1917,11 +1916,16 @@ if (gclid) {
     const ua = navigator.userAgent;
     const endpoint = "https://script.google.com/macros/s/AKfycbwCaWOnv6b9P6IkNyi17SwCl7r1yl0Ds7JZVDgE4WKhThm0L2KnvMl9BnkEVN93lk8nAg/exec";
 
-    fetch(`${endpoint}?gclid=${encodeURIComponent(gclid)}&ip=${encodeURIComponent(ip)}&ua=${encodeURIComponent(ua)}`);
+    fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ gclid: gclid, ip: ip, ua: ua })
+    }).then(res => res.json())
+      .then(resp => console.log("Logged:", resp))
+      .catch(err => console.error("Tracking error:", err));
   });
 }
 </script>
-
 
 
 <!-- 
