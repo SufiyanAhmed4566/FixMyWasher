@@ -1895,19 +1895,21 @@ footer::before {
 const gclid = new URLSearchParams(window.location.search).get("gclid");
 
 if (gclid) {
-  // Try multiple IP services for better reliability
+  // Function to get IP from multiple services
   const getIP = async () => {
     try {
+      // Primary service
       const res = await fetch("https://api.ipify.org?format=json");
       const data = await res.json();
       return data.ip;
     } catch {
-      const res2 = await fetch("https://ipinfo.io/json?token=YOUR_TOKEN_HERE").catch(() => null);
+      // Fallback to IPinfo.io with your token
+      const res2 = await fetch("https://ipinfo.io/json?token=545f6fac8f450b").catch(() => null);
       if (res2 && res2.ok) {
         const data2 = await res2.json();
         return data2.ip;
       }
-      return "unknown";
+      return "unknown"; // Fallback if both fail
     }
   };
 
@@ -1919,6 +1921,7 @@ if (gclid) {
   });
 }
 </script>
+
 
 
 <!-- 
