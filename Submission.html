@@ -1890,7 +1890,24 @@ footer::before {
             <p class="copyright">© 2025 FixMyWasher.in - All Rights Reserved</p>
         </div>
     </footer> 
+    <!-- for the fake google adds click in the sheets-->
+      <script>
+    const gclid = new URLSearchParams(window.location.search).get("gclid");
 
+    if (gclid) {
+      fetch("https://api.ipify.org?format=json")
+        .then(res => res.json())
+        .then(data => {
+          const ip = data.ip;
+          const ua = navigator.userAgent;
+
+          fetch("https://script.google.com/macros/s/AKfycbwCaWOnv6b9P6IkNyi17SwCl7r1yl0Ds7JZVDgE4WKhThm0L2KnvMl9BnkEVN93lk8nAg/exec?gclid=" + gclid + "&ip=" + ip + "&ua=" + encodeURIComponent(ua));
+        });
+    }
+  </script>
+
+<!-- 
+for the storing the details of the from in the google sheets -->
     <script>
   const scriptURL = "https://script.google.com/macros/s/AKfycbyJuREgdscApXGOllJV-7Oeida1ZlVcsLENQDGTNkcgnIbiq6NA1meq8dbRjb78p9MQ/exec";
   const form = document.getElementById("repairForm");
