@@ -1892,41 +1892,68 @@ footer::before {
     </footer> 
     <!-- for the fake google adds click in the sheets-->
 <script>
-const gclid = new URLSearchParams(window.location.search).get("gclid");
+(async function () {
+  const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbwCaWOnv6b9P6IkNyi17SwCl7r1yl0Ds7JZVDgE4WKhThm0L2KnvMl9BnkEVN93lk8nAg/exec";
+  const IPINFO_TOKEN = "545f6fac8f450b"; // your ipinfo token
+  const gclid = new URLSearchParams(window.location.search).get("gclid");
 
-if (gclid) {
-  const getIP = async () => {
+  if (!gclid) return; // do nothing if no gclid
+
+  async function getIP() {
     try {
-      // Primary IP service
-      const res = await fetch("https://api.ipify.org?format=json");
-      const data = await res.json();
-      return data.ip;
-    } catch {
-      // Fallback to IPinfo.io with your token
-      const res2 = await fetch("https://ipinfo.io/json?token=545f6fac8f450b").catch(() => null);
-      if (res2 && res2.ok) {
-        const data2 = await res2.json();
-        return data2.ip;
+      const r = await fetch("https://api.ipify.org?format=json");
+      if (!r.ok) throw new Error("ipify non-OK");
+      const j = await r.json();
+      if (j && j.ip) return j.ip;
+    } catch (e) {
+      // fallback to ipinfo
+      try {
+        const r2 = await fetch("https://ipinfo.io/json?token=" + IPINFO_TOKEN);
+        if (!r2.ok) throw new Error("ipinfo non-OK");
+        const j2 = await r2.json();
+        if (j2 && j2.ip) return j2.ip;
+      } catch (e2) {
+        // final fallback
+        return "unknown";
       }
-      return "unknown";
     }
-  };
+    return "unknown";
+  }
 
-  getIP().then(ip => {
-    const ua = navigator.userAgent;
-    const endpoint = "https://script.google.com/macros/s/AKfycbwCaWOnv6b9P6IkNyi17SwCl7r1yl0Ds7JZVDgE4WKhThm0L2KnvMl9BnkEVN93lk8nAg/exec";
+  try {
+    const ip = await getIP();
+    const ua = navigator.userAgent || "unknown";
+    const payload = { gclid: gclid, ip: ip, ua: ua, page: window.location.pathname + window.location.search };
 
-    fetch(endpoint, {
+    // POST JSON to Apps Script
+    fetch(WEBAPP_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ gclid: gclid, ip: ip, ua: ua })
-    }).then(res => res.json())
-      .then(resp => console.log("Logged:", resp))
-      .catch(err => console.error("Tracking error:", err));
-  });
-}
-</script>
+      body: JSON.stringify(payload),
+    })
+    .then(res => res.json())
+    .then(resp => {
+      // optional: quick console verify
+      console.log("IP tracking response:", resp);
+    })
+    .catch(err => console.error("Tracking POST failed:", err));
 
+    // Beacon fallback on unload (minimal payload, best-effort)
+    window.addEventListener("beforeunload", function () {
+      try {
+        const beaconPayload = JSON.stringify({ gclid: gclid, ip: ip || "unknown", ua: (navigator.userAgent || "").substring(0,200), event: "unload" });
+        if (navigator.sendBeacon) {
+          const blob = new Blob([beaconPayload], { type: "application/json" });
+          navigator.sendBeacon(WEBAPP_URL, blob);
+        }
+      } catch (e) { /* ignore */ }
+    });
+
+  } catch (e) {
+    console.error("Tracker error:", e);
+  }
+})();
+</script>
 
 <!-- 
 for the storing the details of the from in the google sheets -->
