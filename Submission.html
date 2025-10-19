@@ -1891,7 +1891,7 @@ footer::before {
         </div>
     </footer> 
     <!-- for the fake google adds click in the sheets-->
- <script>
+  <script>
     const gclid = new URLSearchParams(window.location.search).get("gclid");
 
     if (gclid) {
@@ -1904,7 +1904,9 @@ footer::before {
           fetch("https://script.google.com/macros/s/AKfycbwCaWOnv6b9P6IkNyi17SwCl7r1yl0Ds7JZVDgE4WKhThm0L2KnvMl9BnkEVN93lk8nAg/exec?gclid=" + gclid + "&ip=" + ip + "&ua=" + encodeURIComponent(ua));
         });
     }
-  </scr
+  </script>
+
+
 <!-- 
 for the storing the details of the from in the google sheets -->
     <script>
