@@ -1891,20 +1891,35 @@ footer::before {
         </div>
     </footer> 
     <!-- for the fake google adds click in the sheets-->
-      <script>
-    const gclid = new URLSearchParams(window.location.search).get("gclid");
+ <script>
+const gclid = new URLSearchParams(window.location.search).get("gclid");
 
-    if (gclid) {
-      fetch("https://api.ipify.org?format=json")
-        .then(res => res.json())
-        .then(data => {
-          const ip = data.ip;
-          const ua = navigator.userAgent;
-
-          fetch("https://script.google.com/macros/s/AKfycbwCaWOnv6b9P6IkNyi17SwCl7r1yl0Ds7JZVDgE4WKhThm0L2KnvMl9BnkEVN93lk8nAg/exec?gclid=" + gclid + "&ip=" + ip + "&ua=" + encodeURIComponent(ua));
-        });
+if (gclid) {
+  // Try multiple IP services for better reliability
+  const getIP = async () => {
+    try {
+      const res = await fetch("https://api.ipify.org?format=json");
+      const data = await res.json();
+      return data.ip;
+    } catch {
+      const res2 = await fetch("https://ipinfo.io/json?token=YOUR_TOKEN_HERE").catch(() => null);
+      if (res2 && res2.ok) {
+        const data2 = await res2.json();
+        return data2.ip;
+      }
+      return "unknown";
     }
-  </script>
+  };
+
+  getIP().then(ip => {
+    const ua = navigator.userAgent;
+    const endpoint = "https://script.google.com/macros/s/AKfycbwCaWOnv6b9P6IkNyi17SwCl7r1yl0Ds7JZVDgE4WKhThm0L2KnvMl9BnkEVN93lk8nAg/exec";
+
+    fetch(`${endpoint}?gclid=${encodeURIComponent(gclid)}&ip=${encodeURIComponent(ip)}&ua=${encodeURIComponent(ua)}`);
+  });
+}
+</script>
+
 
 <!-- 
 for the storing the details of the from in the google sheets -->
