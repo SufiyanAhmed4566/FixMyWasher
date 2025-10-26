@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -449,101 +451,6 @@
             font-size: 0.85rem;
         }
 
-        /* Content Section Styles */
-        .content-section {
-            padding: 2rem 1rem;
-            background: white;
-        }
-
-        .content-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .content-section h2 {
-            text-align: center;
-            margin-bottom: 1.5rem;
-            color: #1e293b;
-            font-size: 1.4rem;
-        }
-
-        .content-grid {
-            display: grid;
-            gap: 1.5rem;
-        }
-
-        .content-block h3 {
-            color: #2563eb;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-        .content-block p {
-            color: #64748b;
-            line-height: 1.6;
-            font-size: 0.9rem;
-        }
-
-        .brands-section {
-            padding: 2rem 1rem;
-            background: #f8fafc;
-        }
-
-        .brands-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .brand-card {
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .brand-card h4 {
-            color: #2563eb;
-            margin-bottom: 0.5rem;
-            font-size: 0.95rem;
-        }
-
-        .brand-card p {
-            color: #64748b;
-            font-size: 0.8rem;
-            line-height: 1.4;
-        }
-
-        .faq-section {
-            padding: 2rem 1rem;
-            background: white;
-        }
-
-        .faq-grid {
-            display: grid;
-            gap: 1rem;
-        }
-
-        .faq-item {
-            background: #f8fafc;
-            padding: 1rem;
-            border-radius: 8px;
-        }
-
-        .faq-item h4 {
-            color: #2563eb;
-            margin-bottom: 0.5rem;
-            font-size: 0.95rem;
-        }
-
-        .faq-item p {
-            color: #64748b;
-            font-size: 0.85rem;
-            line-height: 1.5;
-        }
-
         /* Non-critical CSS loaded async */
     </style>
 
@@ -880,24 +787,6 @@
                 padding: 0.6rem 0.8rem;
                 font-size: 0.85rem;
             }
-
-            /* Content sections mobile optimization */
-            .content-section, .brands-section, .faq-section {
-                padding: 1.5rem 0.8rem;
-            }
-
-            .content-section h2, .brands-section h2, .faq-section h2 {
-                font-size: 1.2rem;
-            }
-
-            .brands-grid {
-                grid-template-columns: 1fr;
-                gap: 0.8rem;
-            }
-
-            .brand-card {
-                padding: 0.8rem;
-            }
         }
 
         /* Ultra Mobile Optimization (365px - 414px) */
@@ -1083,26 +972,9 @@
                 grid-template-columns: 1fr 1fr;
                 text-align: left;
             }
-
-            /* Desktop content sections */
-            .content-section, .brands-section, .faq-section {
-                padding: 3rem 5%;
-            }
-
-            .content-section h2, .brands-section h2, .faq-section h2 {
-                font-size: 2rem;
-            }
-
-            .brands-grid {
-                grid-template-columns: repeat(4, 1fr);
-                gap: 1.5rem;
-            }
-
-            .faq-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1.5rem;
-            }
         }
+
+
     </style>
 </head>
 <body>
@@ -1121,16 +993,16 @@
             <ul class="nav-menu" id="navMenu" role="menubar">
                 <li role="none"><a href="https://fixmywasher.in/" role="menuitem"><i class="fas fa-home"></i> Home</a></li>
                 <li role="none"><a href="Submission.html" role="menuitem"><i class="fas fa-calendar-check"></i> Book Now</a></li>
-                <li class="dropdown" role="none">
-                    <a href="javascript:void(0)" role="menuitem" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-tools"></i> Services <i class="fas fa-chevron-down"></i>
-                    </a>
-                    <div class="dropdown-content" role="menu">
-                        <a href="Submission.html" role="menuitem">Top Load Washing Machine</a>
-                        <a href="Submission.html" role="menuitem">Front Load Washing Machine</a>
-                        <a href="Submission.html" role="menuitem">All Brands Repair</a>
-                    </div>
-                </li>
+              <li class="dropdown" role="none">
+    <a href="javascript:void(0)" role="menuitem" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-tools"></i> Services <i class="fas fa-chevron-down"></i>
+    </a>
+    <div class="dropdown-content" role="menu">
+        <a href="Submission.html" role="menuitem">Top Load Washing Machine</a>
+        <a href="Submission.html" role="menuitem">Front Load Washing Machine</a>
+        <a href="Submission.html" role="menuitem">All Brands Repair</a>
+    </div>
+</li>
                 <li role="none"><a href="contact.html" role="menuitem"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </div>
@@ -1146,8 +1018,6 @@
             </a>
         </div>
     </section>
-
-    <!-- Professional Services Content - ADDED FOR ADSENSE -->
     
     <!-- Steps Section -->
     <section class="steps" aria-labelledby="steps-title">
@@ -1187,7 +1057,6 @@
             </div>
         </div>
     </section>
-
     
     <!-- Service Areas -->
     <section class="service-areas" aria-labelledby="areas-title">
@@ -1231,108 +1100,6 @@
             <a href="Submission.html" class="cta-button" style="margin-top: 1rem;">
                 <i class="fas fa-calendar-check" aria-hidden="true"></i> Book Your Repair
             </a>
-        </div>
-    </section>
-
-
-    <!-- Brands We Repair Section - ADDED FOR ADSENSE -->
-    <section class="brands-section" aria-labelledby="brands-title">
-        <div class="content-container">
-            <h2 id="brands-title">Washing Machine Brands We Repair</h2>
-            
-            <div class="brands-grid">
-                <div class="brand-card">
-                    <h4>LG Washing Machines</h4>
-                    <p>Expert repair for LG front-load and top-load models, including direct drive technology, turbo wash, and 6 motion technology. We handle all LG series including TurboDrum, Direct Drive, and Smart ThinQ models.</p>
-                </div>
-                <div class="brand-card">
-                    <h4>Samsung Washing Machines</h4>
-                    <p>Specialized service for Samsung eco bubble, activ dual wash, and digital inverter models. Our technicians are trained to repair Samsung's advanced features including AddWash, QuickDrive, and Smart Control technology.</p>
-                </div>
-                <div class="brand-card">
-                    <h4>IFB Washing Machines</h4>
-                    <p>Professional repair for IFB front-load machines with aqua energie and crescent moon drum technology. We service all IFB models including Senator, Bosch, and Neptune series with specialized knowledge of their unique features.</p>
-                </div>
-                <div class="brand-card">
-                    <h4>Whirlpool & Bosch</h4>
-                    <p>Expert service for Whirlpool and Bosch washing machines with 6th sense technology. We repair all Whirlpool models including Supreme Care, IntelliSense, and Bosch's ActiveWater and EcoSilence Drive systems.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="content-section" aria-labelledby="services-title">
-        <div class="content-container">
-            <h2 id="services-title">Professional Washing Machine Repair Services in Bangalore</h2>
-            
-            <div class="content-grid">
-                <div class="content-block">
-                    <h3>Expert Washing Machine Repair & Maintenance</h3>
-                    <p>FixMyWasher provides comprehensive washing machine repair services across Bangalore. Our certified technicians specialize in repairing all major brands including LG, Samsung, IFB, Whirlpool, Bosch, Haier, and Godrej. With years of experience in appliance repair, we understand the intricacies of both front-load and top-load washing machines. We provide reliable, efficient, and affordable repair solutions for residential and commercial clients throughout Bangalore.</p>
-                </div>
-                
-                <div class="content-block">
-                    <h3>Common Washing Machine Problems We Fix</h3>
-                    <p>We expertly handle various washing machine issues including water leakage, drum not spinning, machine not starting, excessive vibration, error codes, drainage problems, and electrical faults. Our technicians use advanced diagnostic tools to identify the root cause and provide permanent solutions. Whether your washing machine is making unusual noises, not draining properly, or showing error codes, our experienced technicians can diagnose and fix the problem quickly and efficiently.</p>
-                </div>
-                
-                <div class="content-block">
-                    <h3>Why Choose FixMyWasher?</h3>
-                    <p>• Same-day service available for urgent repairs<br>
-                    • 90-day warranty on all repairs and services<br>
-                    • Free diagnosis & transparent price quotes<br>
-                    • Genuine spare parts from authorized dealers<br>
-                    • Certified & experienced technicians<br>
-                    • Transparent pricing with no hidden charges<br>
-                    • 24/7 customer support availability<br>
-                    • Emergency repair services for critical issues</p>
-                </div>
-                
-                <div class="content-block">
-                    <h3>Our Service Areas in Bangalore</h3>
-                    <p>We provide washing machine repair services throughout Bangalore including Koramangala, Indiranagar, Jayanagar, Whitefield, Marathahalli, HSR Layout, BTM Layout, Electronic City, and surrounding areas. Our mobile service vans ensure we reach your location quickly for same-day repairs. We cover all major residential and commercial areas in Bangalore with our extensive network of trained technicians and service centers.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <!-- FAQ Section - ADDED FOR ADSENSE -->
-    <section class="faq-section" aria-labelledby="faq-title">
-        <div class="content-container">
-            <h2 id="faq-title">Frequently Asked Questions</h2>
-            
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h4>How quickly can you repair my washing machine?</h4>
-                    <p>We offer same-day service for most repairs. Our technician typically arrives within 2-4 hours of booking. For emergency situations, we can often provide service within 1-2 hours depending on your location in Bangalore and technician availability.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h4>Do you provide warranty on repairs?</h4>
-                    <p>Yes, we provide 90-day warranty on all labor repairs and 180-day warranty on genuine spare parts. Our warranty covers both parts and labor, ensuring you have complete peace of mind after the repair service.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h4>What areas in Bangalore do you serve?</h4>
-                    <p>We serve all areas of Bangalore including central Bangalore, east Bangalore, west Bangalore, and surrounding regions. Our service coverage extends to over 50+ localities across the city with same-day service availability.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h4>Do you use genuine spare parts?</h4>
-                    <p>Yes, we use only genuine and high-quality spare parts from authorized dealers to ensure long-lasting repairs. All parts come with manufacturer warranty and are sourced directly from authorized distributors.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>What is your service charge?</h4>
-                    <p>We charge a nominal service fee of ₹199 which includes complete diagnosis and inspection. The service charge is waived if you proceed with the repair. There are no hidden charges and we provide transparent pricing before starting any work.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>Do you repair all types of washing machines?</h4>
-                    <p>Yes, we repair all types including front load, top load, semi-automatic, and fully automatic washing machines. Our technicians are trained to handle both Indian and international brands with equal expertise.</p>
-                </div>
-            </div>
         </div>
     </section>
     
