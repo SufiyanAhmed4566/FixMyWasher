@@ -204,7 +204,7 @@ Beyond 30km: Custom quotation
 ### Contact Information
 - **Phone**:  9844004214
 - **Email**: help@fixmywasher.in
-- **WhatsApp**: +91 80123 45678
+- **WhatsApp**: +91 9844004214
 - **Address**: MG Road, Bangalore - 560001
 
 ### Technical Support
