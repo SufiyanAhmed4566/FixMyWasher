@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book TV Repair in Bangalore | FixMyTV</title>
+    <meta name="description" content="Expert TV repair service in Bangalore. Same-day service for LG, Samsung, Sony, Mi, OnePlus & more. Free diagnosis & warranty.">
+    <style>
+        :root {
+            --primary-blue: #2563eb;
+            --electric-blue: #3b82f6;
+            --deep-purple: #8b5cf6;
+            --neon-blue: #00d4ff;
+            --tv-gradient: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 50%, #06b6d4 100%);
+            --tv-glow: 0 0 20px rgba(0, 212, 255, 0.4);
+            --dark-bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.8);
+            --text-light: #e2e8f0;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+        }
+
+        .tv-screen-effect {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(90deg, transparent 98%, rgba(0, 212, 255, 0.03) 100%),
+                linear-gradient(0deg, transparent 98%, rgba(0, 212, 255, 0.03) 100%);
+            pointer-events: none;
+            z-index: -1;
+            animation: screenFlicker 8s infinite;
+        }
+
+        @keyframes screenFlicker {
+            0%, 100% { opacity: 1; }
+            95% { opacity: 0.98; }
+            96% { opacity: 0.99; }
+            97% { opacity: 0.98; }
+        }
+
+        .main-nav {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 3px solid;
+            border-image: var(--tv-gradient) 1;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-light);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--tv-gradient);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--tv-glow);
+        }
+
+        .logo-icon::before {
+            content: "📺";
+            font-size: 1.5rem;
+        }
+
+        .mobile-menu-btn {
+            background: none;
+            border: none;
+            color: var(--text-light);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .form-header {
+            text-align: center;
+            margin: 2rem 0 3rem;
+            animation: slideInDown 0.8s ease-out;
+        }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            background: var(--tv-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+        }
+
+        .form-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .repair-form {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 2rem 1.5rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .repair-form::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--tv-gradient);
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-group:nth-child(1) { animation-delay: 0.1s; }
+        .form-group:nth-child(2) { animation-delay: 0.2s; }
+        .form-group:nth-child(3) { animation-delay: 0.3s; }
+        .form-group:nth-child(4) { animation-delay: 0.4s; }
+        .form-group:nth-child(5) { animation-delay: 0.5s; }
+        .form-group:nth-child(6) { animation-delay: 0.6s; }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .form-group label .icon {
+            font-size: 1.2rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1.2rem 1.5rem;
+            background: rgba(15, 23, 42, 0.6);
+            border: 2px solid #334155;
+            border-radius: 12px;
+            color: var(--text-light);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.2);
+        }
+
+        .form-control::placeholder {
+            color: var(--text-muted);
+        }
+
+        /* Brand Selection - Mobile Optimized */
+        .brand-selection {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        .brand-option {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .brand-option input {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .brand-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 2px solid #334155;
+            border-radius: 12px;
+            padding: 1rem 0.5rem;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            height: 100%;
+        }
+
+        .brand-option:hover .brand-card {
+            transform: translateY(-3px);
+            border-color: var(--neon-blue);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .brand-option input:checked + .brand-card {
+            border-color: var(--neon-blue);
+            background: rgba(0, 212, 255, 0.1);
+            box-shadow: 0 0 0 2px var(--neon-blue), 0 8px 20px rgba(0, 212, 255, 0.3);
+            transform: translateY(-3px) scale(1.02);
+        }
+
+        .brand-logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            transition: all 0.3s ease;
+        }
+
+        .brand-option:hover .brand-logo {
+            transform: scale(1.1);
+        }
+
+        .brand-option input:checked + .brand-card .brand-logo {
+            filter: brightness(0) invert(79%) sepia(67%) saturate(2593%) hue-rotate(155deg) brightness(103%) contrast(101%);
+            transform: scale(1.15);
+        }
+
+        .brand-name {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-light);
+            transition: color 0.3s ease;
+        }
+
+        .brand-option input:checked + .brand-card .brand-name {
+            color: var(--neon-blue);
+        }
+
+        /* TV Type Selection - Mobile Optimized */
+        .type-selection {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .type-option {
+            cursor: pointer;
+        }
+
+        .type-option input {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .type-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 2px solid #334155;
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .type-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--tv-gradient);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .type-option:hover .type-card {
+            transform: translateY(-3px);
+            border-color: var(--neon-blue);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .type-option input:checked + .type-card {
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 0 2px var(--neon-blue), 0 10px 25px rgba(0, 212, 255, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .type-option input:checked + .type-card::before {
+            opacity: 0.1;
+        }
+
+        .type-icon {
+            width: 50px;
+            height: 50px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .type-option:hover .type-icon {
+            transform: scale(1.1);
+        }
+
+        .type-option input:checked + .type-card .type-icon {
+            transform: scale(1.15);
+        }
+
+        .type-content {
+            flex: 1;
+        }
+
+        .type-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+        }
+
+        .type-description {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .type-option input:checked + .type-card .type-name {
+            color: var(--neon-blue);
+        }
+
+        /* Time and Area Selection */
+        .dropdown-container {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            width: 100%;
+            padding: 1.2rem 1.5rem;
+            background: rgba(15, 23, 42, 0.6);
+            border: 2px solid #334155;
+            border-radius: 12px;
+            color: var(--text-light);
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-toggle:hover {
+            border-color: var(--neon-blue);
+        }
+
+        .dropdown-toggle::after {
+            content: '▼';
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .dropdown-toggle.active::after {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: var(--card-bg);
+            border: 2px solid #334155;
+            border-radius: 12px;
+            margin-top: 0.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            z-index: 10;
+        }
+
+        .dropdown-menu.active {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .dropdown-item {
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-bottom: 1px solid #334155;
+        }
+
+        .dropdown-item:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-item:hover {
+            background: rgba(0, 212, 255, 0.1);
+        }
+
+        .dropdown-item.selected {
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--neon-blue);
+        }
+
+        /* Security and Disclaimer */
+        .security-text {
+            background: rgba(0, 212, 255, 0.05);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 12px;
+            padding: 1.2rem;
+            margin: 1.5rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .security-text strong {
+            color: var(--neon-blue);
+        }
+
+        .disclaimer-section {
+            background: rgba(0, 212, 255, 0.03);
+            border: 1px solid rgba(0, 212, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .disclaimer-checkbox {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            cursor: pointer;
+        }
+
+        .disclaimer-checkbox input {
+            margin-top: 0.2rem;
+            accent-color: var(--neon-blue);
+        }
+
+        .disclaimer-text {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .disclaimer-text a {
+            color: var(--neon-blue);
+            text-decoration: none;
+        }
+
+        .disclaimer-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            width: 100%;
+            padding: 1.5rem;
+            background: var(--tv-gradient);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+            margin-top: 1rem;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Success Message */
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 3rem 2rem;
+            background: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .success-icon {
+            font-size: 4rem;
+            color: #10b981;
+            margin-bottom: 1.5rem;
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+
+        .success-message h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            background: var(--tv-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .success-message p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .back-btn {
+            padding: 1rem 2rem;
+            background: transparent;
+            color: var(--neon-blue);
+            border: 2px solid var(--neon-blue);
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: var(--neon-blue);
+            color: white;
+        }
+
+        /* Error Messages */
+        .error-message {
+            color: #ef4444;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        .form-control.error {
+            border-color: #ef4444;
+        }
+
+        /* Floating TV Animation */
+        .floating-tvs {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .floating-tv {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.1;
+            animation: float 15s linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.1;
+            }
+            90% {
+                opacity: 0.1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(15, 23, 42, 0.9);
+            color: var(--text-light);
+            padding: 3rem 1rem 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .footer-column h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--neon-blue);
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-column a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-column a:hover {
+            color: var(--neon-blue);
+        }
+
+        .copyright {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0.5rem;
+            }
+            
+            .form-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .brand-selection {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .type-card {
+                padding: 1rem;
+                gap: 1rem;
+            }
+            
+            .type-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .brand-selection {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-header h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tv-screen-effect"></div>
+    <div class="floating-tvs" id="floatingTvs"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon"></div>
+                FixMyTV
+            </a>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="form-header">
+            <h1>TV Repair Service</h1>
+            <p>Book expert TV repair with same-day service in Bangalore</p>
+        </div>
+
+        <form id="repairForm" class="repair-form">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">
+                    <span class="icon">👤</span>
+                    Your Name
+                </label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                <div class="error-message" id="name-error">Please enter your name</div>
+            </div>
+
+            <!-- Phone Field -->
+            <div class="form-group">
+                <label for="phone">
+                    <span class="icon">📞</span>
+                    WhatsApp Number
+                </label>
+                <input type="tel" id="phone" class="form-control" placeholder="10-digit mobile number" required>
+                <div class="error-message" id="phone-error">Please enter a valid 10-digit number</div>
+            </div>
+
+            <!-- TV Brand Selection -->
+            <div class="form-group">
+                <label>
+                    <span class="icon">🏷️</span>
+                    TV Brand
+                </label>
+                <div class="brand-selection">
+                    <!-- TV Brands with actual logos -->
+                    <label class="brand-option">
+                        <input type="radio" name="brand" value="LG" required>
+                        <div class="brand-card">
+                            <img src="https://logos-download.com/wp-content/uploads/2016/02/LG_logo.png" alt="LG" class="brand-logo">
+                            <div class="brand-name">LG</div>
+                        </div>
+                    </label>
+                    
+                    <label class="brand-option">
+                        <input type="radio" name="brand" value="Samsung">
+                        <div class="brand-card">
+                            <img src="https://logos-download.com/wp-content/uploads/2016/02/Samsung_Logo_1.png" alt="Samsung" class="brand-logo">
+                            <div class="brand-name">Samsung</div>
+                        </div>
+                    </label>
+                    
+                    <label class="brand-option">
+                        <input type="radio" name="brand" value="Sony">
+                        <div class="brand-card">
+                            <img src="https://logos-download.com/wp-content/uploads/2016/05/Sony_logo_black.png" alt="Sony" class="brand-logo">
+                            <div class="brand-name">Sony</div>
+                        </div>
+                    </label>
+                    
+                    <label class="brand-option">
+                        <input type="radio" name="brand" value="Mi">
+                        <div class="brand-card">
+                            <img src="https://logos-download.com/wp-content/uploads/2019/06/Xiaomi_Logo_2.png" alt="Mi" class="brand-logo">
+                            <div class="brand-name">Mi</div>
+                        </div>
+                    </label>
+                    
+                    <label class="brand-option">
+                        <input type="radio" name="brand" value="OnePlus">
+                        <div class="brand-card">
+                            <img src="https://logos-download.com/wp-content/uploads/2019/06/OnePlus_Logo.png" alt="OnePlus" class="brand-logo">
+                            <div class="brand-name">OnePlus</div>
+                        </div>
+                    </label>
+                    
+                    <label class="brand-option">
+                        <input type="radio" name="brand" value="TCL">
+                        <div class="brand-card">
+                            <img src="https://logos-download.com/wp-content/uploads/2020/06/TCL_logo.png" alt="TCL" class="brand-logo">
+                            <div class="brand-name">TCL</div>
+                        </div>
+                    </label>
+                </div>
+                <div class="error-message" id="brand-error">Please select a TV brand</div>
+            </div>
+
+            <!-- TV Type Selection -->
+            <div class="form-group">
+                <label>
+                    <span class="icon">📺</span>
+                    TV Type
+                </label>
+                <div class="type-selection">
+                    <label class="type-option">
+                        <input type="radio" name="type" value="LED TV" required>
+                        <div class="type-card">
+                            <div class="type-icon">💡</div>
+                            <div class="type-content">
+                                <div class="type-name">LED TV</div>
+                                <div class="type-description">Crystal clear LED display</div>
+                            </div>
+                        </div>
+                    </label>
+                    
+                    <label class="type-option">
+                        <input type="radio" name="type" value="Smart TV">
+                        <div class="type-card">
+                            <div class="type-icon">🤖</div>
+                            <div class="type-content">
+                                <div class="type-name">Smart TV</div>
+                                <div class="type-description">Internet connected features</div>
+                            </div>
+                        </div>
+                    </label>
+                    
+                    <label class="type-option">
+                        <input type="radio" name="type" value="Android TV">
+                        <div class="type-card">
+                            <div class="type-icon">📱</div>
+                            <div class="type-content">
+                                <div class="type-name">Android TV</div>
+                                <div class="type-description">Google OS powered</div>
+                            </div>
+                        </div>
+                    </label>
+                    
+                    <label class="type-option">
+                        <input type="radio" name="type" value="OLED TV">
+                        <div class="type-card">
+                            <div class="type-icon">🌟</div>
+                            <div class="type-content">
+                                <div class="type-name">OLED TV</div>
+                                <div class="type-description">Perfect blacks & colors</div>
+                            </div>
+                        </div>
+                    </label>
+                    
+                    <label class="type-option">
+                        <input type="radio" name="type" value="QLED TV">
+                        <div class="type-card">
+                            <div class="type-icon">✨</div>
+                            <div class="type-content">
+                                <div class="type-name">QLED TV</div>
+                                <div class="type-description">Quantum dot technology</div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <div class="error-message" id="type-error">Please select your TV type</div>
+            </div>
+
+            <!-- Time Slot -->
+            <div class="form-group">
+                <label>
+                    <span class="icon">⏰</span>
+                    Preferred Time
+                </label>
+                <div class="dropdown-container">
+                    <button type="button" class="dropdown-toggle" id="timeToggle">Select time slot</button>
+                    <div class="dropdown-menu" id="timeDropdown">
+                        <div class="dropdown-item" data-value="Morning (9 AM - 12 PM)">Morning (9 AM - 12 PM)</div>
+                        <div class="dropdown-item" data-value="Afternoon (12 PM - 4 PM)">Afternoon (12 PM - 4 PM)</div>
+                        <div class="dropdown-item" data-value="Evening (4 PM - 8 PM)">Evening (4 PM - 8 PM)</div>
+                        <div class="dropdown-item" data-value="Flexible">Flexible (Any time)</div>
+                    </div>
+                    <input type="hidden" id="timeSlot" required>
+                </div>
+                <div class="error-message" id="timeSlot-error">Please select a time slot</div>
+            </div>
+
+            <!-- Area -->
+            <div class="form-group">
+                <label>
+                    <span class="icon">📍</span>
+                    Your Area
+                </label>
+                <div class="dropdown-container">
+                    <button type="button" class="dropdown-toggle" id="areaToggle">Select your area</button>
+                    <div class="dropdown-menu" id="areaDropdown">
+                        <div class="dropdown-item" data-value="Koramangala">Koramangala</div>
+                        <div class="dropdown-item" data-value="Indiranagar">Indiranagar</div>
+                        <div class="dropdown-item" data-value="HSR Layout">HSR Layout</div>
+                        <div class="dropdown-item" data-value="Whitefield">Whitefield</div>
+                        <div class="dropdown-item" data-value="Other">Other Area</div>
+                    </div>
+                    <input type="hidden" id="area">
+                </div>
+            </div>
+
+            <!-- Security Text -->
+            <div class="security-text">
+                <strong>🔒 Your information is secure</strong><br>
+                We use encryption to protect your data and never share it with third parties.
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="disclaimer-section">
+                <label class="disclaimer-checkbox">
+                    <input type="checkbox" id="disclaimerCheckbox" required>
+                    <div class="disclaimer-text">
+                        I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>. 
+                        I consent to receiving service communications via WhatsApp and phone.
+                    </div>
+                </label>
+                <div class="error-message" id="disclaimer-error">Please accept the terms to continue</div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn" id="submitBtn">
+                <span>📺</span> Book TV Repair
+            </button>
+        </form>
+
+        <!-- Success Message -->
+        <div class="success-message" id="successMessage">
+            <div class="success-icon">✅</div>
+            <h2>Booking Confirmed!</h2>
+            <p>Your TV repair request has been submitted. Our technician will contact you within 30 minutes to schedule the service.</p>
+            <button class="back-btn" onclick="location.reload()">Book Another Repair</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>📺</span> FixMyTV.in
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">LED TV Repair</a></li>
+                        <li><a href="#">Smart TV Repair</a></li>
+                        <li><a href="#">OLED TV Repair</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tel:+919844004214">📞 9844004214</a></li>
+                        <li><a href="#">📧 Email Us</a></li>
+                        <li><a href="#">💬 WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p class="copyright">© 2025 FixMyTV.in - Professional TV Repair Services in Bangalore</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create floating TV animations
+            function createFloatingTVs() {
+                const container = document.getElementById('floatingTvs');
+                for (let i = 0; i < 8; i++) {
+                    const tv = document.createElement('div');
+                    tv.className = 'floating-tv';
+                    tv.textContent = '📺';
+                    tv.style.left = Math.random() * 100 + '%';
+                    tv.style.animationDelay = Math.random() * 15 + 's';
+                    tv.style.fontSize = (Math.random() * 1 + 1.5) + 'rem';
+                    container.appendChild(tv);
+                }
+            }
+
+            // Dropdown functionality
+            const timeToggle = document.getElementById('timeToggle');
+            const timeDropdown = document.getElementById('timeDropdown');
+            const timeItems = timeDropdown.querySelectorAll('.dropdown-item');
+            const timeSlotInput = document.getElementById('timeSlot');
+
+            const areaToggle = document.getElementById('areaToggle');
+            const areaDropdown = document.getElementById('areaDropdown');
+            const areaItems = areaDropdown.querySelectorAll('.dropdown-item');
+            const areaInput = document.getElementById('area');
+
+            // Time dropdown
+            timeToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                this.classList.toggle('active');
+                timeDropdown.classList.toggle('active');
+                
+                // Close other dropdown
+                areaDropdown.classList.remove('active');
+                areaToggle.classList.remove('active');
+            });
+
+            timeItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const value = this.getAttribute('data-value');
+                    timeToggle.textContent = value;
+                    timeSlotInput.value = value;
+                    timeDropdown.classList.remove('active');
+                    timeToggle.classList.remove('active');
+                    
+                    timeItems.forEach(el => el.classList.remove('selected'));
+                    this.classList.add('selected');
+                });
+            });
+
+            // Area dropdown
+            areaToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                this.classList.toggle('active');
+                areaDropdown.classList.toggle('active');
+                
+                // Close other dropdown
+                timeDropdown.classList.remove('active');
+                timeToggle.classList.remove('active');
+            });
+
+            areaItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const value = this.getAttribute('data-value');
+                    areaToggle.textContent = value;
+                    areaInput.value = value;
+                    areaDropdown.classList.remove('active');
+                    areaToggle.classList.remove('active');
+                    
+                    areaItems.forEach(el => el.classList.remove('selected'));
+                    this.classList.add('selected');
+                });
+            });
+
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', function() {
+                timeDropdown.classList.remove('active');
+                timeToggle.classList.remove('active');
+                areaDropdown.classList.remove('active');
+                areaToggle.classList.remove('active');
+            });
+
+            // Form submission
+            const form = document.getElementById('repairForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const successMessage = document.getElementById('successMessage');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Validate form
+                const name = document.getElementById('name').value;
+                const phone = document.getElementById('phone').value;
+                const brandSelected = document.querySelector('input[name="brand"]:checked');
+                const typeSelected = document.querySelector('input[name="type"]:checked');
+                const timeSlot = timeSlotInput.value;
+                const disclaimer = document.getElementById('disclaimerCheckbox').checked;
+                
+                let isValid = true;
+                
+                // Reset errors
+                document.querySelectorAll('.error-message').forEach(el => {
+                    el.style.display = 'none';
+                });
+                document.querySelectorAll('.form-control').forEach(el => {
+                    el.classList.remove('error');
+                });
+                
+                // Validate fields
+                if (!name.trim()) {
+                    document.getElementById('name-error').style.display = 'block';
+                    document.getElementById('name').classList.add('error');
+                    isValid = false;
+                }
+                
+                if (!phone.match(/^\d{10}$/)) {
+                    document.getElementById('phone-error').style.display = 'block';
+                    document.getElementById('phone').classList.add('error');
+                    isValid = false;
+                }
+                
+                if (!brandSelected) {
+                    document.getElementById('brand-error').style.display = 'block';
+                    isValid = false;
+                }
+                
+                if (!typeSelected) {
+                    document.getElementById('type-error').style.display = 'block';
+                    isValid = false;
+                }
+                
+                if (!timeSlot) {
+                    document.getElementById('timeSlot-error').style.display = 'block';
+                    isValid = false;
+                }
+                
+                if (!disclaimer) {
+                    document.getElementById('disclaimer-error').style.display = 'block';
+                    isValid = false;
+                }
+                
+                if (!isValid) return;
+                
+                // Show loading state
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span>⏳</span> Booking...';
+                
+                // Simulate API call
+                setTimeout(() => {
+                    form.style.display = 'none';
+                    successMessage.style.display = 'block';
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 2000);
+            });
+
+            // Initialize
+            createFloatingTVs();
+        });
+    </script>
+</body>
+</html>
