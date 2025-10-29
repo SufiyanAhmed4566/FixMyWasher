@@ -1104,6 +1104,11 @@
             }
         }
     </style>
+    <script>
+  fetch('phone-whatsnapp-icons.html')
+    .then(res => res.text())
+    .then(html => document.body.insertAdjacentHTML('beforeend', html));
+</script>
 </head>
 <body>
     <!-- Navigation Menu -->
