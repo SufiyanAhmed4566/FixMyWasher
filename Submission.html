@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) - Optimized placement -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-0NRL6X5B4L');
-    </script>
+<!-- Load gtag.js FIRST -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0NRL6X5B4L"></script>
+
+<!-- THEN initialize gtag -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0NRL6X5B4L');  // ✅ This will WORK
+</script>
+
+<!-- THEN add conversion snippet -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17646728047/QwsSCJrQ97cbEO_mzt5B',
+      'value': 1.0,
+      'currency': 'INR',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 
     <!-- Favicon optimized -->
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -1915,35 +1937,35 @@
   </div>
 </footer>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0NRL6X5B4L"></script>
-    
 <script>
     // =============================================
     // LOGIC 1: GOOGLE ANALYTICS & ADS CONVERSION TRACKING
     // =============================================
-    function trackConversion() {
-        // Get all form data for tracking
-        const name = document.getElementById('name').value;
-        const phone = document.getElementById('phone').value;
-        const brand = document.querySelector('input[name="brand"]:checked')?.value || 'Unknown';
-        const machineType = document.querySelector('input[name="type"]:checked')?.value || 'Unknown';
-        const timeSlot = document.getElementById('timeSlot').value || 'Not Selected';
-        const area = document.getElementById('area').value || 'Not Selected';
-        
-        // Track Google Ads conversion
-        gtag('event', 'ads_conversion_Submit_lead_form_1');
-        
-        // Track to Google Analytics with custom parameters
-        gtag('event', 'form_submit', {
-            'event_category': 'Lead Form',
-            'event_label': 'Washing Machine Repair',
-            'brand': brand,
-            'machine_type': machineType,
-            'time_slot': timeSlot,
-            'area_selected': area !== 'Not Selected' ? 'Yes' : 'No',
-            'value': 1
-        });
-    }
+function trackConversion() {
+    // Get all form data for tracking
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const brand = document.querySelector('input[name="brand"]:checked')?.value || 'Unknown';
+    const machineType = document.querySelector('input[name="type"]:checked')?.value || 'Unknown';
+    const timeSlot = document.getElementById('timeSlot').value || 'Not Selected';
+    const area = document.getElementById('area').value || 'Not Selected';
+    
+    // TRACK GOOGLE ADS CONVERSION (Primary)
+    gtag_report_conversion(); // This tracks the actual conversion
+    
+    // TRACK GOOGLE ANALYTICS EVENT (Secondary - for analytics)
+    gtag('event', 'form_submit', {
+        'event_category': 'Lead Form',
+        'event_label': 'Washing Machine Repair',
+        'brand': brand,
+        'machine_type': machineType,
+        'time_slot': timeSlot,
+        'area_selected': area !== 'Not Selected' ? 'Yes' : 'No',
+        'value': 1
+    });
+    
+    console.log('Conversion tracked for Google Ads');
+}
 
     // =============================================
     // LOGIC 2: GOOGLE ADS GCLID TRACKING
@@ -2335,70 +2357,72 @@
             }
         });
 
-        // =============================================
-        // BACKGROUND FORM SUBMISSION FUNCTION
-        // =============================================
-        function submitFormInBackground(formData) {
-            // Convert FormData to object for JSON submission
-            const formDataObj = Object.fromEntries(formData.entries());
-            
-            // LOGIC 1: Track conversion in Google Analytics & Ads
-            trackConversion();
+   // =============================================
+// BACKGROUND FORM SUBMISSION FUNCTION
+// =============================================
+function submitFormInBackground(formData) {
+    // Convert FormData to object for JSON submission
+    const formDataObj = Object.fromEntries(formData.entries());
+    
+    // 🚨 REMOVED: trackConversion() call from here
+    // Conversion is now tracked ONLY in the main form handler
+    
+    // LOGIC 3: Submit to Google Sheets for data storage (fire and forget)
+    fetch(sheetsScriptURL, {
+        method: "POST",
+        body: JSON.stringify(formDataObj),
+    }).catch(err => console.log('Sheets submission error (non-critical):', err));
 
-            // LOGIC 3: Submit to Google Sheets for data storage (fire and forget)
-            fetch(sheetsScriptURL, {
-                method: "POST",
-                body: JSON.stringify(formDataObj),
-            }).catch(err => console.log('Sheets submission error (non-critical):', err));
+    // LOGIC 4: Submit to Google Apps Script for email sending (fire and forget)
+    fetch(emailScriptURL, {
+        method: "POST",
+        body: formData
+    }).catch(err => console.log('Email submission error (non-critical):', err));
 
-            // LOGIC 4: Submit to Google Apps Script for email sending (fire and forget)
-            fetch(emailScriptURL, {
-                method: "POST",
-                body: formData
-            }).catch(err => console.log('Email submission error (non-critical):', err));
+    console.log('Background submissions initiated');
+}
 
-            console.log('Background submissions initiated');
-        }
+// =============================================
+// MAIN FORM SUBMISSION HANDLER - INSTANT SUCCESS
+// =============================================
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
 
-        // =============================================
-        // MAIN FORM SUBMISSION HANDLER - INSTANT SUCCESS
-        // =============================================
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
+    // Validate form before submission
+    if (!validateForm()) return;
 
-            // Validate form before submission
-            if (!validateForm()) return;
+    // Get form data before showing success
+    const formData = new FormData(form);
 
-            // Get form data before showing success
-            const formData = new FormData(form);
+    // STEP 1: Show success message IMMEDIATELY (no waiting)
+    form.style.display = 'none';
+    successMessage.style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
-            // STEP 1: Show success message IMMEDIATELY (no waiting)
-            form.style.display = 'none';
-            successMessage.style.display = 'block';
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+    // STEP 2: TRACK CONVERSION HERE - Only when success is shown
+    trackConversion(); // <-- This now calls gtag_report_conversion()
 
-            // STEP 2: Submit forms in background (user doesn't wait for this)
-            setTimeout(() => {
-                submitFormInBackground(formData);
-            }, 100); // Small delay to ensure UI is updated first
+    // STEP 3: Submit forms in background (user doesn't wait for this)
+    setTimeout(() => {
+        submitFormInBackground(formData); // <-- This should NOT call trackConversion()
+    }, 100);
 
-            // STEP 3: Reset form after showing success
-            setTimeout(() => {
-                form.reset();
-                areaToggle.textContent = 'Select your area';
-                areaInput.value = '';
-                timeToggle.textContent = 'Select time slot';
-                timeSlotInput.value = '';
-                disclaimerCheckbox.checked = false;
-                document.querySelectorAll('.dropdown-item').forEach(el => {
-                    el.classList.remove('selected');
-                });
-                document.querySelectorAll('.time-dropdown-item').forEach(el => {
-                    el.classList.remove('selected');
-                });
-            }, 100);
+    // STEP 4: Reset form after showing success
+    setTimeout(() => {
+        form.reset();
+        areaToggle.textContent = 'Select your area';
+        areaInput.value = '';
+        timeToggle.textContent = 'Select time slot';
+        timeSlotInput.value = '';
+        disclaimerCheckbox.checked = false;
+        document.querySelectorAll('.dropdown-item').forEach(el => {
+            el.classList.remove('selected');
         });
-
+        document.querySelectorAll('.time-dropdown-item').forEach(el => {
+            el.classList.remove('selected');
+        });
+    }, 100);
+});
         // Initialize the page
         createBubbles();
         populateAreaDropdown();
