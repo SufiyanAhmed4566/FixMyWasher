@@ -7,10 +7,10 @@ A professional website for FixMyWasher.in, offering washing machine repair servi
 ```
 fixmywasher.in/
 ├── 📄 index.html                 # Homepage with service overview
-├── 📄 Submission.html            # Booking form page
-├── 📄 contact.html               # Contact information page
-├── 📄 privacy-policy.html        # Privacy policy document
-├── 📄 terms-and-conditions.html  # Terms of service
+├── 📄 /Submission            # Booking form page
+├── 📄 /contact               # Contact information page
+├── 📄 /privacy-policy        # Privacy policy document
+├── 📄 /terms-and-conditions  # Terms of service
 ├── 📄 sitemap.xml               # SEO sitemap
 ├── 📄 robots.txt                # Search engine directives
 ├── 📄 google415b23037075c296.html # Google Search Console verification
@@ -39,7 +39,7 @@ fixmywasher.in/
 
 ### 📞 Contact & Booking
 - **Multiple Channels**: Phone, WhatsApp, Email
-- **Online Booking Form**: Submission.html with comprehensive form
+- **Online Booking Form**: /Submission with comprehensive form
 - **Service Areas**: Complete Bangalore coverage
 - **Working Hours**: 8:00 AM - 8:00 PM (All days)
 
@@ -74,7 +74,7 @@ fixmywasher.in/
 - Multiple call-to-action sections
 - Mobile-optimized layout
 
-### 2. Submission.html (Booking Form)
+### 2. /Submission (Booking Form)
 **Purpose**: Lead capture and service booking
 **Features**:
 - Multi-step form with validation
@@ -86,7 +86,7 @@ fixmywasher.in/
 - FormSubmit.co integration
 - Disclaimer and privacy consent
 
-### 3. contact.html (Contact Page)
+### 3. /contact (Contact Page)
 **Purpose**: Customer communication channels
 **Features**:
 - Contact information cards
@@ -96,8 +96,8 @@ fixmywasher.in/
 - Multiple contact methods
 
 ### 4. Legal Pages
-- **privacy-policy.html**: Data protection information
-- **terms-and-conditions.html**: Service terms and pricing
+- **/privacy-policy**: Data protection information
+- **/terms-and-conditions**: Service terms and pricing
 
 ## 🔧 Technical Implementation
 

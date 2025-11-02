@@ -11,10 +11,10 @@ Allow: /
 # Allow all HTML pages
 Allow: /$
 Allow: /index.html$
-Allow: /Submission.html$
-Allow: /contact.html$
-Allow: /privacy-policy.html$
-Allow: /terms-and-conditions.html$
+Allow: //Submission$
+Allow: //contact$
+Allow: //privacy-policy$
+Allow: //terms-and-conditions$
 
 # Allow all assets and verification files
 Allow: /favicon.ico$
@@ -40,8 +40,8 @@ Disallow: /.github/
 # ========================================
 User-agent: Googlebot
 Allow: /
-Allow: /Submission.html$
-Allow: /contact.html$
+Allow: //Submission$
+Allow: //contact$
 Crawl-delay: 1
 
 User-agent: Googlebot-Image
