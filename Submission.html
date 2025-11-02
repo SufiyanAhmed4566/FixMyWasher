@@ -171,7 +171,7 @@ function gtag_report_conversion(url) {
     }
     </script>
     
-    <style>
+   <style>
         /* Critical CSS - Inlined for performance */
         :root {
             --primary-blue: #2563eb;
@@ -182,7 +182,10 @@ function gtag_report_conversion(url) {
             --gradient-hover: linear-gradient(135deg, var(--deep-teal) 0%, var(--electric-blue) 100%);
             --light-gray: #f8fafc;
             --dark-gray: #1e293b;
+            --medium-gray: #64748b;
+            --border-gray: #e2e8f0;
             --glow: 0 0 15px rgba(59, 130, 246, 0.3);
+            --separator-color: rgba(59, 130, 246, 0.15);
         }
 
         * {
@@ -194,7 +197,7 @@ function gtag_report_conversion(url) {
         body {
             font-family: 'Poppins', sans-serif;
             color: var(--dark-gray);
-            line-height: 1.6;
+            line-height: 1.5;
             background-color: #f5f9ff;
             padding: 0;
             margin: 0;
@@ -207,7 +210,7 @@ function gtag_report_conversion(url) {
             top: 0;
             left: 0;
             width: 100%;
-            padding: 1rem 5%;
+            padding: 0.8rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -251,14 +254,14 @@ function gtag_report_conversion(url) {
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 2rem 5%;
+            padding: 1.5rem 5%;
             position: relative;
             z-index: 1;
         }
 
         .form-header {
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             animation: fadeInUp 0.8s ease-out forwards;
             position: relative;
         }
@@ -266,7 +269,7 @@ function gtag_report_conversion(url) {
         .form-header::before {
             content: '';
             position: absolute;
-            top: -20px;
+            top: -15px;
             left: 50%;
             transform: translateX(-50%);
             width: 100px;
@@ -283,7 +286,7 @@ function gtag_report_conversion(url) {
 
         .form-header h1 {
             font-size: 1.8rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
             color: var(--dark-gray);
             background: linear-gradient(135deg, var(--electric-blue) 0%, var(--deep-teal) 100%);
             -webkit-background-clip: text;
@@ -296,7 +299,7 @@ function gtag_report_conversion(url) {
         .form-header h1::after {
             content: '';
             position: absolute;
-            bottom: -10px;
+            bottom: -8px;
             left: 50%;
             transform: translateX(-50%);
             width: 60px;
@@ -306,7 +309,7 @@ function gtag_report_conversion(url) {
         }
 
         .form-header p {
-            color: #64748b;
+            color: var(--medium-gray);
             font-size: 1rem;
             max-width: 500px;
             margin: 0 auto;
@@ -315,10 +318,10 @@ function gtag_report_conversion(url) {
         .repair-form {
             background: #fff;
             border-radius: 16px;
-            padding: 1.5rem;
+            padding: 1.2rem;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             border: 1px solid rgba(59, 130, 246, 0.1);
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             position: relative;
             overflow: visible;
             transition: all 0.4s ease;
@@ -335,11 +338,31 @@ function gtag_report_conversion(url) {
             background: var(--gradient);
         }
 
+        /* Field Separators - NEW */
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             position: relative;
             animation: fadeIn 0.6s ease-out forwards;
             opacity: 0;
+            padding-bottom: 1rem;
+        }
+
+        /* Add horizontal line after each form group except the last one */
+        .form-group:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: var(--separator-color);
+            border-radius: 1px;
+        }
+
+        /* Special separator for sections with more visual weight */
+        .form-group.section-separator:not(:last-child)::after {
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, var(--separator-color) 20%, var(--separator-color) 80%, transparent 100%);
         }
 
         @keyframes fadeIn {
@@ -356,7 +379,7 @@ function gtag_report_conversion(url) {
 
         .form-group label {
             display: block;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
             font-weight: 500;
             color: var(--dark-gray);
             font-size: 1rem;
@@ -382,8 +405,8 @@ function gtag_report_conversion(url) {
 
         .form-control {
             width: 100%;
-            padding: 0.8rem 1rem;
-            border: 1px solid #e2e8f0;
+            padding: 0.7rem 1rem;
+            border: 1px solid var(--border-gray);
             border-radius: 10px;
             font-size: 1rem;
             transition: all 0.3s ease;
@@ -408,8 +431,8 @@ function gtag_report_conversion(url) {
         .time-dropdown-toggle,
         .dropdown-toggle {
             width: 100%;
-            padding: 0.8rem 1rem;
-            border: 1px solid #e2e8f0;
+            padding: 0.7rem 1rem;
+            border: 1px solid var(--border-gray);
             border-radius: 10px;
             font-size: 1rem;
             background-color: var(--light-gray);
@@ -447,10 +470,10 @@ function gtag_report_conversion(url) {
             max-height: 0;
             overflow: hidden;
             background: #fff;
-            border: 1px solid #e2e8f0;
+            border: 1px solid var(--border-gray);
             border-radius: 10px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            margin-top: 0.5rem;
+            margin-top: 0.4rem;
             transition: max-height 240ms ease, padding 240ms ease;
             padding: 0;
             z-index: 5;
@@ -469,10 +492,10 @@ function gtag_report_conversion(url) {
             max-height: 0;
             overflow: hidden;
             background: white;
-            border: 1px solid #e2e8f0;
+            border: 1px solid var(--border-gray);
             border-radius: 10px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            margin-top: 0.5rem;
+            margin-top: 0.4rem;
             transition: max-height 240ms ease, padding 240ms ease;
             padding: 0;
             z-index: 5;
@@ -486,7 +509,7 @@ function gtag_report_conversion(url) {
 
         .time-dropdown-item,
         .dropdown-item {
-            padding: 0.8rem 1.5rem;
+            padding: 0.7rem 1.5rem;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -531,7 +554,7 @@ function gtag_report_conversion(url) {
         .no-results {
             padding: 1rem;
             text-align: center;
-            color: #64748b;
+            color: var(--medium-gray);
             font-style: italic;
             border-bottom: 1px solid #f1f5f9;
         }
@@ -554,7 +577,7 @@ function gtag_report_conversion(url) {
 
         .time-slot {
             font-size: 0.85rem;
-            color: #64748b;
+            color: var(--medium-gray);
             margin-top: 0.1rem;
         }
 
@@ -565,13 +588,13 @@ function gtag_report_conversion(url) {
             z-index: 5;
             background: #fff;
             padding: 0.6rem;
-            border-bottom: 1px solid #e2e8f0;
+            border-bottom: 1px solid var(--border-gray);
         }
 
         .search-box input {
             width: 100%;
             padding: 0.5rem 1rem;
-            border: 1px solid #e2e8f0;
+            border: 1px solid var(--border-gray);
             border-radius: 8px;
             font-size: 0.9rem;
             transition: all 0.3s ease;
@@ -588,11 +611,11 @@ function gtag_report_conversion(url) {
             background: rgba(59, 130, 246, 0.05);
             border: 1px solid rgba(59, 130, 246, 0.2);
             border-radius: 10px;
-            padding: 1rem;
-            margin-top: 1.5rem;
+            padding: 0.8rem;
+            margin-top: 1rem;
             text-align: center;
             font-size: 0.85rem;
-            color: #64748b;
+            color: var(--medium-gray);
             line-height: 1.5;
         }
 
@@ -606,8 +629,8 @@ function gtag_report_conversion(url) {
             background: rgba(59, 130, 246, 0.03);
             border: 1px solid rgba(59, 130, 246, 0.1);
             border-radius: 10px;
-            padding: 1.2rem;
-            margin-top: 1.5rem;
+            padding: 1rem;
+            margin-top: 1rem;
         }
 
         .disclaimer-checkbox {
@@ -633,7 +656,7 @@ function gtag_report_conversion(url) {
 
         .disclaimer-text {
             font-size: 0.85rem;
-            color: #64748b;
+            color: var(--medium-gray);
             line-height: 1.5;
             flex: 1;
         }
@@ -659,7 +682,7 @@ function gtag_report_conversion(url) {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
-            margin-top: 0.5rem;
+            margin-top: 0.4rem;
         }
 
         .brand-option {
@@ -725,9 +748,9 @@ function gtag_report_conversion(url) {
         }
 
         .brand-card {
-            border: 2px solid #e2e8f0;
+            border: 2px solid var(--border-gray);
             border-radius: 8px;
-            padding: 0.6rem 0.4rem;
+            padding: 0.5rem 0.4rem;
             text-align: center;
             transition: all 0.3s ease;
             background: #fff;
@@ -767,7 +790,7 @@ function gtag_report_conversion(url) {
             width: 40px;
             height: 40px;
             object-fit: contain;
-            margin: 0 auto 0.3rem;
+            margin: 0 auto 0.2rem;
             filter: grayscale(30%);
             transition: all 0.3s ease;
             aspect-ratio: 1/1;
@@ -804,7 +827,7 @@ function gtag_report_conversion(url) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 0.8rem;
-            margin-top: 0.5rem;
+            margin-top: 0.4rem;
         }
 
         .type-option {
@@ -812,9 +835,9 @@ function gtag_report_conversion(url) {
         }
 
         .type-card {
-            border: 2px solid #e2e8f0;
+            border: 2px solid var(--border-gray);
             border-radius: 12px;
-            padding: 1.2rem 0.8rem;
+            padding: 1rem 0.8rem;
             text-align: center;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             background: #fff;
@@ -822,18 +845,18 @@ function gtag_report_conversion(url) {
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            min-height: 200px;
+            min-height: 180px;
             height: 100%;
             box-sizing: border-box;
         }
 
         .image-container {
             width: 100%;
-            height: 100px;
+            height: 90px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.6rem;
             flex-shrink: 0;
         }
 
@@ -861,13 +884,13 @@ function gtag_report_conversion(url) {
             font-size: 1.1rem;
             font-weight: 700;
             color: var(--dark-gray);
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.2rem;
             line-height: 1.2;
         }
 
         .type-description {
             font-size: 0.9rem;
-            color: #64748b;
+            color: var(--medium-gray);
             font-weight: 500;
             line-height: 1.2;
         }
@@ -879,9 +902,9 @@ function gtag_report_conversion(url) {
 
         .type-option:nth-child(3) .type-card {
             border-radius: 8px;
-            padding: 0.8rem 0.4rem;
-            min-height: 80px;
-            height: 80px;
+            padding: 0.7rem 0.4rem;
+            min-height: 70px;
+            height: 70px;
             flex-direction: row;
             justify-content: flex-start;
             text-align: left;
@@ -897,7 +920,7 @@ function gtag_report_conversion(url) {
 
         .type-option:nth-child(3) .type-icon {
             font-size: 2rem;
-            color: #64748b;
+            color: var(--medium-gray);
             transition: all 0.3s ease;
         }
 
@@ -968,13 +991,13 @@ function gtag_report_conversion(url) {
             }
             
             .type-card {
-                padding: 1rem 0.6rem;
-                min-height: 180px;
+                padding: 0.9rem 0.6rem;
+                min-height: 160px;
             }
             
             .image-container {
-                height: 90px;
-                margin-bottom: 0.6rem;
+                height: 80px;
+                margin-bottom: 0.5rem;
             }
             
             .type-option:nth-child(1) .type-image {
@@ -987,8 +1010,8 @@ function gtag_report_conversion(url) {
             
             .type-option:nth-child(3) .type-card {
                 padding: 0.6rem 1rem;
-                min-height: 70px;
-                height: 70px;
+                min-height: 65px;
+                height: 65px;
                 gap: 0.8rem;
             }
             
@@ -1012,11 +1035,11 @@ function gtag_report_conversion(url) {
             
             .type-card {
                 padding: 0.8rem 0.4rem;
-                min-height: 160px;
+                min-height: 150px;
             }
             
             .image-container {
-                height: 80px;
+                height: 75px;
                 margin-bottom: 0.5rem;
             }
             
@@ -1050,7 +1073,7 @@ function gtag_report_conversion(url) {
 
         .submit-btn {
             width: 100%;
-            padding: 1rem;
+            padding: 0.9rem;
             background: var(--gradient);
             color: #fff;
             border: none;
@@ -1067,7 +1090,7 @@ function gtag_report_conversion(url) {
             position: relative;
             overflow: hidden;
             z-index: 100;
-            margin-top: 1rem;
+            margin-top: 0.8rem;
         }
 
         .submit-btn::before {
@@ -1093,7 +1116,7 @@ function gtag_report_conversion(url) {
         }
 
         .submit-btn:disabled {
-            background: #e2e8f0;
+            background: var(--border-gray);
             cursor: not-allowed;
             transform: none !important;
             box-shadow: none !important;
@@ -1107,7 +1130,7 @@ function gtag_report_conversion(url) {
         .success-message {
             display: none;
             text-align: center;
-            padding: 2rem;
+            padding: 1.5rem;
             background: #fff;
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -1130,7 +1153,7 @@ function gtag_report_conversion(url) {
         .success-icon {
             font-size: 4rem;
             color: #10b981;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             animation: bounce 1s infinite alternate, pulse 2s infinite;
         }
 
@@ -1147,7 +1170,7 @@ function gtag_report_conversion(url) {
 
         .success-message h2 {
             font-size: 1.8rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             color: var(--dark-gray);
             background: linear-gradient(135deg, var(--electric-blue) 0%, #10b981 100%);
             -webkit-background-clip: text;
@@ -1156,8 +1179,8 @@ function gtag_report_conversion(url) {
         }
 
         .success-message p {
-            color: #64748b;
-            margin-bottom: 1.5rem;
+            color: var(--medium-gray);
+            margin-bottom: 1.2rem;
             font-size: 1.1rem;
             max-width: 500px;
             margin-left: auto;
@@ -1257,10 +1280,10 @@ function gtag_report_conversion(url) {
         footer {
             background: var(--dark-gray);
             color: #fff;
-            padding: 2rem 5%;
+            padding: 1.5rem 5%;
             text-align: center;
             position: relative;
-            margin-top: 2rem;
+            margin-top: 1.5rem;
         }
 
         footer::before {
@@ -1282,7 +1305,7 @@ function gtag_report_conversion(url) {
 
         .footer-column h2 {
             font-size: 1.2rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             position: relative;
             display: inline-block;
         }
@@ -1301,7 +1324,7 @@ function gtag_report_conversion(url) {
 
         .footer-links {
             list-style: none;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
         }
 
         .footer-links li {
@@ -1347,8 +1370,8 @@ function gtag_report_conversion(url) {
         }
 
         .footer-bottom {
-            margin-top: 2rem;
-            padding-top: 1.5rem;
+            margin-top: 1.5rem;
+            padding-top: 1.2rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
@@ -1385,6 +1408,7 @@ function gtag_report_conversion(url) {
         .legal-links a:hover {
             color: #fff;
         }
+        
         /* Navigation Menu Styles */
         .main-nav {
             background: rgba(255, 255, 255, 0.98);
@@ -1556,8 +1580,6 @@ function gtag_report_conversion(url) {
             }
         }
 
-        
-
         /* Ultra Mobile Optimization */
         @media (max-width: 414px) {
             .nav-menu {
@@ -1580,11 +1602,9 @@ function gtag_report_conversion(url) {
             }
         }
 
-        
-
         @media (min-width: 768px) {
             .container {
-                padding: 3rem 5%;
+                padding: 2.5rem 5%;
             }
             
             .form-header h1 {
@@ -1596,11 +1616,11 @@ function gtag_report_conversion(url) {
             }
             
             .repair-form {
-                padding: 2rem;
+                padding: 1.8rem;
             }
             
             .success-message {
-                padding: 3rem;
+                padding: 2.5rem;
             }
             
             .success-message h2 {
