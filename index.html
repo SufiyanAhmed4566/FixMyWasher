@@ -1104,10 +1104,15 @@
             }
         }
     </style>
-    <script>
+<script>
+  // Add error handling to prevent redirects
   fetch('phone-whatsnapp-icons.html')
-    .then(res => res.text())
-    .then(html => document.body.insertAdjacentHTML('beforeend', html));
+    .then(res => {
+      if (!res.ok) throw new Error('File not found');
+      return res.text();
+    })
+    .then(html => document.body.insertAdjacentHTML('beforeend', html))
+    .catch(err => console.log('Icons not loaded:', err));
 </script>
 </head>
 <body>
