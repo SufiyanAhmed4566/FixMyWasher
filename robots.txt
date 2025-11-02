@@ -11,10 +11,10 @@ Allow: /
 # Allow all HTML pages
 Allow: /$
 Allow: /index.html$
-Allow: //Submission$
-Allow: //contact$
-Allow: //privacy-policy$
-Allow: //terms-and-conditions$
+Allow: /Submission$
+Allow: /contact$
+Allow: /privacy-policy$
+Allow: /terms-and-conditions$
 
 # Allow all assets and verification files
 Allow: /favicon.ico$
@@ -40,8 +40,8 @@ Disallow: /.github/
 # ========================================
 User-agent: Googlebot
 Allow: /
-Allow: //Submission$
-Allow: //contact$
+Allow: /Submission$
+Allow: /contact$
 Crawl-delay: 1
 
 User-agent: Googlebot-Image
@@ -122,4 +122,4 @@ Disallow: /
 # ========================================
 # Sitemap Location (CRITICAL)
 # ========================================
-Sitemap: https://fixmywasher.in/sitemap.xml
+Sitemap: https:/fixmywasher.in/sitemap.xml
