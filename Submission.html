@@ -526,12 +526,13 @@ function gtag_report_conversion(url) {
         // =============================================
         // MAIN INITIALIZATION - RUNS ON PAGE LOAD
         // =============================================
-        document.addEventListener('DOMContentLoaded', function() {
-            // Auto-scroll on page load
-            window.scrollTo({
-                top: 200,
-                behavior: 'instant'
-            });
+      window.addEventListener('load', function() {
+    // Auto-scroll on page load
+    window.scrollTo({
+        top: 200,
+        behavior: 'instant'
+    });
+});
 
             // =============================================
             // MOBILE MENU FUNCTIONALITY
