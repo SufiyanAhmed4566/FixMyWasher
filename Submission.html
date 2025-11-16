@@ -216,6 +216,90 @@ function gtag_report_conversion(url) {
     color: #ef4444;
     font-weight: bold;
 }
+
+/* No Idea row styling */
+.no-idea-row {
+    margin-top: 0.5rem; /* Reduced space between rows */
+}
+
+.no-idea-option {
+    flex: 1;
+}
+
+.no-idea-card {
+    min-height: 70px !important; /* Much less height */
+    width: 100%; /* Full width */
+    flex-direction: row !important; /* Horizontal layout */
+    justify-content: center !important; /* Center content horizontally */
+    align-items: center !important; /* Center content vertically */
+    padding: 0.5rem 1.5rem !important; /* Reduced padding */
+    gap: 1rem;
+    /* Normal styling - same as other cards */
+    border: 2px solid var(--border-gray) !important;
+    background: #fff !important;
+}
+
+.no-idea-icon {
+    color: #3b82f6 !important; /* Blue color for question mark only */
+    font-size: 2rem !important; /* Slightly smaller */
+    margin: 0 !important;
+    /* Remove blue background, keep just blue color */
+    background-color: transparent !important;
+    color: #3b82f6 !important;
+    border-radius: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Adjust image container for horizontal layout */
+.no-idea-card .image-container {
+    height: 40px !important;
+    width: 40px !important;
+    margin-bottom: 0 !important;
+    flex-shrink: 0;
+}
+
+.no-idea-card .type-name {
+    font-size: 1.1rem !important;
+    font-weight: 600;
+    color: var(--dark-gray) !important; /* Normal text color */
+}
+
+/* Hover and selected states - normal styling */
+.no-idea-option:hover .no-idea-card {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.no-idea-option input:checked + .no-idea-card {
+    border-color: var(--electric-blue) !important;
+    background-color: rgba(59,130,246,0.1) !important;
+    box-shadow: 0 0 0 2px var(--electric-blue), 0 5px 15px rgba(59,130,246,0.2) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .no-idea-card {
+        min-height: 60px !important; /* Even less height on mobile */
+        padding: 0.4rem 1rem !important; /* Reduced padding */
+    }
+    
+    .no-idea-icon {
+        font-size: 1.5rem !important;
+    }
+    
+    .no-idea-card .image-container {
+        height: 35px !important;
+        width: 35px !important;
+    }
+    
+    .no-idea-card .type-name {
+        font-size: 1rem !important;
+    }
+}
         
     </style>
 </head>
@@ -314,19 +398,34 @@ function gtag_report_conversion(url) {
                 <div class="type-name">Front Load</div>
             </div>
         </label>
-        
+
         <label class="type-option">
-            <input type="radio" name="type" value="No Idea" required aria-describedby="type-error" data-gtm-form-interact-field-id="2">
+            <input type="radio" name="type" value="Semi-Automated" required aria-describedby="type-error" data-gtm-form-interact-field-id="2">
             <div class="type-card">
                 <div class="image-container">
-                    <div class="type-image" style="font-size: 3rem;">🤔</div>
+                    <!-- Optimized image with proper dimensions -->
+                    <img src="/images/semi-automated-washing-machine-near-me.png" alt="Semi Automated Washing Machine" class="type-image" loading="lazy">
+                </div>
+                <div class="type-name">Semi Automated</div>
+            </div>
+        </label>
+    </div>
+    
+    <!-- No Idea option on new line -->
+    <div class="type-selection no-idea-row">
+        <label class="type-option no-idea-option">
+            <input type="radio" name="type" value="No Idea" required aria-describedby="type-error" data-gtm-form-interact-field-id="3">
+            <div class="type-card no-idea-card">
+                <div class="image-container">
+                    <div class="type-image no-idea-icon" style="font-size: 3rem; color: #3b82f6;">❓</div>
                 </div>
                 <div class="type-name">No Idea</div>
             </div>
         </label>
     </div>
+    
     <div class="error-message" id="type-error">Please fill this field</div>
-</div>  
+</div>
                 <button type="submit" class="submit-btn" id="submitBtn">
                     <span>✈️</span> Submit My Request
                 </button>
@@ -380,27 +479,15 @@ function gtag_report_conversion(url) {
             <p class="copyright">© 2025 FixMyWasher.in — All Rights Reserved</p>
         </div>
     </footer>
-    
 
-    
+      <!-- Deferred JavaScript -->
     <script>
         // =============================================
-        // AUTO SCROLL ON PAGE LOAD - BETTER USER EXPERIENCE
+        // GLOBAL VARIABLES AND CONFIGURATION
         // =============================================
-        // This automatically scrolls the page down slightly when loaded
-        // so users can see the entire form instead of starting from the very top
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                window.scrollTo({
-                    top: 200, // Adjust this value to control scroll distance
-                    behavior: 'smooth' // Smooth scrolling animation
-                });
-            }, 300); // Small delay to ensure page is fully loaded
-        });
-    </script>
+        const sheetsScriptURL = "https://script.google.com/macros/s/AKfycbyJuREgdscApXGOllJV-7Oeida1ZlVcsLENQDGTNkcgnIbiq6NA1meq8dbRjb78p9MQ/exec";
+        const emailScriptURL = "https://script.google.com/macros/s/AKfycbxT6qDnlNTsBKm3Va-qCAB836YpvOPaQR87dLNBGOnelbY7jws6Gmc6wzLzeYKIcmGsrg/exec";
 
-    <!-- Deferred JavaScript -->
-    <script>
         // =============================================
         // LOGIC 1: GOOGLE ANALYTICS & ADS CONVERSION TRACKING
         // =============================================
@@ -437,19 +524,18 @@ function gtag_report_conversion(url) {
         }
 
         // =============================================
-        // LOGIC 3: GOOGLE SHEETS DATA STORAGE
-        // =============================================
-        const sheetsScriptURL = "https://script.google.com/macros/s/AKfycbyJuREgdscApXGOllJV-7Oeida1ZlVcsLENQDGTNkcgnIbiq6NA1meq8dbRjb78p9MQ/exec";
-
-        // =============================================
-        // LOGIC 4: EMAIL SENDING VIA GOOGLE APPS SCRIPT
-        // =============================================
-        const emailScriptURL = "https://script.google.com/macros/s/AKfycbxT6qDnlNTsBKm3Va-qCAB836YpvOPaQR87dLNBGOnelbY7jws6Gmc6wzLzeYKIcmGsrg/exec";
-
-        // =============================================
-        // MOBILE MENU FUNCTIONALITY
+        // MAIN INITIALIZATION - RUNS ON PAGE LOAD
         // =============================================
         document.addEventListener('DOMContentLoaded', function() {
+            // Auto-scroll on page load
+            window.scrollTo({
+                top: 200,
+                behavior: 'instant'
+            });
+
+            // =============================================
+            // MOBILE MENU FUNCTIONALITY
+            // =============================================
             const mobileMenuBtn = document.getElementById('mobileMenuBtn');
             const navMenu = document.getElementById('navMenu');
 
@@ -508,32 +594,46 @@ function gtag_report_conversion(url) {
             function validateForm() {
                 let isValid = true;
                 
+                // Reset all errors first
+                nameError.style.display = 'none';
+                phoneError.style.display = 'none';
+                typeError.style.display = 'none';
+                nameInput.classList.remove('error');
+                phoneInput.classList.remove('error');
+                
+                // Check name
                 if (nameInput.value.trim() === '') {
                     nameError.style.display = 'block';
+                    nameError.textContent = 'Please fill this field';
                     nameInput.classList.add('error');
                     isValid = false;
-                } else {
-                    nameError.style.display = 'none';
-                    nameInput.classList.remove('error');
                 }
                 
-                let phoneValue = phoneInput.value.replace(/\D/g, '');
-                const phoneRegex = /^(\d{10}|0\d{10})$/;
+     // Check phone
+let phoneValue = phoneInput.value.replace(/\D/g, '');
+const phoneRegex = /^(?:\d{10}|0\d{10})$/;
 
-                if (!phoneRegex.test(phoneValue)) {
-                    phoneError.style.display = 'block';
-                    phoneError.textContent = 'Please enter a valid 10-digit mobile number';
-                    phoneInput.classList.add('error');
-                    isValid = false;
-                } else {
-                    phoneError.style.display = 'none';
-                    phoneInput.classList.remove('error');
-                    
-                    if (phoneValue.length === 11 && phoneValue.startsWith('0')) {
-                        phoneInput.value = phoneValue.substring(1);
-                    }
-                }
+if (phoneInput.value.trim() === '') {
+    phoneError.style.display = 'block';
+    phoneError.textContent = 'Please fill this field';
+    phoneInput.classList.add('error');
+    isValid = false;
+} else if (!phoneRegex.test(phoneValue)) {
+    phoneError.style.display = 'block';
+    phoneError.textContent = 'Please enter a valid 10-digit mobile number';
+    phoneInput.classList.add('error');
+    isValid = false;
+} else {
+    phoneError.style.display = 'none';
+    phoneInput.classList.remove('error');
+    
+    // Format phone number if needed (remove leading 0 for 11-digit numbers)
+    if (phoneValue.length === 11 && phoneValue.startsWith('0')) {
+        phoneInput.value = phoneValue.substring(1);
+    }
+}
                 
+                // Check type
                 let typeSelected = false;
                 typeOptions.forEach(option => {
                     if (option.checked) typeSelected = true;
@@ -541,9 +641,8 @@ function gtag_report_conversion(url) {
                 
                 if (!typeSelected) {
                     typeError.style.display = 'block';
+                    typeError.textContent = 'Please fill this field';
                     isValid = false;
-                } else {
-                    typeError.style.display = 'none';
                 }
                 
                 return isValid;
@@ -566,7 +665,14 @@ function gtag_report_conversion(url) {
             form.addEventListener('submit', function(e) {
                 e.preventDefault();
 
-                if (!validateForm()) return;
+                if (!validateForm()) {
+                    // Scroll to first error
+                    const firstError = document.querySelector('.error-message[style*="display: block"]');
+                    if (firstError) {
+                        firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                    return;
+                }
 
                 const formData = new FormData(form);
 
