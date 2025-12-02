@@ -271,38 +271,46 @@
 
     <!-- Inline Critical CSS -->
     <style>
-        :root {
-            --primary-blue: #2563eb;
-            --primary-teal: #0d9488;
-            --electric-blue: #3b82f6;
-            --deep-teal: #14b8a6;
-            --vibrant-blue: #1d4ed8;
-            --neon-teal: #00f5d4;
-            --gradient: linear-gradient(135deg, var(--electric-blue) 0%, var(--deep-teal) 100%);
-            --gradient-hover: linear-gradient(135deg, var(--deep-teal) 0%, var(--electric-blue) 100%);
-            --neon-gradient: linear-gradient(135deg, var(--vibrant-blue) 0%, var(--neon-teal) 100%);
-            --light-gray: #f8fafc;
-            --dark-gray: #1e293b;
-        }
+:root {
+    --primary-blue: #2563eb;
+    --primary-teal: #0d9488;
+    --electric-blue: #3b82f6;
+    --deep-teal: #14b8a6;
+    --vibrant-blue: #1d4ed8;
+    --neon-teal: #00f5d4;
+    --gradient: linear-gradient(135deg, var(--electric-blue) 0%, var(--deep-teal) 100%);
+    --gradient-hover: linear-gradient(135deg, var(--deep-teal) 0%, var(--electric-blue) 100%);
+    --neon-gradient: linear-gradient(135deg, var(--vibrant-blue) 0%, var(--neon-teal) 100%);
+    --neon-gradient-hover: linear-gradient(135deg, var(--neon-teal) 0%, var(--vibrant-blue) 100%);
+    --light-gray: #f8fafc;
+    --dark-gray: #1e293b;
+    --medium-gray: #64748b;
+    --border-gray: #e2e8f0;
+    --glow: 0 0 15px rgba(59, 130, 246, 0.3);
+    --separator-color: rgba(59, 130, 246, 0.15);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-gray);
+    line-height: 1.5;
+    background-color: #f5f9ff;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
 
-        html {
+            html {
             scroll-behavior: smooth;
         }
 
-        body {
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-            color: var(--dark-gray);
-            line-height: 1.6;
-            background-color: #f5f9ff;
-            overflow-x: hidden;
-            -webkit-overflow-scrolling: touch;
-        }
+        
+
         /* Navigation Menu - Taller Version */
         .main-nav {
             background: white;
@@ -1951,9 +1959,9 @@
         <span class="sr-only">Book Repair Service</span>
     </a>
 
-     <!-- JavaScript - FIXED with smooth animation -->
+    <!-- JavaScript - FIXED with smooth animation -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const mobileMenuBtn = document.getElementById('mobileMenuBtn');
             const mobileMenu = document.getElementById('mobileMenu');
             const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
@@ -1963,25 +1971,25 @@
             // Toggle mobile menu with smooth animation
             function toggleMobileMenu() {
                 const isActive = mobileMenu.classList.contains('active');
-                
+
                 // Toggle classes with proper timing
                 if (!isActive) {
                     // Open menu
                     mobileMenuOverlay.style.display = 'block';
                     mobileMenuOverlay.classList.add('active');
-                    
+
                     // Force reflow to ensure transition works
                     mobileMenu.offsetHeight;
-                    
+
                     mobileMenu.classList.add('active');
-                    
+
                     // Toggle button icon
                     const icon = mobileMenuBtn.querySelector('i');
                     icon.className = 'fas fa-times';
-                    
+
                     // Toggle aria-expanded
                     mobileMenuBtn.setAttribute('aria-expanded', 'true');
-                    
+
                     // Prevent body scroll when menu is open
                     document.body.style.overflow = 'hidden';
                 } else {
@@ -1994,17 +2002,17 @@
                 // Remove active class first
                 mobileMenu.classList.remove('active');
                 mobileMenuOverlay.classList.remove('active');
-                
+
                 // Toggle button icon
                 const icon = mobileMenuBtn.querySelector('i');
                 icon.className = 'fas fa-bars';
-                
+
                 // Toggle aria-expanded
                 mobileMenuBtn.setAttribute('aria-expanded', 'false');
-                
+
                 // Allow body scroll when menu is closed
                 document.body.style.overflow = '';
-                
+
                 // Hide overlay after transition
                 setTimeout(() => {
                     if (!mobileMenu.classList.contains('active')) {
@@ -2015,21 +2023,21 @@
 
             // Event listeners
             if (mobileMenuBtn) {
-                mobileMenuBtn.addEventListener('click', function(e) {
+                mobileMenuBtn.addEventListener('click', function (e) {
                     e.stopPropagation();
                     toggleMobileMenu();
                 });
             }
 
             if (mobileMenuOverlay) {
-                mobileMenuOverlay.addEventListener('click', function(e) {
+                mobileMenuOverlay.addEventListener('click', function (e) {
                     e.stopPropagation();
                     closeMobileMenu();
                 });
             }
 
             if (mobileMenuClose) {
-                mobileMenuClose.addEventListener('click', function(e) {
+                mobileMenuClose.addEventListener('click', function (e) {
                     e.stopPropagation();
                     closeMobileMenu();
                 });
@@ -2037,28 +2045,28 @@
 
             // Close menu when clicking links
             mobileMenuLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
+                link.addEventListener('click', function (e) {
                     e.stopPropagation();
                     closeMobileMenu();
                 });
             });
 
             // Close menu on escape key
-            document.addEventListener('keydown', function(e) {
+            document.addEventListener('keydown', function (e) {
                 if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
                     closeMobileMenu();
                 }
             });
 
             // Handle window resize - close menu on desktop
-            window.addEventListener('resize', function() {
+            window.addEventListener('resize', function () {
                 if (window.innerWidth > 768 && mobileMenu.classList.contains('active')) {
                     closeMobileMenu();
                 }
             });
 
             // Prevent clicks inside mobile menu from closing it
-            mobileMenu.addEventListener('click', function(e) {
+            mobileMenu.addEventListener('click', function (e) {
                 e.stopPropagation();
             });
         });

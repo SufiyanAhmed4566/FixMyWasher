@@ -206,41 +206,52 @@
 
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+    --primary-blue: #2563eb;
+    --primary-teal: #0d9488;
+    --electric-blue: #3b82f6;
+    --deep-teal: #14b8a6;
+    --vibrant-blue: #1d4ed8;
+    --neon-teal: #00f5d4;
+    --gradient: linear-gradient(135deg, var(--electric-blue) 0%, var(--deep-teal) 100%);
+    --gradient-hover: linear-gradient(135deg, var(--deep-teal) 0%, var(--electric-blue) 100%);
+    --neon-gradient: linear-gradient(135deg, var(--vibrant-blue) 0%, var(--neon-teal) 100%);
+    --neon-gradient-hover: linear-gradient(135deg, var(--neon-teal) 0%, var(--vibrant-blue) 100%);
+    --light-gray: #f8fafc;
+    --dark-gray: #1e293b;
+    --medium-gray: #64748b;
+    --border-gray: #e2e8f0;
+    --glow: 0 0 15px rgba(59, 130, 246, 0.3);
+    --separator-color: rgba(59, 130, 246, 0.15);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-gray);
+    line-height: 1.5;
+    background-color: #f5f9ff;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+            html {
+            scroll-behavior: smooth;
         }
-        
-        body {
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.5;
-            color: #333;
-            background-color: #f8fafc;
-        }
-        
+
+
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 1rem 0.8rem;
         }
         
-       :root {
-            --primary-blue: #2563eb;
-            --primary-teal: #0d9488;
-            --electric-blue: #3b82f6;
-            --deep-teal: #14b8a6;
-            --vibrant-blue: #1d4ed8;
-            --neon-teal: #00f5d4;
-            --gradient: linear-gradient(135deg, var(--electric-blue) 0%, var(--deep-teal) 100%);
-            --gradient-hover: linear-gradient(135deg, var(--deep-teal) 0%, var(--electric-blue) 100%);
-            --neon-gradient: linear-gradient(135deg, var(--vibrant-blue) 0%, var(--neon-teal) 100%);
-            --neon-gradient-hover: linear-gradient(135deg, var(--neon-teal) 0%, var(--vibrant-blue) 100%);
-            --light-gray: #f8fafc;
-            --dark-gray: #1e293b;
-        }
-    
-
+     
         /* Navigation Menu - Taller Version */
         .main-nav {
             background: white;
