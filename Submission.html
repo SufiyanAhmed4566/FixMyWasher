@@ -1504,6 +1504,7 @@ footer::before {
 .footer-bottom {
     padding-top: 1.2rem;
     border-top: 1px solid var(--separator-color);
+    margin: 3px;
 }
 
 .footer-logo {
@@ -1515,6 +1516,7 @@ footer::before {
     gap: 0.8rem;
     text-decoration: none;
     transition: all 0.3s ease;
+    margin: 3px;
 }
 
 .footer-logo:hover {
@@ -1525,19 +1527,26 @@ footer::before {
 .footer-logo-img {
     border-radius: 6px;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    margin: 3px;
 }
 
 .footer-logo-text {
     background: linear-gradient(135deg, var(--electric-blue) 0%, var(--deep-teal) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: 3px;
 }
 
 .legal-links {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.7rem;
+    flex-wrap: nowrap;   /* ✅ force all links to stay in one line */
+    gap: 0.3rem;
+    margin: 3px;
+    overflow-x: auto;    /* ✅ optional: allow horizontal scroll if they overflow */
 }
+
 
 .legal-links a {
     color: rgba(255, 255, 255, 0.8);
@@ -1547,6 +1556,7 @@ footer::before {
     padding: 0.35rem 0.8rem;
     border-radius: 4px;
     background: rgba(59, 130, 246, 0.1);
+    margin: 3px;
 }
 
 .legal-links a:hover {
@@ -1558,11 +1568,13 @@ copyright {
     font-size: 0.8rem;
     opacity: 0.7;
     color: var(--medium-gray);
+    margin: 3px;
 }
 
 /* Mobile Call Button */
 .mobile-call-button {
     padding: 1rem 0;
+    margin: 3px;
 }
 
 .call-now-btn {
@@ -1580,6 +1592,7 @@ copyright {
     transition: all 0.3s ease;
     border: none;
     min-width: 250px;
+    margin: 3px;
 }
 
 .call-now-btn:hover {
@@ -1592,6 +1605,8 @@ copyright {
     width: 18px;
     height: 18px;
     margin-right: 8px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 /* Responsive Adjustments */
