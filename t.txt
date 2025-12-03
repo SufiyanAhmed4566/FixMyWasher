@@ -1,85 +1,85 @@
-📦FixMyWasher
- ┣ 📂blog
- ┃ ┣ 📂most-searched-keywords
- ┃ ┃ ┣ 📜washing-machine-repair-near-me.html
- ┃ ┃ ┣ 📜washing-machine-repair-in-bangalore.html
- ┃ ┃ ┣ 📜emergency-washing-machine-repair.html
- ┃ ┃ ┣ 📜washing-machine-repair-service.html
- ┃ ┃ ┣ 📜same-day-washing-machine-repair.html
- ┃ ┃ ┣ 📜doorstep-washing-machine-repair.html
- ┃ ┃ ┣ 📜washing-machine-repair-center.html
- ┃ ┃ ┣ 📜washing-machine-repair-shop-near-me.html
- ┃ ┃ ┣ 📜washing-machine-repair-cost.html
- ┃ ┃ ┣ 📜best-washing-machine-repair.html
- ┃ ┃ ┣ 📜affordable-washing-machine-repair.html
- ┃ ┃ ┣ 📜washing-machine-repair-expert.html
- ┃ ┃ ┣ 📜washing-machine-repair-technician.html
- ┃ ┃ ┣ 📜washing-machine-repair-company.html
- ┃ ┃ ┣ 📜washing-machine-repair-home-service.html
- ┃ ┃ ┣ 📜washing-machine-repair-contacts.html
- ┃ ┃ ┣ 📜washing-machine-repair-whatsapp-number.html
- ┃ ┃ ┣ 📜washing-machine-repair-call.html
- ┃ ┃ ┗ 📜washing-machine-repair-booking.html
- ┃ ┣ 📂area-specific
- ┃ ┃ ┣ 📜washing-machine-repair-in-bannerghatta-road.html
- ┃ ┃ ┣ 📜washing-machine-repair-in-bellandur.html
- ┃ ┃ ┣ 📜washing-machine-repair-in-btm-layout.html
- ┃ ┃ ┣ 📜washing-machine-repair-in-electronic-city.html
- ┃ ┃ ┣ 📜washing-machine-repair-in-hsr-layout.html
- ┃ ┃ ┣ 📜washing-machine-repair-in-indiranagar.html
- ┃ ┃ ┣ 📜washing-machine-repair-in-jayanagar.html
- ┃ ┃ ┣ 📜washing-machine-repair-in-koramangala.html
- ┃ ┃ ┣ 📜washing-machine-repair-in-malleswaram.html
- ┃ ┃ ┣ 📜washing-machine-repair-in-marathahalli.html
- ┃ ┃ ┣ 📜washing-machine-repair-in-rajajinagar.html
- ┃ ┃ ┣ 📜washing-machine-repair-in-sarjapur-road.html
- ┃ ┃ ┣ 📜washing-machine-repair-in-whitefield.html
- ┃ ┃ ┗ 📜washing-machine-repair-in-yelahanka.html
- ┃ ┣ 📂brand-specific
- ┃ ┃ ┣ 📜lg-washing-machine-repair-in-bangalore.html
- ┃ ┃ ┣ 📜samsung-washing-machine-repair-in-bangalore.html
- ┃ ┃ ┣ 📜whirlpool-washing-machine-repair-in-bangalore.html
- ┃ ┃ ┣ 📜ifb-washing-machine-repair-in-bangalore.html
- ┃ ┃ ┣ 📜bosch-washing-machine-repair-in-bangalore.html
- ┃ ┃ ┣ 📜haier-washing-machine-repair-in-bangalore.html
- ┃ ┃ ┣ 📜godrej-washing-machine-repair-in-bangalore.html
- ┃ ┃ ┣ 📜panasonic-washing-machine-repair-in-bangalore.html
- ┃ ┃ ┣ 📜voltas-washing-machine-repair-in-bangalore.html
- ┃ ┃ ┗ 📜lloyd-washing-machine-repair-in-bangalore.html
- ┃ ┣ 📂issues-specific
- ┃ ┃ ┣ 📜washing-machine-not-spinning-repair.html
- ┃ ┃ ┣ 📜washing-machine-not-draining-repair.html
- ┃ ┃ ┣ 📜washing-machine-leaking-water-repair.html
- ┃ ┃ ┣ 📜washing-machine-not-starting-repair.html
- ┃ ┃ ┣ 📜washing-machine-making-noise-repair.html
- ┃ ┃ ┣ 📜washing-machine-display-error-repair.html
- ┃ ┃ ┣ 📜washing-machine-smell-removal-service.html
- ┃ ┃ ┣ 📜washing-machine-vibration-issues-repair.html
- ┃ ┃ ┣ 📜washing-machine-door-not-opening-repair.html
- ┃ ┃ ┗ 📜washing-machine-detergent-not-dispensing.html
- ┃ ┣ 📂machine-type-specific
- ┃ ┃ ┣ 📜front-load-washing-machine-repair.html
- ┃ ┃ ┣ 📜top-load-washing-machine-repair.html
- ┃ ┃ ┣ 📜semi-automatic-washing-machine-repair.html
- ┃ ┃ ┣ 📜fully-automatic-washing-machine-repair.html
- ┃ ┃ ┣ 📜commercial-washing-machine-repair.html
- ┃ ┃ ┗ 📜portable-washing-machine-repair.html
- ┃ ┣ 📂service-specific
- ┃ ┃ ┣ 📜washing-machine-installation-service.html
- ┃ ┃ ┣ 📜washing-machine-descaling-service.html
- ┃ ┃ ┣ 📜washing-machine-detergent-tray-repair.html
- ┃ ┃ ┣ 📜washing-machine-drum-replacement.html
- ┃ ┃ ┣ 📜washing-machine-motor-replacement.html
- ┃ ┃ ┣ 📜washing-machine-pump-replacement.html
- ┃ ┃ ┣ 📜washing-machine-circuit-board-repair.html
- ┃ ┃ ┗ 📜washing-machine-drain-pump-repair.html
- ┃ ┣ 📂prevention-maintenance
- ┃ ┃ ┣ 📜how-to-clean-washing-machine.html
- ┃ ┃ ┣ 📜washing-machine-maintenance-tips.html
- ┃ ┃ ┣ 📜best-detergent-for-washing-machine.html
- ┃ ┃ ┣ 📜how-to-prevent-washing-machine-smell.html
- ┃ ┃ ┣ 📜washing-machine-water-saving-tips.html
- ┃ ┃ ┣ 📜when-to-replace-washing-machine.html
- ┃ ┃ ┣ 📜diy-washing-machine-repair-tips.html
- ┃ ┃ ┗ 📜washing-machine-energy-saving-tips.html
- ┃ ┗ 📜washing-machine-repair-blog-bangalore.html
+📦 FixMyWasher
+┣ 📂 blog 
+┃ ┣ 📂 most-searched-keywords 
+┃ ┃ ┣ 📜 washing-machine-repair-near-me.html 
+┃ ┃ ┣ 📜 washing-machine-repair-in-bangalore.html 
+┃ ┃ ┣ 📜 washing-machine-repair-service.html 
+┃ ┃ ┣ 📜 washing-machine-repair-center.html 
+┃ ┃ ┣ 📜 washing-machine-repair-shop-near-me.html 
+┃ ┃ ┣ 📜 affordable-washing-machine-repair.html 
+┃ ┃ ┣ 📜 washing-machine-repair-home-service.html 
+┃ ┃ ┣ 📜 washing-machine-service-near-me.html 
+┃ ┃ ┣ 📜 washing-machine-service-centre-near-me.html 
+┃ ┃ ┣ 📜 washing-machine-service-bangalore.html 
+┃ ┃ ┣ 📜 washing-machine-service-centre-bangalore.html
+┃ ┃ ┣ 📜 washer-repair-near-me.html 
+┃ ┃ ┣ 📜 affordable-washing-machine-service-near-me.html 
+┃ ┃ ┣ 📜 same-day-washing-machine-repair-near-me.html
+┃ ┣ 📂area-specific
+┃ ┃ ┣ 📜washing-machine-repair-in-bannerghatta-road.html
+┃ ┃ ┣ 📜washing-machine-repair-in-bellandur.html
+┃ ┃ ┣ 📜washing-machine-repair-in-btm-layout.html
+┃ ┃ ┣ 📜washing-machine-repair-in-electronic-city.html
+┃ ┃ ┣ 📜washing-machine-repair-in-hsr-layout.html
+┃ ┃ ┣ 📜washing-machine-repair-in-indiranagar.html
+┃ ┃ ┣ 📜washing-machine-repair-in-jayanagar.html
+┃ ┃ ┣ 📜washing-machine-repair-in-koramangala.html
+┃ ┃ ┣ 📜washing-machine-repair-in-malleswaram.html
+┃ ┃ ┣ 📜washing-machine-repair-in-marathahalli.html
+┃ ┃ ┣ 📜washing-machine-repair-in-rajajinagar.html
+┃ ┃ ┣ 📜washing-machine-repair-in-sarjapur-road.html
+┃ ┃ ┣ 📜washing-machine-repair-in-whitefield.html
+┃ ┃ ┗ 📜washing-machine-repair-in-yelahanka.html
+┃ ┣ 📂brand-specific
+┃ ┃ ┣ 📜lg-washing-machine-repair-in-bangalore.html
+┃ ┃ ┣ 📜samsung-washing-machine-repair-in-bangalore.html
+┃ ┃ ┣ 📜whirlpool-washing-machine-repair-in-bangalore.html
+┃ ┃ ┣ 📜ifb-washing-machine-repair-in-bangalore.html
+┃ ┃ ┣ 📜bosch-washing-machine-repair-in-bangalore.html
+┃ ┃ ┣ 📜haier-washing-machine-repair-in-bangalore.html
+┃ ┃ ┣ 📜godrej-washing-machine-repair-in-bangalore.html
+┃ ┃ ┣ 📜panasonic-washing-machine-repair-in-bangalore.html
+┃ ┃ ┣ 📜voltas-washing-machine-repair-in-bangalore.html
+┃ ┃ ┗ 📜lloyd-washing-machine-repair-in-bangalore.html
+┃ ┣ 📂issues-specific
+┃ ┃ ┣ 📜washing-machine-not-spinning-repair.html
+┃ ┃ ┣ 📜washing-machine-not-draining-repair.html
+┃ ┃ ┣ 📜washing-machine-leaking-water-repair.html
+┃ ┃ ┣ 📜washing-machine-not-starting-repair.html
+┃ ┃ ┣ 📜washing-machine-making-noise-repair.html
+┃ ┃ ┣ 📜washing-machine-display-error-repair.html
+┃ ┃ ┣ 📜washing-machine-smell-removal-service.html
+┃ ┃ ┣ 📜washing-machine-vibration-issues-repair.html
+┃ ┃ ┣ 📜washing-machine-door-not-opening-repair.html
+┃ ┃ ┗ 📜washing-machine-detergent-not-dispensing.html
+┃ ┣ 📂machine-type-specific
+┃ ┃ ┣ 📜front-load-washing-machine-repair.html
+┃ ┃ ┣ 📜top-load-washing-machine-repair.html
+┃ ┃ ┣ 📜semi-automatic-washing-machine-repair.html
+┃ ┃ ┣ 📜fully-automatic-washing-machine-repair.html
+┃ ┃ ┣ 📜commercial-washing-machine-repair.html
+┃ ┃ ┗ 📜portable-washing-machine-repair.html
+┃ ┣ 📂service-specific
+┃ ┃ ┣ 📜washing-machine-installation-service.html
+┃ ┃ ┣ 📜washing-machine-descaling-service.html
+┃ ┃ ┣ 📜washing-machine-detergent-tray-repair.html
+┃ ┃ ┣ 📜washing-machine-drum-replacement.html
+┃ ┃ ┣ 📜washing-machine-motor-replacement.html
+┃ ┃ ┣ 📜washing-machine-pump-replacement.html
+┃ ┃ ┣ 📜washing-machine-circuit-board-repair.html
+┃ ┃ ┗ 📜washing-machine-drain-pump-repair.html
+┃ ┣ 📂prevention-maintenance
+┃ ┃ ┣ 📜how-to-clean-washing-machine.html
+┃ ┃ ┣ 📜washing-machine-maintenance-tips.html
+┃ ┃ ┣ 📜best-detergent-for-washing-machine.html
+┃ ┃ ┣ 📜how-to-prevent-washing-machine-smell.html
+┃ ┃ ┣ 📜washing-machine-water-saving-tips.html
+┃ ┃ ┣ 📜when-to-replace-washing-machine.html
+┃ ┃ ┣ 📜diy-washing-machine-repair-tips.html
+┃ ┃ ┗ 📜washing-machine-energy-saving-tips.html
+┃ ┗ 📜washing-machine-repair-blog-bangalore.html
+┣ testomotials.html(for this give some good seo name like washing machine repair testimonials like that something like according to you) 
+
+i want to create this whole file structure at a time in vs code i already have FixMyWasher folder root folder so give something to create it 
+
+
