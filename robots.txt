@@ -18,7 +18,7 @@ Allow: /terms-and-conditions$
 
 # Allow all assets and verification files
 Allow: /favicon.ico$
-Allow: /favicon.png$
+Allow: /logo.png$
 Allow: /favicon-16x16.png$
 Allow: /favicon-32x32.png$
 Allow: /android-chrome-192x192.png$
@@ -46,7 +46,7 @@ Crawl-delay: 1
 
 User-agent: Googlebot-Image
 Allow: /images/
-Allow: /favicon.png$
+Allow: /logo.png$
 Allow: /favicon-16x16.png$
 Allow: /favicon-32x32.png$
 Allow: /android-chrome-192x192.png$

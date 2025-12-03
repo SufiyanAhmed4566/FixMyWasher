@@ -112,10 +112,10 @@
  ┣ 📜contact.html
  ┣ 📜favicon-32x32.png
  ┣ 📜favicon.ico
- ┣ 📜favicon.png    > it is just the logo of the webiste 
+ ┣ 📜logo.png    > it is just the logo of the webiste 
  ┣ 📜google415b23037075c296.html
  ┣ 📜index.html
- ┣ 📜logo.png > this is the logo plus brand name which in the each nav bar 
+ ┣ 📜nav-logo.png > this is the logo plus brand name which in the each nav bar 
  ┣ 📜phone-whatsnapp-icons.html
  ┣ 📜privacy-policy.html
  ┣ 📜README.md

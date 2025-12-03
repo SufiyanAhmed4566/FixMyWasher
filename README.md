@@ -15,7 +15,7 @@ fixmywasher.in/
 ├── 📄 robots.txt                # Search engine directives
 ├── 📄 google415b23037075c296.html # Google Search Console verification
 ├── 📄 site.webmanifest          # PWA manifest
-├── 📄 favicon.png               # Main favicon
+├── 📄 logo.png               # Main favicon
 ├── 📄 favicon.ico               # Legacy favicon
 ├── 📄 apple-touch-icon.png      # iOS home screen icon
 ├── 📄 android-chrome-192x192.png # Android icon small
