@@ -84,7 +84,7 @@ i want to create this whole file structure at a time in vs code i already have F
 
 
 
- ┃ ┣ 📜sideimages/sideimage (1).png
- ┃ ┣ 📜sideimages/sideimage (22).png
+ ┃ ┣ 📜sideimages/sideimage(1).png
+ ┃ ┣ 📜sideimages/sideimage(22).png
  ┃ ┣ 📜Washing-Machine-Repair-Near-you.png
  ┃ ┗ 📜Washing-Machine-Repair.png
