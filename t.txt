@@ -39,6 +39,7 @@
  ┃ ┃ ┗ 📜washing-machine-vibration-issues-repair.html
  ┃ ┣ 📂machine-type-specific
  ┃ ┃ ┣ 📜commercial-washing-machine-repair.html
+ ┃ ┃ ┣ 📜front-load-washing-machine-repair.html
  ┃ ┃ ┣ 📜fully-automatic-washing-machine-repair.html
  ┃ ┃ ┣ 📜portable-washing-machine-repair.html
  ┃ ┃ ┣ 📜semi-automatic-washing-machine-repair.html
@@ -112,10 +113,10 @@
  ┣ 📜contact.html
  ┣ 📜favicon-32x32.png
  ┣ 📜favicon.ico
- ┣ 📜logo.png    > it is just the logo of the webiste 
  ┣ 📜google415b23037075c296.html
  ┣ 📜index.html
- ┣ 📜nav-logo.png > this is the logo plus brand name which in the each nav bar or header 
+ ┣ 📜logo.png   >  it is just the logo of the webiste 
+ ┣ 📜nav-logo.png >   this is the logo plus brand name which in the each nav bar or header
  ┣ 📜phone-whatsnapp-icons.html
  ┣ 📜privacy-policy.html
  ┣ 📜README.md
@@ -128,9 +129,9 @@
  ┣ 📜terms-and-conditions.html
  ┣ 📜test.html
  ┗ 📜washing-machine-repair-customer-testimonials-bangalore.html
+
  from this structure ignore and avoid test.html , sub.html ,t.txt this irrrevalent and and based on this structure this page 
-  ┃ ┗ 📜washing-machine-repair-blog-bangalore.html which is inside the blog folder which include all the blog link and button of all 
-  the folders in the blog folder based on the theme and header and footer should of same size dont change it at any cost 
+  ┃ ┗ 📜washing-machine-repair-blog-bangalore.html based on the theme and header and footer should of same size dont change it at any cost 
   now based on this page given by you with similar layout and section and give perfect and proper url for reaching use this layout and everthing dont change the header or footer size keep as it is and with this same content  and improve seo techniques in seo secction everthing else improve it add more content create and change everthing with this page and pls remove unnecessary margin top and bottom keep margin if need somewhere to show properly i dont want them create speciaclly for the mobile screen and put some space between the text and button as in the provided code in the inline html only  i need space betwen text or paragraph in between already in the inline of the html understood for proper looking  google search console accepted and all the blocks sections will should there in 2 in one line good for mobile looking where necessary u decided it and dont menntion the price of the repair and take all this things and specfication i told very very seriously okay and there only 1 to 15 sideimages from (1) to (24) so take different combination for each page page not more than that remember and focus more on seo techninques and html content include its name many place  
 now create content for this particular page okay and the page should be accepted by google search console and inlcude more keywords and description based on the user search real and include that page name alot alot of times in the page and content related to keyword user searches
 
