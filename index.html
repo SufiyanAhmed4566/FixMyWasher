@@ -259,8 +259,7 @@
       }
     }
     </script>
-
-    <!-- Inline Critical CSS -->
+  <!-- Inline Critical CSS -->
     <style>
 :root {
     --primary-blue: #2563eb;
@@ -867,217 +866,515 @@ body {
             }
         }
 
-        /* Critical above-the-fold styles */
-        .hero {
+        /* ===== COMPACT HERO SECTION ===== */
+        .hero-section {
+            padding: 20px 15px 10px;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(20, 184, 166, 0.08) 100%);
             position: relative;
-            padding: 1.5rem 1rem 1rem;
-            text-align: center;
             overflow: hidden;
-            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(20, 184, 166, 0.1) 100%);
-            min-height: auto;
+            margin-bottom: 0;
         }
 
-        .hero-content {
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 15px 10px 5px;
+            }
+        }
+
+        /* Hero Top Content */
+        .hero-top {
             position: relative;
             z-index: 2;
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 1.2rem;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 12px;
-            backdrop-filter: blur(8px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1), 0 0 20px rgba(59, 130, 246, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            max-width: 1200px;
+            margin: 0 auto 15px;
+            width: 100%;
+            text-align: center;
         }
 
-        .hero h1 {
-            font-size: 1.4rem;
-            margin-bottom: 0.6rem;
+        .hero-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
             background: var(--neon-gradient);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            line-height: 1.3;
+            line-height: 1.2;
         }
 
-        .hero p {
-            font-size: 0.8rem;
-            color: #64748b;
-            margin-bottom: 1rem;
-            max-width: 100%;
-            line-height: 1.5;
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 1.4rem;
+                margin-bottom: 8px;
+            }
         }
 
-        .cta-button,
-        .hero-button {
-            padding: 0.5rem 1rem;
-            background: var(--neon-gradient);
-            color: white;
-            border: none;
-            border-radius: 25px;
-            font-weight: 600;
-            font-size: 0.8rem;
-            cursor: pointer;
+        .hero-subtitle {
+            font-size: 0.95rem;
+            color: var(--medium-gray);
+            margin-bottom: 15px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .hero-subtitle {
+                font-size: 0.85rem;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Hero CTA Button */
+        .hero-cta-btn {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
-            gap: 0.3rem;
-            transition: all 0.3s ease;
+            gap: 8px;
+            background: var(--neon-gradient);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
             text-decoration: none;
-            white-space: nowrap;
+            box-shadow: 0 4px 15px rgba(29, 78, 216, 0.25);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin-top: 5px;
         }
 
-        .hero-button {
-            padding: 0.7rem 1.4rem;
-            font-size: 0.85rem;
+        .hero-cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(29, 78, 216, 0.35);
+            background: var(--neon-gradient-hover);
         }
 
-        /* Content Section Styles */
-        .content-section {
-            padding: 2rem 1rem;
+        @media (max-width: 768px) {
+            .hero-cta-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Hero Bottom - Single Big Image */
+        .hero-bottom {
+            position: relative;
+            margin-top: 15px;
             background: white;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border-gray);
+            overflow: hidden;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .content-container {
+        .machine-image {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8fafc;
+        }
+
+        .machine-image img {
+            max-width: 90%;
+            max-height: 160px;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+        }
+
+        /* Features Section - After Hero */
+        .features-section {
+            padding: 20px 15px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        .content-section h2 {
-            text-align: center;
-            margin-bottom: 1.5rem;
-            color: #1e293b;
-            font-size: 1.4rem;
+        @media (max-width: 768px) {
+            .features-section {
+                padding: 15px 10px;
+            }
         }
 
-        .content-grid {
+        .features-grid {
             display: grid;
-            gap: 1.5rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-bottom: 20px;
         }
 
-        .content-block h3 {
-            color: #2563eb;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
         }
 
-        .content-block p {
-            color: #64748b;
-            line-height: 1.6;
+        .feature-card {
+            background: white;
+            padding: 15px 10px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 1px solid var(--border-gray);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .feature-icon {
+            width: 35px;
+            height: 35px;
+            background: var(--neon-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 8px;
+            color: white;
             font-size: 0.9rem;
         }
 
-        .brands-section {
-            padding: 2rem 1rem;
-            background: #f8fafc;
-        }
-
-        .brands-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .brand-card {
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .brand-card h4 {
-            color: #2563eb;
-            margin-bottom: 0.5rem;
-            font-size: 0.95rem;
-        }
-
-        .brand-card p {
-            color: #64748b;
-            font-size: 0.8rem;
-            line-height: 1.4;
-        }
-
-        .faq-section {
-            padding: 2rem 1rem;
-            background: white;
-        }
-
-        .faq-grid {
-            display: grid;
-            gap: 1rem;
-        }
-
-        .faq-item {
-            background: #f8fafc;
-            padding: 1rem;
-            border-radius: 8px;
-        }
-
-        .faq-item h4 {
-            color: #2563eb;
-            margin-bottom: 0.5rem;
-            font-size: 0.95rem;
-        }
-
-        .faq-item p {
-            color: #64748b;
+        .feature-title {
             font-size: 0.85rem;
-            line-height: 1.5;
+            font-weight: 600;
+            color: var(--dark-gray);
+            margin-bottom: 4px;
         }
 
-        /* Non-critical CSS loaded async */
-    </style>
+        .feature-desc {
+            font-size: 0.7rem;
+            color: var(--medium-gray);
+            line-height: 1.3;
+        }
 
-    <!-- Deferred non-critical resources -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        media="print" onload="this.media='all'">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"
-        media="print" onload="this.media='all'">
+        /* ===== SECTIONS ===== */
+        .section {
+            padding: 30px 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-    <!-- Non-critical CSS -->
-    <style>
-        /* Rest of the CSS that's not critical */
-        .steps {
-            padding: 1.2rem 0.8rem;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 12px;
-            margin: 1.2rem 0.5rem;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+        @media (max-width: 768px) {
+            .section {
+                padding: 20px 10px;
+            }
         }
 
         .section-title {
             text-align: center;
-            font-size: 1.2rem;
-            margin-bottom: 0.8rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--dark-gray);
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
             background: var(--neon-gradient);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+            }
+        }
+
+        /* Services Section - 9 small cards */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-gray);
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .service-icon {
+            font-size: 1.5rem;
+            color: var(--vibrant-blue);
+            margin-bottom: 10px;
+        }
+
+        .service-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--dark-gray);
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+
+        .service-desc {
+            color: var(--medium-gray);
+            line-height: 1.4;
+            font-size: 0.75rem;
+            margin-bottom: 10px;
+            flex-grow: 1;
+        }
+
+        .service-link {
+            color: var(--vibrant-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.75rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: gap 0.3s ease;
+        }
+
+        .service-link:hover {
+            gap: 6px;
+        }
+
+        /* Testimonials Section - 4 in 2 lines */
+        .testimonials-section {
+            background: var(--light-gray);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-gray);
+        }
+
+        .testimonial-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-gray);
+        }
+
+        .customer-info h4 {
+            color: var(--dark-gray);
+            margin-bottom: 3px;
+            font-size: 0.9rem;
+        }
+
+        .customer-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-size: 0.7rem;
+            color: var(--medium-gray);
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+
+        .detail-item i {
+            color: var(--vibrant-blue);
+            font-size: 0.6rem;
+        }
+
+        .status-badge {
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-size: 0.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status-enquiry {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .status-completed {
+            background: #10b981;
+            color: white;
+        }
+
+        .status-cancelled {
+            background: #ef4444;
+            color: white;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: var(--medium-gray);
+            line-height: 1.4;
+            margin-bottom: 10px;
+            font-size: 0.75rem;
+            position: relative;
+            padding-left: 12px;
+            border-left: 2px solid var(--vibrant-blue);
+        }
+
+        .testimonial-problem {
+            background: #f8fafc;
+            padding: 8px 10px;
+            border-radius: 6px;
+            font-size: 0.7rem;
+            color: var(--medium-gray);
+            border: 1px solid var(--border-gray);
+        }
+
+        .testimonial-problem strong {
+            color: var(--dark-gray);
+            font-size: 0.7rem;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            border: 1px solid var(--border-gray);
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+        }
+
+        .faq-question {
+            padding: 12px 15px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--dark-gray);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: rgba(59, 130, 246, 0.05);
+        }
+
+        .faq-answer {
+            padding: 0 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: var(--medium-gray);
+            line-height: 1.5;
+            font-size: 0.8rem;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 15px 12px;
+            max-height: 500px;
+        }
+
+        .faq-toggle {
+            color: var(--vibrant-blue);
+            transition: transform 0.3s ease;
+            font-size: 0.7rem;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        /* Steps Section */
+        .steps-section {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.04) 0%, rgba(20, 184, 166, 0.04) 100%);
         }
 
         .steps-container {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.6rem;
-            max-width: 100%;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            max-width: 1000px;
             margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .steps-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
         }
 
         .step-card {
             background: white;
             border-radius: 8px;
-            padding: 0.8rem 0.6rem;
+            padding: 15px 10px;
             text-align: center;
-            border: 1px solid rgba(59, 130, 246, 0.1);
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border-gray);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+            transition: transform 0.3s ease;
+        }
+
+        .step-card:hover {
+            transform: translateY(-2px);
         }
 
         .step-number {
-            width: 24px;
-            height: 24px;
+            width: 30px;
+            height: 30px;
             background: var(--neon-gradient);
             color: white;
             border-radius: 50%;
@@ -1085,96 +1382,249 @@ body {
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            margin: 0 auto 0.4rem;
+            font-size: 0.9rem;
+            margin: 0 auto 8px;
+        }
+
+        .step-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--dark-gray);
+            margin-bottom: 6px;
+        }
+
+        .step-desc {
+            color: var(--medium-gray);
+            line-height: 1.4;
             font-size: 0.7rem;
         }
 
-        .step-icon {
-            font-size: 1.1rem;
-            color: var(--vibrant-blue);
-            margin-bottom: 0.4rem;
+        /* Service Areas */
+        .service-areas-section {
+            background: white;
         }
 
-        .step-card h3 {
-            font-size: 0.8rem;
-            margin-bottom: 0.2rem;
-            background: linear-gradient(135deg, var(--vibrant-blue) 0%, var(--dark-gray) 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .step-card p {
-            color: #64748b;
-            font-size: 0.7rem;
-            line-height: 1.2;
-        }
-
-        .service-areas {
-            padding: 1.2rem 0.8rem;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 12px;
-            margin: 1.2rem 0.5rem;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .service-areas p {
-            color: #64748b;
-            margin-bottom: 1rem;
-            font-size: 0.8rem;
+        .areas-container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .areas-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.5rem;
-            max-width: 100%;
-            margin: 0 auto 1rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .areas-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
         }
 
         .area-card {
-            background: white;
+            background: var(--light-gray);
+            padding: 10px 6px;
             border-radius: 6px;
-            padding: 0.6rem 0.4rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 0.3rem;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-            font-size: 0.75rem;
-            border: 1px solid rgba(59, 130, 246, 0.1);
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            gap: 6px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-gray);
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-size: 0.8rem;
+        }
+
+        .area-card:hover {
+            background: var(--neon-gradient);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 3px 10px rgba(29, 78, 216, 0.15);
         }
 
         .area-card i {
             color: var(--vibrant-blue);
+            font-size: 0.9rem;
+        }
+
+        .area-card:hover i {
+            color: white;
+        }
+
+        /* Brands Section */
+        .brands-section {
+            background: var(--light-gray);
+        }
+
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .brands-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+        }
+
+        .brand-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-gray);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .brand-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .brand-logo {
+            font-size: 2rem;
+            color: var(--vibrant-blue);
+            margin-bottom: 8px;
+        }
+
+        .brand-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--dark-gray);
+            margin-bottom: 6px;
+        }
+
+        .brand-desc {
+            color: var(--medium-gray);
+            line-height: 1.4;
             font-size: 0.7rem;
         }
 
-        .cta-section {
-            padding: 1.5rem 1rem;
-            text-align: center;
+        /* CTA Section */
+        .cta-section-final {
             background: var(--neon-gradient);
             color: white;
-            margin: 1.2rem 0.5rem;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(29, 78, 216, 0.4);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 800px;
+            box-shadow: 0 6px 20px rgba(29, 78, 216, 0.2);
         }
 
-        .cta-section h2 {
-            font-size: 1.2rem;
-            margin-bottom: 0.6rem;
+        @media (max-width: 768px) {
+            .cta-section-final {
+                padding: 20px 15px;
+                margin: 20px 10px;
+                border-radius: 8px;
+            }
         }
 
-        .cta-section p {
-            margin-bottom: 1rem;
-            opacity: 0.95;
-            font-size: 0.8rem;
+        .cta-title {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            .cta-title {
+                font-size: 1.2rem;
+            }
+        }
+
+        .cta-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 15px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .cta-subtitle {
+                font-size: 0.8rem;
+            }
+        }
+
+        .cta-button-final {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: white;
+            color: var(--vibrant-blue);
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button-final:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            background: #f0f0f0;
+        }
+
+        @media (max-width: 768px) {
+            .cta-button-final {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Floating CTA */
+        .floating-cta {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            width: 45px;
+            height: 45px;
+            background: var(--neon-gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(29, 78, 216, 0.4);
+            z-index: 1000;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .floating-cta:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(29, 78, 216, 0.5);
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        a:focus,
+        button:focus {
+            outline: 2px solid var(--electric-blue);
+            outline-offset: 2px;
         }
 
        /* Footer Styles - Mobile First with Theme Colors */
@@ -1465,328 +1915,14 @@ copyright {
         gap: 1.5rem;
     }
 }
-        .floating-cta {
-            position: fixed;
-            bottom: 1rem;
-            right: 1rem;
-            width: 45px;
-            height: 45px;
-            background: var(--neon-gradient);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1rem;
-            box-shadow: 0 4px 20px rgba(29, 78, 216, 0.5);
-            z-index: 999;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        /* Accessibility improvements */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-
-        /* Focus styles for accessibility */
-        a:focus,
-        button:focus {
-            outline: 2px solid var(--electric-blue);
-            outline-offset: 2px;
-        }
-
-        /* Mobile Navigation - Optimized for 365px-414px */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-                position: fixed;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: white;
-                flex-direction: column;
-                padding: 1rem 0.8rem;
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-                z-index: 999;
-                border-top: 1px solid rgba(0, 0, 0, 0.1);
-                max-height: calc(100vh - 100%);
-                overflow-y: auto;
-            }
-
-            .nav-menu.active {
-                display: flex;
-            }
-
-            .mobile-menu-btn {
-                display: block;
-            }
-
-            .nav-menu li {
-                width: 100%;
-                text-align: center;
-            }
-
-            .nav-menu a {
-                padding: 0.8rem;
-                justify-content: center;
-                font-size: 0.9rem;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-            }
-
-            .dropdown-content {
-                position: static;
-                box-shadow: none;
-                background: var(--light-gray);
-                border-radius: 6px;
-                margin: 0.3rem 0;
-                width: 100%;
-            }
-
-            .dropdown-content a {
-                padding: 0.6rem 0.8rem;
-                font-size: 0.85rem;
-            }
-
-            /* Content sections mobile optimization */
-            .content-section,
-            .brands-section,
-            .faq-section {
-                padding: 1.5rem 0.8rem;
-            }
-
-            .content-section h2,
-            .brands-section h2,
-            .faq-section h2 {
-                font-size: 1.2rem;
-            }
-
-            .brands-grid {
-                grid-template-columns: 1fr;
-                gap: 0.8rem;
-            }
-
-            .brand-card {
-                padding: 0.8rem;
-            }
-        }
-
-        /* Ultra Mobile Optimization (365px - 414px) */
-        @media (max-width: 414px) {
-            .nav-container {
-                padding: 0.4rem 0.8rem;
-            }
-
-            .logo {
-                font-size: 1.1rem;
-            }
-
-            .logo-icon {
-                width: 30px;
-                height: 30px;
-            }
-
-            .hero {
-                padding: 1rem 0.8rem 0.8rem;
-            }
-
-            .hero-content {
-                padding: 1rem;
-            }
-
-            .hero h1 {
-                font-size: 1.2rem;
-            }
-
-            .hero p {
-                font-size: 0.75rem;
-            }
-
-            .steps {
-                padding: 1rem 0.6rem;
-                margin: 1rem 0.4rem;
-            }
-
-            .steps-container {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 0.5rem;
-            }
-
-            .step-card {
-                padding: 0.7rem 0.5rem;
-            }
-
-            .service-areas {
-                padding: 1rem 0.6rem;
-                margin: 1rem 0.4rem;
-            }
-
-            .areas-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 0.4rem;
-            }
-
-            .area-card {
-                padding: 0.5rem 0.3rem;
-                font-size: 0.7rem;
-            }
-
-            .cta-section {
-                padding: 1.2rem 0.8rem;
-                margin: 1rem 0.4rem;
-            }
-
-            .cta-section h2 {
-                font-size: 1.1rem;
-            }
-
-            .footer-links a {
-                font-size: 0.75rem;
-            }
-
-            .legal-links {
-                gap: 0.4rem;
-            }
-
-            .legal-links a {
-                font-size: 0.65rem;
-            }
-        }
-
-        /* Extra Small Mobile Optimization */
-        @media (max-width: 365px) {
-            .nav-container {
-                padding: 0.3rem 0.6rem;
-            }
-
-            .logo {
-                font-size: 1rem;
-            }
-
-            .logo-icon {
-                width: 28px;
-                height: 28px;
-            }
-
-            .hero h1 {
-                font-size: 1.1rem;
-            }
-
-            .steps-container {
-                gap: 0.4rem;
-            }
-
-            .step-card {
-                padding: 0.6rem 0.4rem;
-            }
-
-            .step-card h3 {
-                font-size: 0.75rem;
-            }
-
-            .areas-grid {
-                gap: 0.3rem;
-            }
-
-            .area-card {
-                font-size: 0.65rem;
-                padding: 0.4rem 0.2rem;
-            }
-        }
-
-        /* Desktop Styles */
-        @media (min-width: 768px) {
-            .hero {
-                padding: 3rem 5% 2rem;
-            }
-
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-
-            .hero p {
-                font-size: 1.1rem;
-            }
-
-            .hero-content {
-                padding: 2.5rem;
-                max-width: 800px;
-            }
-
-            .steps {
-                padding: 2rem 5%;
-                margin: 2rem 1rem;
-            }
-
-            .steps-container {
-                grid-template-columns: repeat(4, 1fr);
-                gap: 1.2rem;
-            }
-
-            .step-card {
-                padding: 1.5rem 1rem;
-            }
-
-            .service-areas {
-                padding: 2rem 5%;
-                margin: 2rem 1rem;
-            }
-
-            .areas-grid {
-                grid-template-columns: repeat(4, 1fr);
-                gap: 0.8rem;
-            }
-
-            .cta-section {
-                padding: 2.5rem 5%;
-                margin: 2rem 1rem;
-            }
-
-            .cta-section h2 {
-                font-size: 1.8rem;
-            }
-
-            footer {
-                padding: 2rem 5%;
-            }
-
-            .footer-content {
-                grid-template-columns: 1fr 1fr;
-                text-align: left;
-            }
-
-            /* Desktop content sections */
-            .content-section,
-            .brands-section,
-            .faq-section {
-                padding: 3rem 5%;
-            }
-
-            .content-section h2,
-            .brands-section h2,
-            .faq-section h2 {
-                font-size: 2rem;
-            }
-
-            .brands-grid {
-                grid-template-columns: repeat(4, 1fr);
-                gap: 1.5rem;
-            }
-
-            .faq-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1.5rem;
-            }
-        }
     </style>
+
+    <!-- Deferred non-critical resources -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
+
     <script>
         // Add error handling to prevent redirects
         fetch('phone-whatsnapp-icons.html')
@@ -1853,248 +1989,459 @@ copyright {
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" role="banner">
-        <div class="hero-content">
-            <h1>Professional Washing Machine Repair in Bangalore</h1>
-            <p>Same-day service | Free diagnosis | 90-day warranty | Certified technicians</p>
-            <a href="/Submission" class="hero-button" id="heroButton">
-                <i class="fas fa-calendar-check" aria-hidden="true"></i> Book Repair Now
+    <section class="hero-section" role="banner">
+        <div class="hero-top">
+            <h1 class="hero-title">Expert Washing Machine Repair in Bangalore</h1>
+            <p class="hero-subtitle">Same-day service | 90-day warranty | Certified technicians | Free diagnosis | Genuine spare parts</p>
+            
+            <a href="/Submission" class="hero-cta-btn">
+                <i class="fas fa-calendar-check"></i> Book Repair Now
             </a>
+        </div>
+        
+        <div class="hero-bottom">
+            <div class="machine-image">
+                <img src="images/types/front-load.png" alt="Front Load Washing Machine Repair Service Bangalore">
+            </div>
         </div>
     </section>
 
-    <!-- Professional Services Content - ADDED FOR ADSENSE -->
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="feature-title">1 Year Warranty</h3>
+                <p class="feature-desc">Comprehensive warranty on repairs</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-door-closed"></i>
+                </div>
+                <h3 class="feature-title">Doorstep Service</h3>
+                <p class="feature-desc">Repair at your home location</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-stopwatch"></i>
+                </div>
+                <h3 class="feature-title">30-Second Booking</h3>
+                <p class="feature-desc">Quick online form completion</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3 class="feature-title">Same-Day Repair</h3>
+                <p class="feature-desc">Most repairs within hours</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section">
+        <h2 class="section-title">Our Washing Machine Repair Services</h2>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="service-title">Electrical Repairs</h3>
+                <p class="service-desc">Power supply issues, circuit board, wiring faults for washing machine repair.</p>
+                <a href="blog/issues-specific/washing-machine-not-starting-repair.html" class="service-link">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-water"></i>
+                </div>
+                <h3 class="service-title">Water & Drainage</h3>
+                <p class="service-desc">Inlet problems, drainage issues, leakage, pump failures repair service.</p>
+                <a href="blog/issues-specific/washing-machine-not-draining-repair.html" class="service-link">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3 class="service-title">Mechanical Repairs</h3>
+                <p class="service-desc">Drum issues, bearing replacement, belt problems, vibration repair.</p>
+                <a href="blog/issues-specific/washing-machine-making-noise-repair.html" class="service-link">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <h3 class="service-title">Motor Repairs</h3>
+                <p class="service-desc">Washing machine motor replacement and repair for spinning issues.</p>
+                <a href="blog/service-specific/washing-machine-motor-replacement.html" class="service-link">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <h3 class="service-title">PCB Repairs</h3>
+                <p class="service-desc">Circuit board repair and replacement for washing machine errors.</p>
+                <a href="blog/service-specific/washing-machine-circuit-board-repair.html" class="service-link">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-pump-soap"></i>
+                </div>
+                <h3 class="service-title">Pump Repairs</h3>
+                <p class="service-desc">Drain pump and inlet pump repair for water flow issues.</p>
+                <a href="blog/service-specific/washing-machine-pump-replacement.html" class="service-link">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-drum"></i>
+                </div>
+                <h3 class="service-title">Drum Repairs</h3>
+                <p class="service-desc">Washing machine drum replacement and balancing repair.</p>
+                <a href="blog/service-specific/washing-machine-drum-replacement.html" class="service-link">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-wrench"></i>
+                </div>
+                <h3 class="service-title">General Service</h3>
+                <p class="service-desc">Complete washing machine maintenance and cleaning service.</p>
+                <a href="blog/prevention-maintenance/how-to-clean-washing-machine.html" class="service-link">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-snowflake"></i>
+                </div>
+                <h3 class="service-title">Installation</h3>
+                <p class="service-desc">Professional washing machine installation and setup service.</p>
+                <a href="blog/service-specific/washing-machine-installation-service.html" class="service-link">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="service-card">
+    <div class="service-icon">
+        <i class="fas fa-filter"></i>
+    </div>
+    <h3 class="service-title">Filter Cleaning</h3>
+    <p class="service-desc">Complete filter cleaning and replacement for improved washing machine drainage and performance.</p>
+    <a href="blog/service-specific/washing-machine-filter-cleaning.html" class="service-link">
+        Learn More <i class="fas fa-arrow-right"></i>
+    </a>
+</div>
+        </div>
+    </section>
 
     <!-- Steps Section -->
-    <section class="steps" aria-labelledby="steps-title">
-        <h2 class="section-title" id="steps-title">Our Simple 4-Step Process</h2>
+    <section class="section steps-section">
+        <h2 class="section-title">How Our Service Works</h2>
+        
         <div class="steps-container">
             <div class="step-card">
                 <div class="step-number">1</div>
-                <div class="step-icon">
-                    <i class="fas fa-clipboard-list" aria-hidden="true"></i>
-                </div>
-                <h3>Book Online</h3>
-                <p>Quick 2-minute form</p>
+                <h3 class="step-title">Book Service</h3>
+                <p class="step-desc">Fill quick online form for washing machine repair booking.</p>
             </div>
+            
             <div class="step-card">
                 <div class="step-number">2</div>
-                <div class="step-icon">
-                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
-                </div>
-                <h3>Get a Call</h3>
-                <p>Within 30 minutes</p>
+                <h3 class="step-title">Free Diagnosis</h3>
+                <p class="step-desc">Technician arrives for washing machine problem diagnosis.</p>
             </div>
+            
             <div class="step-card">
                 <div class="step-number">3</div>
-                <div class="step-icon">
-                    <i class="fas fa-user-tie" aria-hidden="true"></i>
-                </div>
-                <h3>Technician Arrives</h3>
-                <p>Same-day service</p>
+                <h3 class="step-title">Get Quote</h3>
+                <p class="step-desc">Transparent pricing for washing machine repair service.</p>
             </div>
+            
             <div class="step-card">
                 <div class="step-number">4</div>
-                <div class="step-icon">
-                    <i class="fas fa-check-circle" aria-hidden="true"></i>
-                </div>
-                <h3>Problem Solved</h3>
-                <p>With warranty</p>
+                <h3 class="step-title">Repair & Warranty</h3>
+                <p class="step-desc">Get washing machine repaired with 90-day service warranty.</p>
             </div>
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <h2 class="section-title">What Our Customers Say</h2>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="customer-info">
+                        <h4>NAVEEN M H</h4>
+                        <div class="customer-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Banashankari</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tag"></i>
+                                <span>IFB Front Load</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-badge status-enquiry">Enquiry</div>
+                </div>
+                <p class="testimonial-text">"Excellent service for washing machine repair. Technician arrived on time and fixed the drainage issue professionally."</p>
+                <div class="testimonial-problem">
+                    <strong>Problem:</strong> Water Not Draining / Drain Pump Jam / Blocked Hose / Filter Clogged
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="customer-info">
+                        <h4>Rajinikanth</h4>
+                        <div class="customer-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Hennur</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tag"></i>
+                                <span>Whirlpool Top Load</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-badge status-enquiry">Enquiry</div>
+                </div>
+                <p class="testimonial-text">"Professional washing machine repair service. Fixed the bearing noise issue completely with genuine parts."</p>
+                <div class="testimonial-problem">
+                    <strong>Problem:</strong> Excess Noise / Vibration / Bearing Issue / Drum Rubbing
+                </div>
+            </div>
 
-    <!-- Service Areas -->
-    <section class="service-areas" aria-labelledby="areas-title">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="customer-info">
+                        <h4>Istiyak</h4>
+                        <div class="customer-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>HBR Layout</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tag"></i>
+                                <span>IFB Front Load</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-badge status-completed">Completed</div>
+                </div>
+                <p class="testimonial-text">"Great washing machine repair service in Bangalore. Fixed the spinning issue same day with warranty."</p>
+                <div class="testimonial-problem">
+                    <strong>Problem:</strong> Drum Not Spinning / Heavy Load / Belt Issue / Motor Problem
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="customer-info">
+                        <h4>Narmatha R</h4>
+                        <div class="customer-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Marathalli</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tag"></i>
+                                <span>LG Front Load</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-badge status-completed">Completed</div>
+                </div>
+                <p class="testimonial-text">"Best washing machine service center in Bangalore. General maintenance done perfectly with professional cleaning."</p>
+                <div class="testimonial-problem">
+                    <strong>Service:</strong> General Service & Maintenance
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="section brands-section">
+        <h2 class="section-title">Brands We Repair</h2>
+        
+        <div class="brands-grid">
+            <div class="brand-card">
+                <div class="brand-logo">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <h3 class="brand-title">LG</h3>
+                <p class="brand-desc">Expert LG washing machine repair for all models including front load, top load, and direct drive.</p>
+            </div>
+
+            <div class="brand-card">
+                <div class="brand-logo">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <h3 class="brand-title">Samsung</h3>
+                <p class="brand-desc">Professional Samsung washing machine service for eco bubble and digital inverter models.</p>
+            </div>
+
+            <div class="brand-card">
+                <div class="brand-logo">
+                    <i class="fas fa-tint"></i>
+                </div>
+                <h3 class="brand-title">IFB</h3>
+                <p class="brand-desc">Specialized IFB washing machine repair with aqua energie and crescent moon drum technology.</p>
+            </div>
+
+            <div class="brand-card">
+                <div class="brand-logo">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <h3 class="brand-title">Whirlpool</h3>
+                <p class="brand-desc">Expert Whirlpool washing machine repair for 6th sense and intellisense technology models.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    How quickly can you repair my washing machine in Bangalore?
+                    <i class="fas fa-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-answer">
+                    We offer same-day washing machine repair service in Bangalore. Our certified technicians typically arrive within 2-4 hours of booking for washing machine repair near me service. For emergency washing machine repairs, we can provide service within 1-2 hours depending on your location in Bangalore.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    Do you provide warranty on washing machine repairs?
+                    <i class="fas fa-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-answer">
+                    Yes, we provide 90-day warranty on all labor repairs and 180-day warranty on genuine spare parts for washing machine repair service in Bangalore. Our washing machine repair warranty covers both parts and labor, ensuring complete peace of mind after the washing machine service.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    What areas in Bangalore do you serve for washing machine repair?
+                    <i class="fas fa-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-answer">
+                    We serve all areas of Bangalore for washing machine repair including Jayanagar, Koramangala, Indiranagar, Whitefield, Marathahalli, HSR Layout, BTM Layout, Electronic City, Banashankari, Malleswaram, RT Nagar, and surrounding areas. Our washing machine repair service covers over 50+ localities across Bangalore.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Do you use genuine spare parts for washing machine repair?
+                    <i class="fas fa-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-answer">
+                    Yes, we use only genuine and high-quality spare parts from authorized dealers to ensure long-lasting washing machine repairs. All parts come with manufacturer warranty and are sourced directly from authorized distributors for your washing machine repair needs in Bangalore.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is your service charge for washing machine repair?
+                    <i class="fas fa-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-answer">
+                    We charge a nominal service fee of ₹199 which includes complete diagnosis and inspection for washing machine repair. The service charge is waived if you proceed with the repair. There are no hidden charges and we provide transparent pricing before starting any washing machine repair work.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Do you repair all types of washing machines?
+                    <i class="fas fa-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-answer">
+                    Yes, we repair all types including front load, top load, semi-automatic, and fully automatic washing machines. Our technicians are trained to handle both Indian and international brands including LG, Samsung, IFB, Whirlpool, Bosch, Haier, Godrej, and other popular washing machine brands available in Bangalore.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="section service-areas-section">
+        <h2 class="section-title">We Cover All Bangalore Areas</h2>
+        
         <div class="areas-container">
-            <h2 class="section-title" id="areas-title">We Serve All Bangalore Areas</h2>
-            <p>Same-day service available in these and surrounding areas</p>
             <div class="areas-grid">
-                <div class="area-card">
-                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                    <span>Jayanagar</span>
-                </div>
-                <div class="area-card">
-                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <a href="blog/area-specific/washing-machine-repair-in-koramangala.html" class="area-card">
+                    <i class="fas fa-map-marker-alt"></i>
                     <span>Koramangala</span>
-                </div>
-                <div class="area-card">
-                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </a>
+                <a href="blog/area-specific/washing-machine-repair-in-indiranagar.html" class="area-card">
+                    <i class="fas fa-map-marker-alt"></i>
                     <span>Indiranagar</span>
-                </div>
-                <div class="area-card">
-                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </a>
+                <a href="blog/area-specific/washing-machine-repair-in-whitefield.html" class="area-card">
+                    <i class="fas fa-map-marker-alt"></i>
                     <span>Whitefield</span>
-                </div>
-                <div class="area-card">
-                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </a>
+                <a href="blog/area-specific/washing-machine-repair-in-marathahalli.html" class="area-card">
+                    <i class="fas fa-map-marker-alt"></i>
                     <span>Marathahalli</span>
-                </div>
-                <div class="area-card">
-                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </a>
+                <a href="blog/area-specific/washing-machine-repair-in-jayanagar.html" class="area-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Jayanagar</span>
+                </a>
+                <a href="blog/area-specific/washing-machine-repair-in-hsr-layout.html" class="area-card">
+                    <i class="fas fa-map-marker-alt"></i>
                     <span>HSR Layout</span>
-                </div>
-                <div class="area-card">
-                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </a>
+                <a href="blog/area-specific/washing-machine-repair-in-btm-layout.html" class="area-card">
+                    <i class="fas fa-map-marker-alt"></i>
                     <span>BTM Layout</span>
-                </div>
-                <div class="area-card">
-                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </a>
+                <a href="blog/area-specific/washing-machine-repair-in-electronic-city.html" class="area-card">
+                    <i class="fas fa-map-marker-alt"></i>
                     <span>Electronic City</span>
-                </div>
-            </div>
-            <a href="/Submission" class="cta-button" style="margin-top: 1rem;">
-                <i class="fas fa-calendar-check" aria-hidden="true"></i> Book Your Repair
-            </a>
-        </div>
-    </section>
-
-
-    <!-- Brands We Repair Section - ADDED FOR ADSENSE -->
-    <section class="brands-section" aria-labelledby="brands-title">
-        <div class="content-container">
-            <h2 id="brands-title">Washing Machine Brands We Repair</h2>
-
-            <div class="brands-grid">
-                <div class="brand-card">
-                    <h4>LG Washing Machines</h4>
-                    <p>Expert repair for LG front-load and top-load models, including direct drive technology, turbo
-                        wash, and 6 motion technology. We handle all LG series including TurboDrum, Direct Drive, and
-                        Smart ThinQ models.</p>
-                </div>
-                <div class="brand-card">
-                    <h4>Samsung Washing Machines</h4>
-                    <p>Specialized service for Samsung eco bubble, activ dual wash, and digital inverter models. Our
-                        technicians are trained to repair Samsung's advanced features including AddWash, QuickDrive, and
-                        Smart Control technology.</p>
-                </div>
-                <div class="brand-card">
-                    <h4>IFB Washing Machines</h4>
-                    <p>Professional repair for IFB front-load machines with aqua energie and crescent moon drum
-                        technology. We service all IFB models including Senator, Bosch, and Neptune series with
-                        specialized knowledge of their unique features.</p>
-                </div>
-                <div class="brand-card">
-                    <h4>Whirlpool & Bosch</h4>
-                    <p>Expert service for Whirlpool and Bosch washing machines with 6th sense technology. We repair all
-                        Whirlpool models including Supreme Care, IntelliSense, and Bosch's ActiveWater and EcoSilence
-                        Drive systems.</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="content-section" aria-labelledby="services-title">
-        <div class="content-container">
-            <h2 id="services-title">Professional Washing Machine Repair Services in Bangalore</h2>
-
-            <div class="content-grid">
-                <div class="content-block">
-                    <h3>Expert Washing Machine Repair & Maintenance</h3>
-                    <p>FixMyWasher provides comprehensive washing machine repair services across Bangalore. Our
-                        certified technicians specialize in repairing all major brands including LG, Samsung, IFB,
-                        Whirlpool, Bosch, Haier, and Godrej. With years of experience in appliance repair, we understand
-                        the intricacies of both front-load and top-load washing machines. We provide reliable,
-                        efficient, and affordable repair solutions for residential and commercial clients throughout
-                        Bangalore.</p>
-                </div>
-
-                <div class="content-block">
-                    <h3>Common Washing Machine Problems We Fix</h3>
-                    <p>We expertly handle various washing machine issues including water leakage, drum not spinning,
-                        machine not starting, excessive vibration, error codes, drainage problems, and electrical
-                        faults. Our technicians use advanced diagnostic tools to identify the root cause and provide
-                        permanent solutions. Whether your washing machine is making unusual noises, not draining
-                        properly, or showing error codes, our experienced technicians can diagnose and fix the problem
-                        quickly and efficiently.</p>
-                </div>
-
-                <div class="content-block">
-                    <h3>Why Choose FixMyWasher?</h3>
-                    <p>• Same-day service available for urgent repairs<br>
-                        • 90-day warranty on all repairs and services<br>
-                        • Free diagnosis & transparent price quotes<br>
-                        • Genuine spare parts from authorized dealers<br>
-                        • Certified & experienced technicians<br>
-                        • Transparent pricing with no hidden charges<br>
-                        • 24/7 customer support availability<br>
-                        • Emergency repair services for critical issues</p>
-                </div>
-
-                <div class="content-block">
-                    <h3>Our Service Areas in Bangalore</h3>
-                    <p>We provide washing machine repair services throughout Bangalore including Koramangala,
-                        Indiranagar, Jayanagar, Whitefield, Marathahalli, HSR Layout, BTM Layout, Electronic City, and
-                        surrounding areas. Our mobile service vans ensure we reach your location quickly for same-day
-                        repairs. We cover all major residential and commercial areas in Bangalore with our extensive
-                        network of trained technicians and service centers.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- FAQ Section - ADDED FOR ADSENSE -->
-    <section class="faq-section" aria-labelledby="faq-title">
-        <div class="content-container">
-            <h2 id="faq-title">Frequently Asked Questions</h2>
-
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h4>How quickly can you repair my washing machine?</h4>
-                    <p>We offer same-day service for most repairs. Our technician typically arrives within 2-4 hours of
-                        booking. For emergency situations, we can often provide service within 1-2 hours depending on
-                        your location in Bangalore and technician availability.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>Do you provide warranty on repairs?</h4>
-                    <p>Yes, we provide 90-day warranty on all labor repairs and 180-day warranty on genuine spare parts.
-                        Our warranty covers both parts and labor, ensuring you have complete peace of mind after the
-                        repair service.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>What areas in Bangalore do you serve?</h4>
-                    <p>We serve all areas of Bangalore including central Bangalore, east Bangalore, west Bangalore, and
-                        surrounding regions. Our service coverage extends to over 50+ localities across the city with
-                        same-day service availability.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>Do you use genuine spare parts?</h4>
-                    <p>Yes, we use only genuine and high-quality spare parts from authorized dealers to ensure
-                        long-lasting repairs. All parts come with manufacturer warranty and are sourced directly from
-                        authorized distributors.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>What is your service charge?</h4>
-                    <p>We charge a nominal service fee of ₹199 which includes complete diagnosis and inspection. The
-                        service charge is waived if you proceed with the repair. There are no hidden charges and we
-                        provide transparent pricing before starting any work.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>Do you repair all types of washing machines?</h4>
-                    <p>Yes, we repair all types including front load, top load, semi-automatic, and fully automatic
-                        washing machines. Our technicians are trained to handle both Indian and international brands
-                        with equal expertise.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="cta-section" role="region" aria-labelledby="cta-title">
-        <div class="cta-content">
-            <h2 id="cta-title">Need Same-Day Washing Machine Repair?</h2>
-            <p>Our certified technicians are standing by to help you today</p>
-            <a href="/Submission" class="cta-button" id="ctaButton">
-                <i class="fas fa-calendar-check" aria-hidden="true"></i> Get Instant Help
-            </a>
-        </div>
+    <!-- Final CTA Section -->
+    <section class="cta-section-final">
+        <h2 class="cta-title">Need Same-Day Washing Machine Repair?</h2>
+        <p class="cta-subtitle">Our certified washing machine technicians are standing by to help you today with same-day service across Bangalore. Book your washing machine repair now!</p>
+        <a href="/Submission" class="cta-button-final">
+            <i class="fas fa-calendar-check"></i> Book Your Repair Now
+        </a>
     </section>
 
    <!-- Footer -->
@@ -2207,75 +2554,54 @@ copyright {
         </div>
     </div>
 </footer>
-    <!-- Floating CTA (Mobile) -->
-    <a href="/Submission" class="floating-cta" id="floatingCta" aria-label="Book Repair Service">
+
+    <!-- Floating CTA -->
+    <a href="/Submission" class="floating-cta" id="floatingCta" aria-label="Book Washing Machine Repair Service">
         <i class="fas fa-tools" aria-hidden="true"></i>
-        <span class="sr-only">Book Repair Service</span>
+        <span class="sr-only">Book Washing Machine Repair Service</span>
     </a>
 
-    <!-- JavaScript - FIXED with smooth animation -->
+    <!-- JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            // Mobile Menu
             const mobileMenuBtn = document.getElementById('mobileMenuBtn');
             const mobileMenu = document.getElementById('mobileMenu');
             const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
             const mobileMenuClose = document.getElementById('mobileMenuClose');
             const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
 
-            // Toggle mobile menu with smooth animation
             function toggleMobileMenu() {
                 const isActive = mobileMenu.classList.contains('active');
 
-                // Toggle classes with proper timing
                 if (!isActive) {
-                    // Open menu
                     mobileMenuOverlay.style.display = 'block';
                     mobileMenuOverlay.classList.add('active');
-
-                    // Force reflow to ensure transition works
                     mobileMenu.offsetHeight;
-
                     mobileMenu.classList.add('active');
-
-                    // Toggle button icon
                     const icon = mobileMenuBtn.querySelector('i');
                     icon.className = 'fas fa-times';
-
-                    // Toggle aria-expanded
                     mobileMenuBtn.setAttribute('aria-expanded', 'true');
-
-                    // Prevent body scroll when menu is open
                     document.body.style.overflow = 'hidden';
                 } else {
                     closeMobileMenu();
                 }
             }
 
-            // Close mobile menu with smooth animation
             function closeMobileMenu() {
-                // Remove active class first
                 mobileMenu.classList.remove('active');
                 mobileMenuOverlay.classList.remove('active');
-
-                // Toggle button icon
                 const icon = mobileMenuBtn.querySelector('i');
                 icon.className = 'fas fa-bars';
-
-                // Toggle aria-expanded
                 mobileMenuBtn.setAttribute('aria-expanded', 'false');
-
-                // Allow body scroll when menu is closed
                 document.body.style.overflow = '';
-
-                // Hide overlay after transition
                 setTimeout(() => {
                     if (!mobileMenu.classList.contains('active')) {
                         mobileMenuOverlay.style.display = 'none';
                     }
-                }, 400); // Match transition duration
+                }, 400);
             }
 
-            // Event listeners
             if (mobileMenuBtn) {
                 mobileMenuBtn.addEventListener('click', function (e) {
                     e.stopPropagation();
@@ -2297,7 +2623,6 @@ copyright {
                 });
             }
 
-            // Close menu when clicking links
             mobileMenuLinks.forEach(link => {
                 link.addEventListener('click', function (e) {
                     e.stopPropagation();
@@ -2305,24 +2630,79 @@ copyright {
                 });
             });
 
-            // Close menu on escape key
             document.addEventListener('keydown', function (e) {
                 if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
                     closeMobileMenu();
                 }
             });
 
-            // Handle window resize - close menu on desktop
             window.addEventListener('resize', function () {
                 if (window.innerWidth > 768 && mobileMenu.classList.contains('active')) {
                     closeMobileMenu();
                 }
             });
 
-            // Prevent clicks inside mobile menu from closing it
             mobileMenu.addEventListener('click', function (e) {
                 e.stopPropagation();
             });
+
+            // FAQ Functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Close all other FAQ items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current FAQ item
+                    item.classList.toggle('active');
+                });
+            });
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Rotate machine images
+            const machineImages = [
+                'images/types/frontload.png',
+                'images/types/topload.png',
+                'images/types/semi-washing-machine.png'
+            ];
+            
+            let currentImageIndex = 0;
+            const machineImageElement = document.querySelector('.machine-image img');
+            
+            if (machineImageElement) {
+                setInterval(() => {
+                    currentImageIndex = (currentImageIndex + 1) % machineImages.length;
+                    machineImageElement.src = machineImages[currentImageIndex];
+                    machineImageElement.alt = currentImageIndex === 0 ? 
+                        'Front Load Washing Machine Repair Service Bangalore' : 
+                        currentImageIndex === 1 ? 
+                        'Top Load Washing Machine Repair Service Bangalore' : 
+                        'Semi Automatic Washing Machine Repair Service Bangalore';
+                }, 2000); // Change image every 5 seconds
+            }
         });
     </script>
 </body>
