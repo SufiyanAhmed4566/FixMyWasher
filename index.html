@@ -2682,27 +2682,52 @@ copyright {
                 });
             });
 
-            // Rotate machine images
-            const machineImages = [
-                'images/types/front-load.png',
-                'images/types/top-load.png',
-                'images/types/semi-automated-washing-machine-near-me.png'
-            ];
-            
-            let currentImageIndex = 0;
-            const machineImageElement = document.querySelector('.machine-image img');
-            
-            if (machineImageElement) {
-                setInterval(() => {
-                    currentImageIndex = (currentImageIndex + 1) % machineImages.length;
-                    machineImageElement.src = machineImages[currentImageIndex];
-                    machineImageElement.alt = currentImageIndex === 0 ? 
-                        'Front Load Washing Machine Repair Service Bangalore' : 
-                        currentImageIndex === 1 ? 
-                        'Top Load Washing Machine Repair Service Bangalore' : 
-                        'Semi Automatic Washing Machine Repair Service Bangalore';
-                }, 2000); // Change image every 5 seconds
-            }
+// Rotate machine images
+const machineImages = [
+    'https://sufiyanahmed4566.github.io/storeimages1/fixmywasher2/types/frontload.png',
+    'https://sufiyanahmed4566.github.io/storeimages1/fixmywasher2/types/topload.png',
+    'https://sufiyanahmed4566.github.io/storeimages1/fixmywasher2/types/semi-washing-machine.png'
+];
+
+let currentImageIndex = 0;
+const machineImageElement = document.querySelector('.machine-image img');
+
+if (machineImageElement) {
+    // Preload images to avoid flickering
+    const preloadImages = [];
+    machineImages.forEach(src => {
+        const img = new Image();
+        img.src = src;
+        preloadImages.push(img);
+    });
+    
+    // Set first image
+    machineImageElement.src = machineImages[0];
+    machineImageElement.alt = 'Front Load Washing Machine Repair Service Bangalore';
+    
+    // Change image every 3 seconds
+    setInterval(() => {
+        currentImageIndex = (currentImageIndex + 1) % machineImages.length;
+        machineImageElement.src = machineImages[currentImageIndex];
+        
+        // Update alt text based on image
+        if (currentImageIndex === 0) {
+            machineImageElement.alt = 'Front Load Washing Machine Repair Service Bangalore';
+        } else if (currentImageIndex === 1) {
+            machineImageElement.alt = 'Top Load Washing Machine Repair Service Bangalore';
+        } else {
+            machineImageElement.alt = 'Semi Automatic Washing Machine Repair Service Bangalore';
+        }
+        
+        // Add fade effect
+        machineImageElement.style.opacity = '0';
+        setTimeout(() => {
+            machineImageElement.style.transition = 'opacity 0.5s ease';
+            machineImageElement.style.opacity = '1';
+        }, 10);
+        
+    }, 3000); // Change image every 3 seconds
+}
         });
     </script>
 </body>
