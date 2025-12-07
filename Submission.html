@@ -498,6 +498,16 @@
     <meta name="googlebot" content="index, follow, snippet, imageindex">
 </head>
 
+    <script>
+        // Add error handling to prevent redirects
+        fetch('phone-whatsnapp-icons.html')
+            .then(res => {
+                if (!res.ok) throw new Error('File not found');
+                return res.text();
+            })
+            .then(html => document.body.insertAdjacentHTML('beforeend', html))
+            .catch(err => console.log('Icons not loaded:', err));
+    </script>
 
     <style>
         :root {
@@ -2502,16 +2512,7 @@ copyright {
                         <div class="type-name">Front Load</div>
                     </div>
                 </label>
-                
-                <label class="type-option">
-                    <input type="radio" name="type" value="Semi-Automatic" required>
-                    <div class="type-card">
-                        <div class="type-image-container">
-                            <img src="/images/types/semi-automated-washing-machine-near-me.png" alt="Semi Automatic Washing Machine" class="type-image">
-                        </div>
-                        <div class="type-name">Semi Automatic</div>
-                    </div>
-                </label>
+        
             </div>
             
             <!-- No Idea option -->
