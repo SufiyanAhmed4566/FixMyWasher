@@ -130,11 +130,13 @@
  ┣ 📜test.html
  ┗ 📜washing-machine-repair-customer-testimonials-bangalore.html
 
- from this structure ignore and avoid test.html , sub.html ,t.txt this irrrevalent and and based on this structure create this page 
+ from this structure ignore and avoid test.html , sub.html ,t.txt this irrrevalent and and based on this structure and html code above create this page 
+
+now based on this page given i want to include all the possible section based on the page name best section and with good content seo for mobile screeen 2 blocks in the one line
  ┣ 📂blog
  ┃ ┣ 📂area-specific
- ┃ ┃ ┣ 📜washing-machine-repair-in-bannerghatta-road.html
-now based on this page i want to include all the possible section based on the page name best section and with good content seo for mobile screeen 2 blocks in the one line
+ ┃ ┃ ┣ 📜washing-machine-repair-in-electronic-city.html
   based on the theme and header and footer should of same size dont change it at any cost 
   now based on this page given by you with similar layout and section and give perfect and proper url for reaching use this layout and everthing dont change the header or footer size keep as it is and with this same content  and improve seo techniques in seo secction everthing else improve it add more content create and change everthing with this page and pls remove unnecessary margin top and bottom keep margin if need somewhere to show properly i dont want them create speciaclly for the mobile screen and put some space between the text and button as in the provided code in the inline html only  i need space betwen text or paragraph in between already in the inline of the html understood for proper looking  google search console accepted and all the blocks sections will should there in 2 in one line good for mobile looking where necessary u decided it and dont menntion the price of the repair and take all this things and specfication i told very very seriously okay and there only 1 to 24 sideimages from (1) to (24) so take different combination for each page page not more than that remember and focus more on seo techninques and html content include its name and keyword of it based on the page or html file name many places
-now create content for this particular page okay and the page should be accepted by google search console and inlcude more keywords and description based on the user search real words and include that page name alot alot of times in the page and content related to keyword user searches
+now create content for this particular page okay and the page should be accepted by google search console and inlcude more keywords and description based on the user search real words and include that page name alot alot of times in the page and content related to keyword user searches and remove that highlight style on the text where it is not needed and for the css of header and  footer mention WOWHEADER WOWFOOTER AS GIVEN IN THE ABOVE CODE IN THE STYLE tag later i will mention the code my self so pls focus on the seo section and content mainly and make the seo more big by adding the sideimages in the google search results and everthing big seo section all the possible seo techniques pls 
+and dont mention the sideimages in the page just i need in the sideimages in the seo section for google search results to appear that time besides the description of the webpage while its appears in the google search results so dont put the sideimages in the page content 
