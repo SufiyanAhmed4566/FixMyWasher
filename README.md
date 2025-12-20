@@ -7,7 +7,7 @@ A professional website for FixMyWasher.in, offering washing machine repair servi
 ```
 fixmywasher.in/
 ├── 📄 index.html                 # Homepage with service overview
-├── 📄 /Submission            # Booking form page
+├── 📄 /Submission.html            # Booking form page
 ├── 📄 /contact               # Contact information page
 ├── 📄 /privacy-policy        # Privacy policy document
 ├── 📄 /terms-and-conditions  # Terms of service
@@ -39,7 +39,7 @@ fixmywasher.in/
 
 ### 📞 Contact & Booking
 - **Multiple Channels**: Phone, WhatsApp, Email
-- **Online Booking Form**: /Submission with comprehensive form
+- **Online Booking Form**: /Submission.html with comprehensive form
 - **Service Areas**: Complete Bangalore coverage
 - **Working Hours**: 8:00 AM - 8:00 PM (All days)
 
@@ -74,7 +74,7 @@ fixmywasher.in/
 - Multiple call-to-action sections
 - Mobile-optimized layout
 
-### 2. /Submission (Booking Form)
+### 2. /Submission.html (Booking Form)
 **Purpose**: Lead capture and service booking
 **Features**:
 - Multi-step form with validation

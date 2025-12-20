@@ -11,7 +11,7 @@ Allow: /
 # Allow all HTML pages
 Allow: /$
 Allow: /index.html$
-Allow: /Submission$
+Allow: /Submission.html$
 Allow: /contact$
 Allow: /privacy-policy$
 Allow: /terms-and-conditions$
@@ -40,7 +40,7 @@ Disallow: /.github/
 # ========================================
 User-agent: Googlebot
 Allow: /
-Allow: /Submission$
+Allow: /Submission.html$
 Allow: /contact$
 Crawl-delay: 1
 
