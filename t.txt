@@ -1,3 +1,8 @@
+
+first understand this structure of my website based on this structure you have create webpages for my 
+webiste based on the group blog they belong to okay so first study this because based on this u should understand the 
+linking of the webiste like putting the right link path for a specific webpage and i will you a webpage program code for 
+reference based on that only u have create the other page and also i will u the prompt before giving the reference code of a webpage 
 📦FixMyWasher
  ┣ 📂blog
  ┃ ┣ 📂area-specific
@@ -132,101 +137,33 @@
 
  from this structure ignore and avoid test.html , sub.html ,t.txt this irrrevalent files
  
- 
 
-now based on this page given above i want to include all the possible section based on the page name best section and with good content seo for mobile screeen 2 blocks in the one line improve more the content the seo section and eveerthing 
+
+ now based on this page given above i want to include all the possible section based on the page name best section and with good content seo for mobile screeen 2 blocks in the one line improve more the content the seo section and eveerthing 
  ┣ 📂blog
  ┃ ┣ 📂area-specific
- ┃ ┃ ┗ 📜washing-machine-repair-in-yelahanka.html (this file name will be changing )
+ ┃ ┃ ┣ 📜washing-machine-repair-center.html (this file name will be changing )
   based on the theme and header and footer should of same size dont change it at any cost 
   now based on this page given by you with similar layout and section and give perfect and proper url for reaching use this layout and everthing dont change the header or footer size keep as it is and with this same content  and improve seo techniques in seo secction everthing else improve it add more content create and change everthing with this page and pls remove unnecessary margin top and bottom keep margin if need somewhere to show properly i dont want them create speciaclly for the mobile screen and put some space between the text and button as in the provided code in the inline html only  i need space betwen text or paragraph in between already in the inline of the html understood for proper looking  google search console accepted and all the blocks sections will should there in 2 in one line good for mobile looking where necessary u decided it and dont menntion the price of the repair and take all this things and specfication i told very very seriously okay and there only 1 to 24 sideimages from (1) to (24) so take different combination for each page page not more than that remember and focus more on seo techninques and html content include its name and keyword of it based on the page or html file name many places
 now create content for this particular page okay and the page should be accepted by google search console and inlcude more keywords and description based on the user search real words and include that page name alot alot of times in the page and content related to keyword user searches and remove that highlight style on the text where it is not needed and for the css of header and  footer mention WOWHEADER WOWFOOTER AS GIVEN IN THE ABOVE CODE IN THE STYLE tag later i will mention the code my self so pls focus on the seo section and content mainly and make the seo more big by adding the sideimages in the google search results and everthing big seo section all the possible seo techniques pls 
 and dont mention the sideimages in the page just i need in the sideimages in the seo section for google search results to appear that time besides the description of the webpage while its appears in the google search results so dont put the sideimages in the page content and dont include emojis in the seo section like description and improve the seo section more and big and for the problem-lists div include the whole keyword like washing machine smell the full keyword not just the issue name and location and include near by area names of the page name and add strong bold in the paragraph to look good 
+now listen create page based on the page name specially and add more more seo technique everthing as much as u can everthing put when the page show on top of the results when search create like that pls beg u
 
 
-### 🔥 MUST-HAVE (Highest Impact)
+now listen now i want you provide a description or a blueprint how will u be creating a specific webpage 
+which belongs to a specific group blog inside that for all the same blueprint and section should be 
+same or similar depending what is best for it based on your knowledge so for i will the whole struture of my webiste 
+which is this [ ] and the sub structure for which u should create a blueprint or what what section should come for the 
+webpages in this group blog and i give u the reference code of a particular webpage so that u can decide and u will 
+get a idea how the section is created for this particular webpage so based on that the reference code from other group 
+blog is [] the main goal is that the webpage which is getting created should rank at the top of the google search resullts at 
+any any cost pls do whatever u want u have do it after u provide the blueprint or section suggestions i will confirm it 
+and i will u to start preparing for the code of a particular webpage from that group blog so everthing is based on
+ranking of webpage in the google search results remember pls pls
 
-**1. LocalBusiness Schema**
-👉 Defines your business as a local repair service in Bangalore
-👉 Helps rank for *“repair near me”*, Google Maps & Local Pack
-👉 Includes name, address, phone, hours, service area
-
----
-
-**2. Service Schema**
-👉 Explains what services you provide (AC repair, mobile repair, appliance repair, etc.)
-👉 Helps Google match service-based searches accurately
-👉 Very important for local intent keywords
-
----
-
-**3. Review / AggregateRating Schema**
-👉 Shows ⭐ ratings in Google search
-👉 Builds trust and increases click-through rate
-👉 Works best with genuine customer reviews
-
----
-
-### ⚡ HIGHLY RECOMMENDED
-
-**4. FAQ Schema**
-👉 Displays common repair questions directly in search
-👉 Improves visibility and user trust
-👉 Useful for service pages & landing pages
-
----
-
-**5. Breadcrumb Schema**
-👉 Shows clean navigation path instead of long URLs
-👉 Improves UX and crawlability
-👉 Helpful for category & service pages
-
----
-
-**6. Organization Schema**
-👉 Defines your brand identity (logo, social links) (no social links i have only whatsnapp link is there and call and webiste nothing else )
-👉 Supports trust and brand recognition
-👉 Works site-wide (homepage best)
-
----
-
-**8. Offer / Event Schema**
-👉 For discounts, service offers, seasonal repair campaigns
-👉 Improves CTR during promotions
-
----
-
-## 🎯 BEST PRIORITY ORDER (FOLLOW THIS)
-
-1️⃣ LocalBusiness
-2️⃣ Service
-3️⃣ Review / AggregateRating
-4️⃣ FAQ
-5️⃣ Breadcrumb
-6️⃣ Organization
-
-
-
-> Optimize this webpage for Google Search results by implementing all essential SERP components and structured data.
->
-> Ensure the page includes:
->
-> * A clear, keyword-optimized **Title tag** (local + service intent)
-> * A compelling **Meta Description** designed to increase CTR
-> * Clean, readable **URL structure** with breadcrumb navigation
-> * **Breadcrumb Schema** for proper hierarchy display
-> * **LocalBusiness Schema** with accurate NAP (name, address, phone), service area, opening hours, geo-coordinates, and Google Business Profile consistency
-> * **Service Schema** clearly defining each repair service offered
-> * **Review & AggregateRating Schema** using genuine customer reviews
-> * **FAQ Schema** answering common customer repair questions
-> * **Organization Schema** including logo and social profile links
-> * Proper **image optimization** (descriptive filenames, alt text, ImageObject schema where applicable) to enable thumbnails in search
-> * Internal linking and clear site structure to encourage **sitelinks** in search results
-> * Mobile optimization to support **call and direction buttons** in mobile SERPs
-> * Article or page update date where applicable
->
-> Follow Google Search Central guidelines strictly.
-> Ensure all structured data is implemented in **JSON-LD**, is error-free, non-spammy, and matches visible page content.
->
-> The goal is to maximize eligibility for rich results such as ratings, FAQs, breadcrumbs, sitelinks, knowledge panel visibility, and enhanced local search appearance.
-
+https://fixmywasher.in/blog/area-specific/washing-machine-repair-in-bangalore.html
+https://fixmywasher.in/blog/washing-machine-keywords/affordable-washing-machine-repair.html
+https://fixmywasher.in/blog/washing-machine-keywords/affordable-washing-machine-service-near-me.html
+https://fixmywasher.in/blog/washing-machine-keywords/same-day-washing-machine-repair-near-me.html
+https://fixmywasher.in/blog/washing-machine-keywords/washer-repair-near-me.html
+https://fixmywasher.in/blog/washing-machine-keywords/washing-machine-repair-center.html
