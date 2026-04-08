@@ -161,37 +161,135 @@ any any cost pls do whatever u want u have do it after u provide the blueprint o
 and i will u to start preparing for the code of a particular webpage from that group blog so everthing is based on
 ranking of webpage in the google search results remember pls pls
 
-https://fixmywasher.in/blog/washing-machine-keywords/washing-machine-repair-in-bangalore.html
-https://fixmywasher.in/blog/washing-machine-keywords/affordable-washing-machine-repair.html
-https://fixmywasher.in/blog/washing-machine-keywords/affordable-washing-machine-service-near-me.html
-https://fixmywasher.in/blog/washing-machine-keywords/same-day-washing-machine-repair-near-me.html
-https://fixmywasher.in/blog/washing-machine-keywords/washer-repair-near-me.html
 
 
-https://fixmywasher.in/blog/washing-machine-keywords/washing-machine-center-near-me.html
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-6156160492385967">
 
-TQH4441234
-IUWPM1626Q
-26-1055832323
+    <title>Washing Machine Repair Near Me Bangalore | Doorstep Service | FixMyWasher</title>
+    <meta name="description" content="Top-rated washing machine repair near me in Bangalore. Same-day service for LG, Samsung, IFB, Bosch. Expert technicians at your doorstep within 90 mins. Reliable washing machine service near me with 90-day warranty.">
+    <meta name="keywords" content="washing machine repair near me, washing machine service near me, washer repair near me, washing machine repair Bangalore, washing machine service Bangalore, doorstep washing machine repair, washing machine technician near me, LG washing machine repair near me, Samsung washing machine repair near me, IFB washing machine service near me, Bosch washing machine repair near me">
+    <meta name="author" content="FixMyWasher">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://fixmywasher.in/blog/washing-machine-keywords/washing-machine-repair-near-me.html">
 
+    <meta property="og:site_name" content="FixMyWasher Bangalore">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Washing Machine Repair Near Me Bangalore | Same Day Doorstep Service">
+    <meta property="og:description" content="Get expert washing machine repair near me in Bangalore. 90-minute response time, all brands covered, 100% genuine parts.">
+    <meta property="og:image" content="https://fixmywasher.in/images/sideimages/sideimage(1).png">
+    <meta property="og:url" content="https://fixmywasher.in/blog/washing-machine-keywords/washing-machine-repair-near-me.html">
 
-SBI Reference number
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "FixMyWasher Bangalore",
+      "image": [
+        "https://fixmywasher.in/images/sideimages/sideimage(1).png",
+        "https://fixmywasher.in/images/sideimages/sideimage(5).png",
+        "https://fixmywasher.in/images/sideimages/sideimage(12).png",
+        "https://fixmywasher.in/images/sideimages/sideimage(18).png"
+      ],
+      "@id": "https://fixmywasher.in/#localbusiness",
+      "url": "https://fixmywasher.in/blog/washing-machine-keywords/washing-machine-repair-near-me.html",
+      "telephone": "+91-9164151568",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Various Locations",
+        "addressLocality": "Bangalore",
+        "addressRegion": "Karnataka",
+        "postalCode": "560001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 12.9716,
+        "longitude": 77.5946
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "07:00",
+        "closes": "23:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "1247"
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Bangalore"},
+        {"@type": "AdministrativeArea", "name": "Indiranagar"},
+        {"@type": "AdministrativeArea", "name": "Koramangala"},
+        {"@type": "AdministrativeArea", "name": "HSR Layout"},
+        {"@type": "AdministrativeArea", "name": "Whitefield"}
+      ]
+    }
+    </script>
 
-CPAGNOHAK4
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Washing Machine Repair Near Me",
+      "provider": { "@id": "https://fixmywasher.in/#localbusiness" },
+      "areaServed": "Bangalore",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Washing Machine Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing machine not spinning repair near me" }},
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing machine water leakage repair near me" }},
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Front load washing machine repair near me" }},
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Top load washing machine repair near me" }}
+        ]
+      }
+    }
+    </script>
 
-Merchant Reference No
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where can I find reliable washing machine repair near me in Bangalore?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FixMyWasher offers the most reliable washing machine repair near me in Bangalore. We provide 90-minute doorstep service across all major areas including Indiranagar, HSR Layout, and Whitefield."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide same day washing machine service near me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We specialize in same day washing machine service near me. Our technicians carry genuine spare parts to ensure most repairs are completed on the first visit."
+          }
+        }
+      ]
+    }
+    </script>
 
-26-1055832323
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixmywasher.in/" },
+        { "@type": "ListItem", "position": 2, "name": "Washing Machine Repair Near Me", "item": "https://fixmywasher.in/blog/washing-machine-keywords/washing-machine-repair-near-me.html" }
+      ]
+    }
+    </script>
 
-Amount to be Remitted
-
-Rs 1500.00/-
-
-Transaction Status
-
-Success
-
-Your appointment has been booked successfully. Your Appoinment Number is :100054953818326
-
-
-
+    <style>
+        /* CSS markers for your header/footer */
+        WOWHEADER {}
+        WOWFOOTER {}
+    </style>
+</head>
