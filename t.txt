@@ -1,7 +1,7 @@
 
 first understand this structure of my website based on this structure you have create webpages for my 
 webiste based on the group blog they belong to okay so first study this because based on this u should understand the 
-linking of the webiste like putting the right link path for a specific webpage and i will you a webpage program code for 
+linking of the webiste like putting the right link path for a specific webpage and i will you a particalur webpage program code for 
 reference based on that only u have create the other page and also i will u the prompt before giving the reference code of a webpage 
 📦FixMyWasher
  ┣ 📂blog
@@ -151,8 +151,8 @@ now listen create page based on the page name specially and add more more seo te
 
 
 now listen now i want you provide a description or a blueprint how will u be creating a specific webpage 
-which belongs to a specific group blog inside that for all the same blueprint and section should be 
-same or similar depending what is best for it based on your knowledge so for i will the whole struture of my webiste 
+which belongs to a specific group blog which is this group [ ] inside that for all the same blueprint and section should be 
+same or similar depending what is best for it based on your knowledge so for i will give the whole struture of my webiste 
 which is this [ ] and the sub structure for which u should create a blueprint or what what section should come for the 
 webpages in this group blog and i give u the reference code of a particular webpage so that u can decide and u will 
 get a idea how the section is created for this particular webpage so based on that the reference code from other group 
@@ -296,7 +296,7 @@ ranking of webpage in the google search results remember pls pls
 
 
 
-https://fixmywasher.in/blog/area-specific/washing-machine-repair-center.html
+https://fixmywasher.in/blog/washing-machine-keywords/washing-machine-repair-center.html
 https://fixmywasher.in/blog/washing-machine-keywords/affordable-washing-machine-repair.html
 https://fixmywasher.in/blog/washing-machine-keywords/same-day-washing-machine-repair-near-me.html
 https://fixmywasher.in/blog/washing-machine-keywords/washing-machine-repair-in-bangalore.html
