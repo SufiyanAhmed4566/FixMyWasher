@@ -6,82 +6,416 @@ reference based on that only u have create the other page and also i will u the 
 📦FixMyWasher
  ┣ 📂blog
  ┃ ┣ 📂area-specific
+ ┃ ┃ ┣ 📜washing-machine-repair-in-akshaya-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-attiguppe.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-banashankari.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-banaswadi.html
  ┃ ┃ ┣ 📜washing-machine-repair-in-bannerghatta-road.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-basavanagudi.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-basaveshwaranagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-begur.html
  ┃ ┃ ┣ 📜washing-machine-repair-in-bellandur.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-bommanahalli.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-brookefield.html
  ┃ ┃ ┣ 📜washing-machine-repair-in-btm-layout.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-chamrajpet.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-chandra-layout.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-cox-town.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-cv-raman-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-domlur.html
  ┃ ┃ ┣ 📜washing-machine-repair-in-electronic-city.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-frazer-town.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-girinagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-gottigere.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-hanumanth-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-hbr-layout.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-hebbal.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-hennur.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-hongasandra.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-horamavu.html
  ┃ ┃ ┣ 📜washing-machine-repair-in-hsr-layout.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-hulimavu.html
  ┃ ┃ ┣ 📜washing-machine-repair-in-indiranagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-jalahalli.html
  ┃ ┃ ┣ 📜washing-machine-repair-in-jayanagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-jnanabharathi.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-jp-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kadugodi.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kaggadasapura.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kalyan-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kammanahalli.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kasturi-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kengeri.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kodigehalli.html
  ┃ ┃ ┣ 📜washing-machine-repair-in-koramangala.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kr-puram.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kumaraswamy-layout.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kundalahalli.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-magadi-road.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-mahalakshmi-layout.html
  ┃ ┃ ┣ 📜washing-machine-repair-in-malleswaram.html
  ┃ ┃ ┣ 📜washing-machine-repair-in-marathahalli.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-mathikere.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-mysore-road.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-nagarbhavi.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-nandini-layout.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-new-bel-road.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-padmanabhanagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-peenya.html
  ┃ ┃ ┣ 📜washing-machine-repair-in-rajajinagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-ramamurthy-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-richmond-town.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-rr-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-rt-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-sahakar-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-sanjay-nagar.html
  ┃ ┃ ┣ 📜washing-machine-repair-in-sarjapur-road.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-shanti-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-tc-palya.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-ulsoor.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-uttarahalli.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-vidyaranyapura.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-vijayanagar.html
  ┃ ┃ ┣ 📜washing-machine-repair-in-whitefield.html
- ┃ ┃ ┗ 📜washing-machine-repair-in-yelahanka.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-wilson-garden.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-yelahanka.html
+ ┃ ┃ ┗ 📜washing-machine-repair-in-yeshwanthpur.html
  ┃ ┣ 📂brand-specific
  ┃ ┃ ┣ 📜bosch-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜bpl-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜electrolux-washing-machine-repair-in-bangalore.html
  ┃ ┃ ┣ 📜godrej-washing-machine-repair-in-bangalore.html
  ┃ ┃ ┣ 📜haier-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜hisense-washing-machine-repair-in-bangalore.html
  ┃ ┃ ┣ 📜ifb-washing-machine-repair-in-bangalore.html
  ┃ ┃ ┣ 📜lg-washing-machine-repair-in-bangalore.html
  ┃ ┃ ┣ 📜lloyd-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜midea-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜onida-washing-machine-repair-in-bangalore.html
  ┃ ┃ ┣ 📜panasonic-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜realme-washing-machine-repair-in-bangalore.html
  ┃ ┃ ┣ 📜samsung-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜siemens-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜tcl-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜toshiba-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜videocon-washing-machine-repair-in-bangalore.html
  ┃ ┃ ┣ 📜voltas-washing-machine-repair-in-bangalore.html
  ┃ ┃ ┗ 📜whirlpool-washing-machine-repair-in-bangalore.html
+ ┃ ┣ 📂clothes-and-wash-quality
+ ┃ ┃ ┣ 📜bedsheets-balling-up-in-washing-machine.html
+ ┃ ┃ ┣ 📜clothes-colour-bleeding-in-washing-machine.html
+ ┃ ┃ ┣ 📜clothes-shrinking-in-washing-machine.html
+ ┃ ┃ ┣ 📜clothes-smell-after-washing.html
+ ┃ ┃ ┣ 📜clothes-still-wet-after-washing-machine-spin.html
+ ┃ ┃ ┣ 📜clothes-tangled-after-washing.html
+ ┃ ┃ ┣ 📜clothes-too-wrinkled-after-washing.html
+ ┃ ┃ ┣ 📜how-to-remove-pet-hair-in-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-wash-baby-clothes-in-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-wash-blankets-in-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-wash-delicate-clothes-in-washing-machine.html
+ ┃ ┃ ┣ 📜too-much-foam-in-washing-machine-affects-cleaning.html
+ ┃ ┃ ┣ 📜towels-hard-after-washing.html
+ ┃ ┃ ┣ 📜washing-machine-leaving-black-marks-on-clothes.html
+ ┃ ┃ ┣ 📜washing-machine-leaving-detergent-on-clothes.html
+ ┃ ┃ ┣ 📜washing-machine-leaving-lint-on-clothes.html
+ ┃ ┃ ┣ 📜washing-machine-leaving-rust-stains-on-clothes.html
+ ┃ ┃ ┣ 📜washing-machine-leaving-white-residue-on-clothes.html
+ ┃ ┃ ┣ 📜washing-machine-not-cleaning-clothes-properly.html
+ ┃ ┃ ┗ 📜washing-machine-tearing-clothes.html
+ ┃ ┣ 📂costs-and-charges
+ ┃ ┃ ┣ 📜how-to-understand-washing-machine-repair-quotation.html
+ ┃ ┃ ┣ 📜washing-machine-bearing-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-belt-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-deep-cleaning-cost.html
+ ┃ ┃ ┣ 📜washing-machine-door-lock-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-door-seal-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-drain-pump-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-drum-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-front-load-repair-cost.html
+ ┃ ┃ ┣ 📜washing-machine-heating-element-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-inlet-valve-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-installation-charges.html
+ ┃ ┃ ┣ 📜washing-machine-motor-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-pcb-repair-cost.html
+ ┃ ┃ ┣ 📜washing-machine-pcb-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-repair-cost-in-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-semi-automatic-repair-cost.html
+ ┃ ┃ ┣ 📜washing-machine-service-charges-in-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-technician-visit-charges.html
+ ┃ ┃ ┗ 📜washing-machine-top-load-repair-cost.html
+ ┃ ┣ 📂electrical-and-water-safety
+ ┃ ┃ ┣ 📜can-you-use-extension-board-for-washing-machine.html
+ ┃ ┃ ┣ 📜washing-machine-burning-smell.html
+ ┃ ┃ ┣ 📜washing-machine-earthing-requirements.html
+ ┃ ┃ ┣ 📜washing-machine-giving-electric-shock.html
+ ┃ ┃ ┣ 📜washing-machine-plug-overheating.html
+ ┃ ┃ ┣ 📜washing-machine-safety-after-flooding.html
+ ┃ ┃ ┣ 📜washing-machine-safety-during-power-cuts.html
+ ┃ ┃ ┣ 📜washing-machine-tripping-mcb.html
+ ┃ ┃ ┣ 📜washing-machine-tripping-rccb.html
+ ┃ ┃ ┗ 📜washing-machine-water-leak-emergency-steps.html
+ ┃ ┣ 📂error-codes
+ ┃ ┃ ┣ 📜bosch-washing-machine-e16-f16-error.html
+ ┃ ┃ ┣ 📜bosch-washing-machine-e17-f17-error.html
+ ┃ ┃ ┣ 📜bosch-washing-machine-e18-error.html
+ ┃ ┃ ┣ 📜bosch-washing-machine-e23-f23-error.html
+ ┃ ┃ ┣ 📜bosch-washing-machine-e32-f32-error.html
+ ┃ ┃ ┣ 📜ifb-washing-machine-door-error.html
+ ┃ ┃ ┣ 📜ifb-washing-machine-error-codes.html
+ ┃ ┃ ┣ 📜ifb-washing-machine-tap-error.html
+ ┃ ┃ ┣ 📜ifb-washing-machine-unbalance-error.html
+ ┃ ┃ ┣ 📜lg-washing-machine-de-error.html
+ ┃ ┃ ┣ 📜lg-washing-machine-fe-error.html
+ ┃ ┃ ┣ 📜lg-washing-machine-ie-error.html
+ ┃ ┃ ┣ 📜lg-washing-machine-le-error.html
+ ┃ ┃ ┣ 📜lg-washing-machine-oe-error.html
+ ┃ ┃ ┣ 📜lg-washing-machine-ue-error.html
+ ┃ ┃ ┣ 📜samsung-washing-machine-3c-3e-error.html
+ ┃ ┃ ┣ 📜samsung-washing-machine-4c-4e-error.html
+ ┃ ┃ ┣ 📜samsung-washing-machine-5c-5e-error.html
+ ┃ ┃ ┣ 📜samsung-washing-machine-dc-de-error.html
+ ┃ ┃ ┣ 📜samsung-washing-machine-le-lc-error.html
+ ┃ ┃ ┣ 📜samsung-washing-machine-sud-5ud-error.html
+ ┃ ┃ ┣ 📜samsung-washing-machine-ub-ue-error.html
+ ┃ ┃ ┣ 📜whirlpool-washing-machine-error-codes.html
+ ┃ ┃ ┣ 📜whirlpool-washing-machine-f8-e1-error.html
+ ┃ ┃ ┗ 📜whirlpool-washing-machine-f9-e1-error.html
  ┃ ┣ 📂issues-specific
+ ┃ ┃ ┣ 📜washing-machine-banging-during-spin.html
+ ┃ ┃ ┣ 📜washing-machine-buttons-not-working.html
+ ┃ ┃ ┣ 📜washing-machine-clicking-noise.html
+ ┃ ┃ ┣ 📜washing-machine-cycle-taking-too-long.html
  ┃ ┃ ┣ 📜washing-machine-detergent-not-dispensing.html
  ┃ ┃ ┣ 📜washing-machine-display-error-repair.html
+ ┃ ┃ ┣ 📜washing-machine-display-not-working.html
+ ┃ ┃ ┣ 📜washing-machine-door-handle-broken.html
+ ┃ ┃ ┣ 📜washing-machine-door-not-locking.html
  ┃ ┃ ┣ 📜washing-machine-door-not-opening-repair.html
+ ┃ ┃ ┣ 📜washing-machine-drum-hard-to-turn.html
+ ┃ ┃ ┣ 📜washing-machine-drum-loose.html
+ ┃ ┃ ┣ 📜washing-machine-drum-not-turning-during-wash.html
+ ┃ ┃ ┣ 📜washing-machine-fabric-softener-not-dispensing.html
+ ┃ ┃ ┣ 📜washing-machine-filling-water-slowly.html
+ ┃ ┃ ┣ 📜washing-machine-foam-coming-out.html
+ ┃ ┃ ┣ 📜washing-machine-grinding-noise.html
+ ┃ ┃ ┣ 📜washing-machine-humming-but-not-running.html
+ ┃ ┃ ┣ 📜washing-machine-keeps-filling-with-water.html
+ ┃ ┃ ┣ 📜washing-machine-keeps-restarting.html
+ ┃ ┃ ┣ 📜washing-machine-leaking-from-bottom.html
+ ┃ ┃ ┣ 📜washing-machine-leaking-from-detergent-drawer.html
+ ┃ ┃ ┣ 📜washing-machine-leaking-from-door.html
  ┃ ┃ ┣ 📜washing-machine-leaking-water-repair.html
  ┃ ┃ ┣ 📜washing-machine-making-noise-repair.html
  ┃ ┃ ┣ 📜washing-machine-not-draining-repair.html
+ ┃ ┃ ┣ 📜washing-machine-not-filling-with-water.html
+ ┃ ┃ ┣ 📜washing-machine-not-heating-water.html
  ┃ ┃ ┣ 📜washing-machine-not-spinning-repair.html
  ┃ ┃ ┣ 📜washing-machine-not-starting-repair.html
  ┃ ┃ ┣ 📜washing-machine-smell-removal-service.html
- ┃ ┃ ┗ 📜washing-machine-vibration-issues-repair.html
+ ┃ ┃ ┣ 📜washing-machine-stops-mid-cycle.html
+ ┃ ┃ ┣ 📜washing-machine-stuck-on-one-minute.html
+ ┃ ┃ ┣ 📜washing-machine-touch-panel-not-working.html
+ ┃ ┃ ┣ 📜washing-machine-vibration-issues-repair.html
+ ┃ ┃ ┣ 📜washing-machine-water-drains-while-filling.html
+ ┃ ┃ ┣ 📜washing-machine-water-left-in-drum.html
+ ┃ ┃ ┗ 📜washing-machine-whistling-noise.html
  ┃ ┣ 📂machine-type-specific
  ┃ ┃ ┣ 📜commercial-washing-machine-repair.html
+ ┃ ┃ ┣ 📜direct-drive-washing-machine-repair.html
  ┃ ┃ ┣ 📜front-load-washing-machine-repair.html
  ┃ ┃ ┣ 📜fully-automatic-washing-machine-repair.html
+ ┃ ┃ ┣ 📜inverter-washing-machine-repair.html
  ┃ ┃ ┣ 📜portable-washing-machine-repair.html
  ┃ ┃ ┣ 📜semi-automatic-washing-machine-repair.html
- ┃ ┃ ┗ 📜top-load-washing-machine-repair.html
+ ┃ ┃ ┣ 📜top-load-washing-machine-repair.html
+ ┃ ┃ ┗ 📜washer-dryer-repair.html
  ┃ ┣ 📂prevention-maintenance
  ┃ ┃ ┣ 📜best-detergent-for-washing-machine.html
  ┃ ┃ ┣ 📜diy-washing-machine-repair-tips.html
+ ┃ ┃ ┣ 📜how-often-to-clean-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-clean-top-load-washing-machine-lint-filter.html
+ ┃ ┃ ┣ 📜how-to-clean-washing-machine-detergent-drawer.html
+ ┃ ┃ ┣ 📜how-to-clean-washing-machine-door-rubber.html
+ ┃ ┃ ┣ 📜how-to-clean-washing-machine-drain-filter.html
+ ┃ ┃ ┣ 📜how-to-clean-washing-machine-drain-hose.html
+ ┃ ┃ ┣ 📜how-to-clean-washing-machine-water-inlet-filter.html
  ┃ ┃ ┣ 📜how-to-clean-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-maintain-washing-machine-hoses.html
+ ┃ ┃ ┣ 📜how-to-prevent-washing-machine-door-seal-damage.html
+ ┃ ┃ ┣ 📜how-to-prevent-washing-machine-drain-blockage.html
+ ┃ ┃ ┣ 📜how-to-prevent-washing-machine-leaks.html
+ ┃ ┃ ┣ 📜how-to-prevent-washing-machine-rust.html
  ┃ ┃ ┣ 📜how-to-prevent-washing-machine-smell.html
+ ┃ ┃ ┣ 📜how-to-prevent-washing-machine-vibration.html
+ ┃ ┃ ┣ 📜how-to-remove-mould-from-washing-machine.html
+ ┃ ┃ ┣ 📜should-you-leave-washing-machine-door-open.html
+ ┃ ┃ ┣ 📜washing-machine-care-after-long-storage.html
+ ┃ ┃ ┣ 📜washing-machine-care-before-long-vacation.html
+ ┃ ┃ ┣ 📜washing-machine-care-for-daily-use.html
+ ┃ ┃ ┣ 📜washing-machine-cleaner-vs-vinegar.html
+ ┃ ┃ ┣ 📜washing-machine-drum-clean-vs-descaling.html
  ┃ ┃ ┣ 📜washing-machine-energy-saving-tips.html
+ ┃ ┃ ┣ 📜washing-machine-maintenance-checklist.html
+ ┃ ┃ ┣ 📜washing-machine-maintenance-during-monsoon.html
+ ┃ ┃ ┣ 📜washing-machine-maintenance-for-hard-water.html
  ┃ ┃ ┣ 📜washing-machine-maintenance-tips.html
  ┃ ┃ ┣ 📜washing-machine-water-saving-tips.html
  ┃ ┃ ┗ 📜when-to-replace-washing-machine.html
+ ┃ ┣ 📂repair-decisions
+ ┃ ┃ ┣ 📜how-long-do-washing-machines-last.html
+ ┃ ┃ ┣ 📜how-to-choose-washing-machine-repair-technician.html
+ ┃ ┃ ┣ 📜independent-vs-authorised-washing-machine-service.html
+ ┃ ┃ ┣ 📜is-washing-machine-bearing-replacement-worth-it.html
+ ┃ ┃ ┣ 📜is-washing-machine-drum-replacement-worth-it.html
+ ┃ ┃ ┣ 📜is-washing-machine-motor-replacement-worth-it.html
+ ┃ ┃ ┣ 📜is-washing-machine-pcb-repair-worth-it.html
+ ┃ ┃ ┣ 📜original-vs-compatible-washing-machine-spare-parts.html
+ ┃ ┃ ┣ 📜questions-to-ask-before-washing-machine-repair.html
+ ┃ ┃ ┣ 📜should-you-repair-a-10-year-old-washing-machine.html
+ ┃ ┃ ┣ 📜signs-washing-machine-needs-professional-repair.html
+ ┃ ┃ ┣ 📜washing-machine-repair-or-replace.html
+ ┃ ┃ ┣ 📜washing-machine-repair-time-explained.html
+ ┃ ┃ ┣ 📜washing-machine-repair-under-manufacturer-warranty.html
+ ┃ ┃ ┣ 📜washing-machine-repair-vs-deep-cleaning.html
+ ┃ ┃ ┣ 📜washing-machine-repair-vs-general-service.html
+ ┃ ┃ ┣ 📜washing-machine-repair-warranty-explained.html
+ ┃ ┃ ┣ 📜washing-machine-repaired-but-problem-returned.html
+ ┃ ┃ ┣ 📜what-to-check-after-washing-machine-repair.html
+ ┃ ┃ ┗ 📜what-to-do-before-washing-machine-technician-arrives.html
  ┃ ┣ 📂service-specific
+ ┃ ┃ ┣ 📜washing-machine-bearing-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-belt-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-capacitor-replacement.html
  ┃ ┃ ┣ 📜washing-machine-circuit-board-repair.html
+ ┃ ┃ ┣ 📜washing-machine-control-panel-repair.html
+ ┃ ┃ ┣ 📜washing-machine-deep-cleaning-service.html
  ┃ ┃ ┣ 📜washing-machine-descaling-service.html
  ┃ ┃ ┣ 📜washing-machine-detergent-tray-repair.html
+ ┃ ┃ ┣ 📜washing-machine-door-handle-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-door-lock-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-door-seal-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-drain-hose-replacement.html
  ┃ ┃ ┣ 📜washing-machine-drain-pump-repair.html
  ┃ ┃ ┣ 📜washing-machine-drum-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-filter-cleaning-service.html
+ ┃ ┃ ┣ 📜washing-machine-general-service.html
+ ┃ ┃ ┣ 📜washing-machine-heating-element-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-inlet-hose-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-inlet-valve-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-inspection-and-diagnosis.html
  ┃ ┃ ┣ 📜washing-machine-installation-service.html
+ ┃ ┃ ┣ 📜washing-machine-motor-carbon-brush-replacement.html
  ┃ ┃ ┣ 📜washing-machine-motor-replacement.html
- ┃ ┃ ┗ 📜washing-machine-pump-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-pump-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-shock-absorber-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-suspension-rod-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-temperature-sensor-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-timer-repair.html
+ ┃ ┃ ┣ 📜washing-machine-water-level-sensor-repair.html
+ ┃ ┃ ┗ 📜washing-machine-wiring-repair.html
+ ┃ ┣ 📂setup-and-usage
+ ┃ ┃ ┣ 📜can-washing-machine-be-kept-on-balcony.html
+ ┃ ┃ ┣ 📜front-load-vs-top-load-detergent.html
+ ┃ ┃ ┣ 📜how-much-clothes-to-put-in-washing-machine.html
+ ┃ ┃ ┣ 📜how-much-detergent-to-use-in-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-level-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-move-washing-machine-safely.html
+ ┃ ┃ ┣ 📜how-to-use-front-load-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-use-semi-automatic-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-use-top-load-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-use-washing-machine-child-lock.html
+ ┃ ┃ ┣ 📜how-to-use-washing-machine-delay-start.html
+ ┃ ┃ ┣ 📜how-to-use-washing-machine-drum-clean.html
+ ┃ ┃ ┣ 📜how-to-use-washing-machine-rinse-and-spin.html
+ ┃ ┃ ┣ 📜liquid-vs-powder-detergent-for-washing-machine.html
+ ┃ ┃ ┣ 📜washing-machine-capacity-kg-explained.html
+ ┃ ┃ ┣ 📜washing-machine-detergent-drawer-compartments.html
+ ┃ ┃ ┣ 📜washing-machine-drain-hose-height.html
+ ┃ ┃ ┣ 📜washing-machine-eco-mode-explained.html
+ ┃ ┃ ┣ 📜washing-machine-first-use-guide.html
+ ┃ ┃ ┣ 📜washing-machine-inlet-hose-connection.html
+ ┃ ┃ ┣ 📜washing-machine-installation-checklist.html
+ ┃ ┃ ┣ 📜washing-machine-installation-handover-checklist.html
+ ┃ ┃ ┣ 📜washing-machine-installation-space-requirements.html
+ ┃ ┃ ┣ 📜washing-machine-problems-after-installation.html
+ ┃ ┃ ┣ 📜washing-machine-programs-explained.html
+ ┃ ┃ ┣ 📜washing-machine-quick-wash-vs-normal-wash.html
+ ┃ ┃ ┣ 📜washing-machine-spin-speed-guide.html
+ ┃ ┃ ┣ 📜washing-machine-tap-adapter-guide.html
+ ┃ ┃ ┣ 📜washing-machine-temperature-settings-guide.html
+ ┃ ┃ ┣ 📜washing-machine-transit-bolts-removal.html
+ ┃ ┃ ┗ 📜washing-machine-water-pressure-requirements.html
  ┃ ┣ 📂washing-machine-keywords
  ┃ ┃ ┣ 📜affordable-washing-machine-repair.html
  ┃ ┃ ┣ 📜affordable-washing-machine-service-near-me.html
+ ┃ ┃ ┣ 📜bosch-front-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜discontinued-washing-machine-model-repair-bangalore.html
+ ┃ ┃ ┣ 📜godrej-top-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜haier-front-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜ifb-front-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜ifb-top-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜imported-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜lg-front-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜lg-top-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜multiple-washing-machine-repair-booking-bangalore.html
+ ┃ ┃ ┣ 📜onida-top-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜panasonic-top-load-washing-machine-repair-bangalore.html
  ┃ ┃ ┣ 📜same-day-washing-machine-repair-near-me.html
+ ┃ ┃ ┣ 📜samsung-front-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜samsung-top-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜stacked-washing-machine-repair-bangalore.html
  ┃ ┃ ┣ 📜washer-repair-near-me.html
+ ┃ ┃ ┣ 📜washing-machine-center-near-me.html
+ ┃ ┃ ┣ 📜washing-machine-check-before-buying-used-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-check-for-tenants-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-inspection-at-home-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-intermittent-fault-repair-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-out-of-warranty-repair-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-preventive-maintenance-service-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-after-diy-attempt-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-after-long-storage-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-after-power-surge-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-after-rat-damage-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-after-water-damage-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-appointment-bangalore.html
  ┃ ┃ ┣ 📜washing-machine-repair-center.html
+ ┃ ┃ ┣ 📜washing-machine-repair-evening-appointments-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-for-apartments-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-for-built-in-cabinets-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-for-hostels-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-for-laundries-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-for-pg-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-for-rental-homes-bangalore.html
  ┃ ┃ ┣ 📜washing-machine-repair-home-service.html
  ┃ ┃ ┣ 📜washing-machine-repair-in-bangalore.html
  ┃ ┃ ┣ 📜washing-machine-repair-near-me.html
+ ┃ ┃ ┣ 📜washing-machine-repair-on-sunday-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-online-booking-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-service-in-bangalore.html
  ┃ ┃ ┣ 📜washing-machine-repair-service.html
  ┃ ┃ ┣ 📜washing-machine-repair-shop-near-me.html
+ ┃ ┃ ┣ 📜washing-machine-repair-urgent-visit-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-whatsapp-booking-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-with-invoice-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-with-service-warranty-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-with-written-estimate-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repeat-fault-after-repair-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-replacement-installation-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-second-opinion-repair-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-service-after-moving-house-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-service-after-renovation-bangalore.html
  ┃ ┃ ┣ 📜washing-machine-service-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-service-before-moving-house-bangalore.html
  ┃ ┃ ┣ 📜washing-machine-service-centre-bangalore.html
  ┃ ┃ ┣ 📜washing-machine-service-centre-near-me.html
- ┃ ┃ ┗ 📜washing-machine-service-near-me.html
+ ┃ ┃ ┣ 📜washing-machine-service-for-landlords-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-service-for-managed-apartments-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-service-near-me.html
+ ┃ ┃ ┣ 📜washing-machine-spare-parts-and-fitting-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-technician-electrician-or-plumber-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-technician-in-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-uninstallation-service-bangalore.html
+ ┃ ┃ ┗ 📜whirlpool-top-load-washing-machine-repair-bangalore.html
  ┃ ┗ 📜washing-machine-repair-blog-bangalore.html
  ┣ 📂images
  ┃ ┣ 📂sideimages
@@ -120,8 +454,9 @@ reference based on that only u have create the other page and also i will u the 
  ┣ 📜favicon.ico
  ┣ 📜google415b23037075c296.html
  ┣ 📜index.html
- ┣ 📜logo.png   >  it is just the logo of the webiste 
- ┣ 📜nav-logo.png >   this is the logo plus brand name which comes in the each nav bar or header
+ ┣ 📜logo.png
+ ┣ 📜lskdjf.html
+ ┣ 📜nav-logo.png
  ┣ 📜phone-whatsnapp-icons.html
  ┣ 📜privacy-policy.html
  ┣ 📜README.md
@@ -129,14 +464,434 @@ reference based on that only u have create the other page and also i will u the 
  ┣ 📜site.webmanifest
  ┣ 📜sitemap.xml
  ┣ 📜sub.html
- ┣ 📜washing-machine-repair-near-me.html
  ┣ 📜t.txt
  ┣ 📜terms-and-conditions.html
  ┣ 📜test.html
- ┗ 📜washing-machine-repair-customer-testimonials-bangalore.html
-
+ ┣ 📜washing-machine-repair-customer-testimonials-bangalore.html
+ ┗ 📜washing-machine-repair-near-me.html
  from this structure ignore and avoid test.html , sub.html ,t.txt this irrrevalent files
  
+
+ 📦FixMyWasher
+ ┣ 📂blog
+ ┃ ┣ 📂area-specific
+ ┃ ┃ ┣ 📜washing-machine-repair-in-akshaya-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-attiguppe.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-banashankari.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-banaswadi.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-bannerghatta-road.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-basavanagudi.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-basaveshwaranagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-begur.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-bellandur.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-bommanahalli.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-brookefield.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-btm-layout.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-chamrajpet.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-chandra-layout.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-cox-town.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-cv-raman-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-domlur.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-electronic-city.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-frazer-town.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-girinagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-gottigere.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-hanumanth-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-hbr-layout.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-hebbal.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-hennur.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-hongasandra.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-horamavu.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-hsr-layout.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-hulimavu.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-indiranagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-jalahalli.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-jayanagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-jnanabharathi.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-jp-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kadugodi.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kaggadasapura.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kalyan-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kammanahalli.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kasturi-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kengeri.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kodigehalli.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-koramangala.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kr-puram.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kumaraswamy-layout.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-kundalahalli.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-magadi-road.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-mahalakshmi-layout.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-malleswaram.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-marathahalli.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-mathikere.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-mysore-road.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-nagarbhavi.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-nandini-layout.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-new-bel-road.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-padmanabhanagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-peenya.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-rajajinagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-ramamurthy-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-richmond-town.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-rr-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-rt-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-sahakar-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-sanjay-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-sarjapur-road.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-shanti-nagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-tc-palya.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-ulsoor.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-uttarahalli.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-vidyaranyapura.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-vijayanagar.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-whitefield.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-wilson-garden.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-yelahanka.html
+ ┃ ┃ ┗ 📜washing-machine-repair-in-yeshwanthpur.html
+ ┃ ┣ 📂brand-specific
+ ┃ ┃ ┣ 📜bosch-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜bpl-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜electrolux-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜godrej-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜haier-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜hisense-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜ifb-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜lg-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜lloyd-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜midea-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜onida-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜panasonic-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜realme-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜samsung-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜siemens-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜tcl-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜toshiba-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜videocon-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜voltas-washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┗ 📜whirlpool-washing-machine-repair-in-bangalore.html
+ ┃ ┣ 📂clothes-and-wash-quality
+ ┃ ┃ ┣ 📜bedsheets-balling-up-in-washing-machine.html
+ ┃ ┃ ┣ 📜clothes-colour-bleeding-in-washing-machine.html
+ ┃ ┃ ┣ 📜clothes-shrinking-in-washing-machine.html
+ ┃ ┃ ┣ 📜clothes-smell-after-washing.html
+ ┃ ┃ ┣ 📜clothes-still-wet-after-washing-machine-spin.html
+ ┃ ┃ ┣ 📜clothes-tangled-after-washing.html
+ ┃ ┃ ┣ 📜clothes-too-wrinkled-after-washing.html
+ ┃ ┃ ┣ 📜how-to-remove-pet-hair-in-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-wash-baby-clothes-in-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-wash-blankets-in-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-wash-delicate-clothes-in-washing-machine.html
+ ┃ ┃ ┣ 📜too-much-foam-in-washing-machine-affects-cleaning.html
+ ┃ ┃ ┣ 📜towels-hard-after-washing.html
+ ┃ ┃ ┣ 📜washing-machine-leaving-black-marks-on-clothes.html
+ ┃ ┃ ┣ 📜washing-machine-leaving-detergent-on-clothes.html
+ ┃ ┃ ┣ 📜washing-machine-leaving-lint-on-clothes.html
+ ┃ ┃ ┣ 📜washing-machine-leaving-rust-stains-on-clothes.html
+ ┃ ┃ ┣ 📜washing-machine-leaving-white-residue-on-clothes.html
+ ┃ ┃ ┣ 📜washing-machine-not-cleaning-clothes-properly.html
+ ┃ ┃ ┗ 📜washing-machine-tearing-clothes.html
+ ┃ ┣ 📂costs-and-charges
+ ┃ ┃ ┣ 📜how-to-understand-washing-machine-repair-quotation.html
+ ┃ ┃ ┣ 📜washing-machine-bearing-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-belt-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-deep-cleaning-cost.html
+ ┃ ┃ ┣ 📜washing-machine-door-lock-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-door-seal-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-drain-pump-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-drum-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-front-load-repair-cost.html
+ ┃ ┃ ┣ 📜washing-machine-heating-element-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-inlet-valve-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-installation-charges.html
+ ┃ ┃ ┣ 📜washing-machine-motor-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-pcb-repair-cost.html
+ ┃ ┃ ┣ 📜washing-machine-pcb-replacement-cost.html
+ ┃ ┃ ┣ 📜washing-machine-repair-cost-in-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-semi-automatic-repair-cost.html
+ ┃ ┃ ┣ 📜washing-machine-service-charges-in-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-technician-visit-charges.html
+ ┃ ┃ ┗ 📜washing-machine-top-load-repair-cost.html
+ ┃ ┣ 📂electrical-and-water-safety
+ ┃ ┃ ┣ 📜can-you-use-extension-board-for-washing-machine.html
+ ┃ ┃ ┣ 📜washing-machine-burning-smell.html
+ ┃ ┃ ┣ 📜washing-machine-earthing-requirements.html
+ ┃ ┃ ┣ 📜washing-machine-giving-electric-shock.html
+ ┃ ┃ ┣ 📜washing-machine-plug-overheating.html
+ ┃ ┃ ┣ 📜washing-machine-safety-after-flooding.html
+ ┃ ┃ ┣ 📜washing-machine-safety-during-power-cuts.html
+ ┃ ┃ ┣ 📜washing-machine-tripping-mcb.html
+ ┃ ┃ ┣ 📜washing-machine-tripping-rccb.html
+ ┃ ┃ ┗ 📜washing-machine-water-leak-emergency-steps.html
+ ┃ ┣ 📂error-codes
+ ┃ ┃ ┣ 📜bosch-washing-machine-e16-f16-error.html
+ ┃ ┃ ┣ 📜bosch-washing-machine-e17-f17-error.html
+ ┃ ┃ ┣ 📜bosch-washing-machine-e18-error.html
+ ┃ ┃ ┣ 📜bosch-washing-machine-e23-f23-error.html
+ ┃ ┃ ┣ 📜bosch-washing-machine-e32-f32-error.html
+ ┃ ┃ ┣ 📜ifb-washing-machine-door-error.html
+ ┃ ┃ ┣ 📜ifb-washing-machine-error-codes.html
+ ┃ ┃ ┣ 📜ifb-washing-machine-tap-error.html
+ ┃ ┃ ┣ 📜ifb-washing-machine-unbalance-error.html
+ ┃ ┃ ┣ 📜lg-washing-machine-de-error.html
+ ┃ ┃ ┣ 📜lg-washing-machine-fe-error.html
+ ┃ ┃ ┣ 📜lg-washing-machine-ie-error.html
+ ┃ ┃ ┣ 📜lg-washing-machine-le-error.html
+ ┃ ┃ ┣ 📜lg-washing-machine-oe-error.html
+ ┃ ┃ ┣ 📜lg-washing-machine-ue-error.html
+ ┃ ┃ ┣ 📜samsung-washing-machine-3c-3e-error.html
+ ┃ ┃ ┣ 📜samsung-washing-machine-4c-4e-error.html
+ ┃ ┃ ┣ 📜samsung-washing-machine-5c-5e-error.html
+ ┃ ┃ ┣ 📜samsung-washing-machine-dc-de-error.html
+ ┃ ┃ ┣ 📜samsung-washing-machine-le-lc-error.html
+ ┃ ┃ ┣ 📜samsung-washing-machine-sud-5ud-error.html
+ ┃ ┃ ┣ 📜samsung-washing-machine-ub-ue-error.html
+ ┃ ┃ ┣ 📜whirlpool-washing-machine-error-codes.html
+ ┃ ┃ ┣ 📜whirlpool-washing-machine-f8-e1-error.html
+ ┃ ┃ ┗ 📜whirlpool-washing-machine-f9-e1-error.html
+ ┃ ┣ 📂issues-specific
+ ┃ ┃ ┣ 📜washing-machine-banging-during-spin.html
+ ┃ ┃ ┣ 📜washing-machine-buttons-not-working.html
+ ┃ ┃ ┣ 📜washing-machine-clicking-noise.html
+ ┃ ┃ ┣ 📜washing-machine-cycle-taking-too-long.html
+ ┃ ┃ ┣ 📜washing-machine-detergent-not-dispensing.html
+ ┃ ┃ ┣ 📜washing-machine-display-error-repair.html
+ ┃ ┃ ┣ 📜washing-machine-display-not-working.html
+ ┃ ┃ ┣ 📜washing-machine-door-handle-broken.html
+ ┃ ┃ ┣ 📜washing-machine-door-not-locking.html
+ ┃ ┃ ┣ 📜washing-machine-door-not-opening-repair.html
+ ┃ ┃ ┣ 📜washing-machine-drum-hard-to-turn.html
+ ┃ ┃ ┣ 📜washing-machine-drum-loose.html
+ ┃ ┃ ┣ 📜washing-machine-drum-not-turning-during-wash.html
+ ┃ ┃ ┣ 📜washing-machine-fabric-softener-not-dispensing.html
+ ┃ ┃ ┣ 📜washing-machine-filling-water-slowly.html
+ ┃ ┃ ┣ 📜washing-machine-foam-coming-out.html
+ ┃ ┃ ┣ 📜washing-machine-grinding-noise.html
+ ┃ ┃ ┣ 📜washing-machine-humming-but-not-running.html
+ ┃ ┃ ┣ 📜washing-machine-keeps-filling-with-water.html
+ ┃ ┃ ┣ 📜washing-machine-keeps-restarting.html
+ ┃ ┃ ┣ 📜washing-machine-leaking-from-bottom.html
+ ┃ ┃ ┣ 📜washing-machine-leaking-from-detergent-drawer.html
+ ┃ ┃ ┣ 📜washing-machine-leaking-from-door.html
+ ┃ ┃ ┣ 📜washing-machine-leaking-water-repair.html
+ ┃ ┃ ┣ 📜washing-machine-making-noise-repair.html
+ ┃ ┃ ┣ 📜washing-machine-not-draining-repair.html
+ ┃ ┃ ┣ 📜washing-machine-not-filling-with-water.html
+ ┃ ┃ ┣ 📜washing-machine-not-heating-water.html
+ ┃ ┃ ┣ 📜washing-machine-not-spinning-repair.html
+ ┃ ┃ ┣ 📜washing-machine-not-starting-repair.html
+ ┃ ┃ ┣ 📜washing-machine-smell-removal-service.html
+ ┃ ┃ ┣ 📜washing-machine-stops-mid-cycle.html
+ ┃ ┃ ┣ 📜washing-machine-stuck-on-one-minute.html
+ ┃ ┃ ┣ 📜washing-machine-touch-panel-not-working.html
+ ┃ ┃ ┣ 📜washing-machine-vibration-issues-repair.html
+ ┃ ┃ ┣ 📜washing-machine-water-drains-while-filling.html
+ ┃ ┃ ┣ 📜washing-machine-water-left-in-drum.html
+ ┃ ┃ ┗ 📜washing-machine-whistling-noise.html
+ ┃ ┣ 📂machine-type-specific
+ ┃ ┃ ┣ 📜commercial-washing-machine-repair.html
+ ┃ ┃ ┣ 📜direct-drive-washing-machine-repair.html
+ ┃ ┃ ┣ 📜front-load-washing-machine-repair.html
+ ┃ ┃ ┣ 📜fully-automatic-washing-machine-repair.html
+ ┃ ┃ ┣ 📜inverter-washing-machine-repair.html
+ ┃ ┃ ┣ 📜portable-washing-machine-repair.html
+ ┃ ┃ ┣ 📜semi-automatic-washing-machine-repair.html
+ ┃ ┃ ┣ 📜top-load-washing-machine-repair.html
+ ┃ ┃ ┗ 📜washer-dryer-repair.html
+ ┃ ┣ 📂prevention-maintenance
+ ┃ ┃ ┣ 📜best-detergent-for-washing-machine.html
+ ┃ ┃ ┣ 📜diy-washing-machine-repair-tips.html
+ ┃ ┃ ┣ 📜how-often-to-clean-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-clean-top-load-washing-machine-lint-filter.html
+ ┃ ┃ ┣ 📜how-to-clean-washing-machine-detergent-drawer.html
+ ┃ ┃ ┣ 📜how-to-clean-washing-machine-door-rubber.html
+ ┃ ┃ ┣ 📜how-to-clean-washing-machine-drain-filter.html
+ ┃ ┃ ┣ 📜how-to-clean-washing-machine-drain-hose.html
+ ┃ ┃ ┣ 📜how-to-clean-washing-machine-water-inlet-filter.html
+ ┃ ┃ ┣ 📜how-to-clean-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-maintain-washing-machine-hoses.html
+ ┃ ┃ ┣ 📜how-to-prevent-washing-machine-door-seal-damage.html
+ ┃ ┃ ┣ 📜how-to-prevent-washing-machine-drain-blockage.html
+ ┃ ┃ ┣ 📜how-to-prevent-washing-machine-leaks.html
+ ┃ ┃ ┣ 📜how-to-prevent-washing-machine-rust.html
+ ┃ ┃ ┣ 📜how-to-prevent-washing-machine-smell.html
+ ┃ ┃ ┣ 📜how-to-prevent-washing-machine-vibration.html
+ ┃ ┃ ┣ 📜how-to-remove-mould-from-washing-machine.html
+ ┃ ┃ ┣ 📜should-you-leave-washing-machine-door-open.html
+ ┃ ┃ ┣ 📜washing-machine-care-after-long-storage.html
+ ┃ ┃ ┣ 📜washing-machine-care-before-long-vacation.html
+ ┃ ┃ ┣ 📜washing-machine-care-for-daily-use.html
+ ┃ ┃ ┣ 📜washing-machine-cleaner-vs-vinegar.html
+ ┃ ┃ ┣ 📜washing-machine-drum-clean-vs-descaling.html
+ ┃ ┃ ┣ 📜washing-machine-energy-saving-tips.html
+ ┃ ┃ ┣ 📜washing-machine-maintenance-checklist.html
+ ┃ ┃ ┣ 📜washing-machine-maintenance-during-monsoon.html
+ ┃ ┃ ┣ 📜washing-machine-maintenance-for-hard-water.html
+ ┃ ┃ ┣ 📜washing-machine-maintenance-tips.html
+ ┃ ┃ ┣ 📜washing-machine-water-saving-tips.html
+ ┃ ┃ ┗ 📜when-to-replace-washing-machine.html
+ ┃ ┣ 📂repair-decisions
+ ┃ ┃ ┣ 📜how-long-do-washing-machines-last.html
+ ┃ ┃ ┣ 📜how-to-choose-washing-machine-repair-technician.html
+ ┃ ┃ ┣ 📜independent-vs-authorised-washing-machine-service.html
+ ┃ ┃ ┣ 📜is-washing-machine-bearing-replacement-worth-it.html
+ ┃ ┃ ┣ 📜is-washing-machine-drum-replacement-worth-it.html
+ ┃ ┃ ┣ 📜is-washing-machine-motor-replacement-worth-it.html
+ ┃ ┃ ┣ 📜is-washing-machine-pcb-repair-worth-it.html
+ ┃ ┃ ┣ 📜original-vs-compatible-washing-machine-spare-parts.html
+ ┃ ┃ ┣ 📜questions-to-ask-before-washing-machine-repair.html
+ ┃ ┃ ┣ 📜should-you-repair-a-10-year-old-washing-machine.html
+ ┃ ┃ ┣ 📜signs-washing-machine-needs-professional-repair.html
+ ┃ ┃ ┣ 📜washing-machine-repair-or-replace.html
+ ┃ ┃ ┣ 📜washing-machine-repair-time-explained.html
+ ┃ ┃ ┣ 📜washing-machine-repair-under-manufacturer-warranty.html
+ ┃ ┃ ┣ 📜washing-machine-repair-vs-deep-cleaning.html
+ ┃ ┃ ┣ 📜washing-machine-repair-vs-general-service.html
+ ┃ ┃ ┣ 📜washing-machine-repair-warranty-explained.html
+ ┃ ┃ ┣ 📜washing-machine-repaired-but-problem-returned.html
+ ┃ ┃ ┣ 📜what-to-check-after-washing-machine-repair.html
+ ┃ ┃ ┗ 📜what-to-do-before-washing-machine-technician-arrives.html
+ ┃ ┣ 📂service-specific
+ ┃ ┃ ┣ 📜washing-machine-bearing-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-belt-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-capacitor-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-circuit-board-repair.html
+ ┃ ┃ ┣ 📜washing-machine-control-panel-repair.html
+ ┃ ┃ ┣ 📜washing-machine-deep-cleaning-service.html
+ ┃ ┃ ┣ 📜washing-machine-descaling-service.html
+ ┃ ┃ ┣ 📜washing-machine-detergent-tray-repair.html
+ ┃ ┃ ┣ 📜washing-machine-door-handle-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-door-lock-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-door-seal-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-drain-hose-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-drain-pump-repair.html
+ ┃ ┃ ┣ 📜washing-machine-drum-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-filter-cleaning-service.html
+ ┃ ┃ ┣ 📜washing-machine-general-service.html
+ ┃ ┃ ┣ 📜washing-machine-heating-element-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-inlet-hose-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-inlet-valve-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-inspection-and-diagnosis.html
+ ┃ ┃ ┣ 📜washing-machine-installation-service.html
+ ┃ ┃ ┣ 📜washing-machine-motor-carbon-brush-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-motor-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-pump-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-shock-absorber-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-suspension-rod-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-temperature-sensor-replacement.html
+ ┃ ┃ ┣ 📜washing-machine-timer-repair.html
+ ┃ ┃ ┣ 📜washing-machine-water-level-sensor-repair.html
+ ┃ ┃ ┗ 📜washing-machine-wiring-repair.html
+ ┃ ┣ 📂setup-and-usage
+ ┃ ┃ ┣ 📜can-washing-machine-be-kept-on-balcony.html
+ ┃ ┃ ┣ 📜front-load-vs-top-load-detergent.html
+ ┃ ┃ ┣ 📜how-much-clothes-to-put-in-washing-machine.html
+ ┃ ┃ ┣ 📜how-much-detergent-to-use-in-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-level-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-move-washing-machine-safely.html
+ ┃ ┃ ┣ 📜how-to-use-front-load-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-use-semi-automatic-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-use-top-load-washing-machine.html
+ ┃ ┃ ┣ 📜how-to-use-washing-machine-child-lock.html
+ ┃ ┃ ┣ 📜how-to-use-washing-machine-delay-start.html
+ ┃ ┃ ┣ 📜how-to-use-washing-machine-drum-clean.html
+ ┃ ┃ ┣ 📜how-to-use-washing-machine-rinse-and-spin.html
+ ┃ ┃ ┣ 📜liquid-vs-powder-detergent-for-washing-machine.html
+ ┃ ┃ ┣ 📜washing-machine-capacity-kg-explained.html
+ ┃ ┃ ┣ 📜washing-machine-detergent-drawer-compartments.html
+ ┃ ┃ ┣ 📜washing-machine-drain-hose-height.html
+ ┃ ┃ ┣ 📜washing-machine-eco-mode-explained.html
+ ┃ ┃ ┣ 📜washing-machine-first-use-guide.html
+ ┃ ┃ ┣ 📜washing-machine-inlet-hose-connection.html
+ ┃ ┃ ┣ 📜washing-machine-installation-checklist.html
+ ┃ ┃ ┣ 📜washing-machine-installation-handover-checklist.html
+ ┃ ┃ ┣ 📜washing-machine-installation-space-requirements.html
+ ┃ ┃ ┣ 📜washing-machine-problems-after-installation.html
+ ┃ ┃ ┣ 📜washing-machine-programs-explained.html
+ ┃ ┃ ┣ 📜washing-machine-quick-wash-vs-normal-wash.html
+ ┃ ┃ ┣ 📜washing-machine-spin-speed-guide.html
+ ┃ ┃ ┣ 📜washing-machine-tap-adapter-guide.html
+ ┃ ┃ ┣ 📜washing-machine-temperature-settings-guide.html
+ ┃ ┃ ┣ 📜washing-machine-transit-bolts-removal.html
+ ┃ ┃ ┗ 📜washing-machine-water-pressure-requirements.html
+ ┃ ┣ 📂washing-machine-keywords
+ ┃ ┃ ┣ 📜affordable-washing-machine-repair.html
+ ┃ ┃ ┣ 📜affordable-washing-machine-service-near-me.html
+ ┃ ┃ ┣ 📜bosch-front-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜discontinued-washing-machine-model-repair-bangalore.html
+ ┃ ┃ ┣ 📜godrej-top-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜haier-front-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜ifb-front-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜ifb-top-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜imported-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜lg-front-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜lg-top-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜multiple-washing-machine-repair-booking-bangalore.html
+ ┃ ┃ ┣ 📜onida-top-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜panasonic-top-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜same-day-washing-machine-repair-near-me.html
+ ┃ ┃ ┣ 📜samsung-front-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜samsung-top-load-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜stacked-washing-machine-repair-bangalore.html
+ ┃ ┃ ┣ 📜washer-repair-near-me.html
+ ┃ ┃ ┣ 📜washing-machine-center-near-me.html
+ ┃ ┃ ┣ 📜washing-machine-check-before-buying-used-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-check-for-tenants-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-inspection-at-home-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-intermittent-fault-repair-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-out-of-warranty-repair-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-preventive-maintenance-service-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-after-diy-attempt-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-after-long-storage-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-after-power-surge-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-after-rat-damage-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-after-water-damage-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-appointment-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-center.html
+ ┃ ┃ ┣ 📜washing-machine-repair-evening-appointments-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-for-apartments-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-for-built-in-cabinets-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-for-hostels-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-for-laundries-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-for-pg-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-for-rental-homes-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-home-service.html
+ ┃ ┃ ┣ 📜washing-machine-repair-in-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-near-me.html
+ ┃ ┃ ┣ 📜washing-machine-repair-on-sunday-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-online-booking-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-service-in-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-service.html
+ ┃ ┃ ┣ 📜washing-machine-repair-shop-near-me.html
+ ┃ ┃ ┣ 📜washing-machine-repair-urgent-visit-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-whatsapp-booking-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-with-invoice-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-with-service-warranty-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repair-with-written-estimate-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-repeat-fault-after-repair-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-replacement-installation-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-second-opinion-repair-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-service-after-moving-house-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-service-after-renovation-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-service-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-service-before-moving-house-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-service-centre-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-service-centre-near-me.html
+ ┃ ┃ ┣ 📜washing-machine-service-for-landlords-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-service-for-managed-apartments-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-service-near-me.html
+ ┃ ┃ ┣ 📜washing-machine-spare-parts-and-fitting-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-technician-electrician-or-plumber-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-technician-in-bangalore.html
+ ┃ ┃ ┣ 📜washing-machine-uninstallation-service-bangalore.html
+ ┃ ┃ ┗ 📜whirlpool-top-load-washing-machine-repair-bangalore.html
+ ┃ ┗ 📜washing-machine-repair-blog-bangalore.html
+ ┣ 📜index.html
+ ┣ 📜robots.txt
+ ┣ 📜site.webmanifest
+ ┣ 📜sitemap.xml
+ ┣ 📜washing-machine-repair-customer-testimonials-bangalore.html
+ ┗ 📜washing-machine-repair-near-me.html
 
 
  now based on this page given above i want to include all the possible section based on the page name best section and with good content seo for mobile screeen 2 blocks in the one line improve more the content the seo section and eveerthing 
