@@ -950,7 +950,7 @@ ranking of webpage in the google search results remember pls pls
       ],
       "@id": "https://fixmywasher.in/#localbusiness",
       "url": "https://fixmywasher.in/blog/washing-machine-keywords/washing-machine-repair-near-me.html",
-      "telephone": "+91-9164151568",
+      "telephone": "+91-8970794240",
       "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",
